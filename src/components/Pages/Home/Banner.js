@@ -21,7 +21,7 @@ const Banner = () => {
             and use words and sentences to communicate. Language acquisition
             involves structures, rules and representation.
           </p>
-          <button class="btn btn-primary">
+          <button class="btn btn-primary uppercase text-white font-bold">
             <Link to="about" onClick={navigateAbout}>
               About
             </Link>
