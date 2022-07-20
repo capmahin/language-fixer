@@ -6,6 +6,7 @@ import Home from "./components/Pages/Home/Home";
 import Login from "./components/Pages/Login/Login";
 import Contact from "./components/Pages/Contact/Contact";
 import Reviews from "./components/Pages/Reviews/Reviews";
+import Learn from "./components/Pages/Learn/Learn";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/learn" element={<Learn />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />

@@ -8,6 +8,9 @@ const NavBar = () => {
         <Link to="/">Home</Link>
       </li>
       <li className="my-1 lg:mr-2 cursor-pointer">
+        <Link to="learn">Learn</Link>
+      </li>
+      <li className="my-1 lg:mr-2 cursor-pointer">
         <Link to="about">About</Link>
       </li>
       <li className="my-1 lg:mr-2 cursor-pointer">

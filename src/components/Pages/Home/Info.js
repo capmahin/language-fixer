@@ -7,7 +7,7 @@ import chinese from "../../../assets/Info/Chinese.jpg";
 
 const Info = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 pb-16">
       <InfoCard cardTitle="Learning English" img={english}></InfoCard>
       <InfoCard cardTitle="Learning Portugies" img={portugal}></InfoCard>
       <InfoCard cardTitle="Learning Spanish" img={spanish}></InfoCard>
