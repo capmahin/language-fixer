@@ -21,6 +21,7 @@ const Services = () => {
         },
     ];
     return (
+        // sefserf
         <div className="my-28 mx-10">
             <div className="text-center ">
                 <h2 className="text-primary text-5xl font-bold uppercase pb-10">
