@@ -53,9 +53,7 @@ const NavBar = () => {
               {navItems}
             </ul>
           </div>
-          <a href="/" className="btn btn-ghost normal-case text-xl">
-            Language Fixer
-          </a>
+          <Link className="btn btn-ghost normal-case text-xl" to='/'>Language Fixer</Link>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal p-0">{navItems}</ul>
