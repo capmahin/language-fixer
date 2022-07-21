@@ -1,7 +1,13 @@
 import React from "react";
+import { signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
-
+import auth from "../../../firebase.init";
 const NavBar = () => {
+  const [user] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
   const navItems = (
     <>
       <li className="my-1 lg:mr-2 cursor-pointer">
@@ -13,20 +19,27 @@ const NavBar = () => {
       <li className="my-1 lg:mr-2 cursor-pointer">
         <Link to="about">About</Link>
       </li>
-      <li className="my-1 lg:mr-2 cursor-pointer">
-        <Link to="login">Login</Link>
-      </li>
+
       <li className="my-1 lg:mr-2 cursor-pointer">
         <Link to="contact">Contact Us</Link>
       </li>
       <li className="my-1 lg:mr-2 cursor-pointer">
         <Link to="reviews">Reviews</Link>
       </li>
+      <li className="my-1 lg:mr-2 cursor-pointer">
+        {user ? (
+          <button className="btn btn-ghost" onClick={logout}>
+            Sign Out
+          </button>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
+      </li>
     </>
   );
 
   return (
-    <div>
+    <div className="bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r">
       <div className="navbar bg-base-100 lg:justify-evenly">
         <div className="navbar-start">
           <div className="dropdown">
