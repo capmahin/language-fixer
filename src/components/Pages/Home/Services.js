@@ -1,5 +1,7 @@
 import React from "react";
-
+import livechat from "../../../assets/live chat.jpg";
+import quiz from "../../../assets/quiz.jpeg";
+import tutorial from "../../../assets/tutorial.jpg";
 import Service from "./Service";
 
 const Services = () => {
@@ -8,16 +10,19 @@ const Services = () => {
       _id: 1,
       name: "LIVE CHAT",
       description: ".....",
+      image: livechat
     },
     {
       _id: 2,
       name: "QUIZ",
       description: ".....",
+      image: quiz
     },
     {
       _id: 3,
       name: "TUTORIAL",
       description: ".....",
+      image: tutorial
     },
   ];
   return (

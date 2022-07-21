@@ -12,9 +12,8 @@ const Service = ({ service }) => {
         <img src={service.img} alt="" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{service.name}</h2>
-
-        <p>{service.description}</p>
+        <h2 className="card-title text-center">{service.name}</h2>
+        <img className="rounded-lg my-4" src={service.image} alt="" />
         <div className="card-actions justify-end">
           <Link to="/learn" onClick={navigateLearn} className="btn bg-teal-500 text-slate-200 border-0 w-36">
             {service.name}
