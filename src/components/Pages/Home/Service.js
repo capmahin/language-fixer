@@ -7,13 +7,15 @@ const Service = ({ service }) => {
     navigate("/learn");
   };
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+    <div className="card card-compact w-80 shadow-xl">
       <figure>
         <img src={service.img} alt="" />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-center">{service.name}</h2>
-        <img className="rounded-lg my-4" src={service.image} alt="" />
+        <div className="flex justify-center">
+          <img className="rounded-lg my-4 w-60" src={service.image} alt="" />
+        </div>
         <div className="card-actions justify-end">
           <Link to="/learn" onClick={navigateLearn} className="btn bg-teal-500 text-slate-200 border-0 w-36">
             {service.name}
