@@ -10,7 +10,6 @@ import Learn from "./components/Pages/Learn/Learn";
 import Footer from "./components/Pages/Shared/Footer";
 import SignUp from "./components/Pages/Login/Signup";
 
-
 function App() {
   return (
     <div className="text-slate-200 bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r p-0">
