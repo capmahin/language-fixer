@@ -19,6 +19,13 @@ const NavBar = () => {
       <li className="my-1 lg:mr-2 cursor-pointer">
         <Link to="about">About</Link>
       </li>
+
+      <li className="my-1 lg:mr-2 cursor-pointer">
+        <Link to="contact">Contact Us</Link>
+      </li>
+      <li className="my-1 lg:mr-2 cursor-pointer">
+        <Link to="reviews">Reviews</Link>
+      </li>
       <li className="my-1 lg:mr-2 cursor-pointer">
         {user ? (
           <button className="btn btn-ghost" onClick={logout}>
@@ -27,12 +34,6 @@ const NavBar = () => {
         ) : (
           <Link to="/login">Login</Link>
         )}
-      </li>
-      <li className="my-1 lg:mr-2 cursor-pointer">
-        <Link to="contact">Contact Us</Link>
-      </li>
-      <li className="my-1 lg:mr-2 cursor-pointer">
-        <Link to="reviews">Reviews</Link>
       </li>
     </>
   );
