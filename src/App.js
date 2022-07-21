@@ -7,11 +7,13 @@ import Login from "./components/Pages/Login/Login";
 import Contact from "./components/Pages/Contact/Contact";
 import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
+import Footer from "./components/Pages/Shared/Footer";
 import SignUp from "./components/Pages/Login/Signup";
+
 
 function App() {
   return (
-    <div>
+    <div className="text-slate-200 bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r p-0">
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

@@ -16,8 +16,8 @@ const Service = ({ service }) => {
 
         <p>{service.description}</p>
         <div className="card-actions justify-end">
-          <Link to="/learn" onClick={navigateLearn} className="btn btn-primary">
-            Learn !
+          <Link to="/learn" onClick={navigateLearn} className="btn bg-teal-500 text-slate-200 border-0 w-36">
+            {service.name}
           </Link>
         </div>
       </div>
