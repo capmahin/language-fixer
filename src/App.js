@@ -7,6 +7,7 @@ import Login from "./components/Pages/Login/Login";
 import Contact from "./components/Pages/Contact/Contact";
 import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
+
 import Quizzes from "./components/Pages/Home/Quizzes";
 
 function App() {
@@ -24,6 +25,5 @@ function App() {
             </Routes>
         </div>
     );
-}
 
 export default App;

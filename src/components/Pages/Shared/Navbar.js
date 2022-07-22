@@ -1,7 +1,10 @@
 import React from "react";
+import { signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
-
+import auth from "../../../firebase.init";
 const NavBar = () => {
+
     const navItems = (
         <>
             <li className="my-1 lg:mr-2 cursor-pointer">
@@ -64,6 +67,7 @@ const NavBar = () => {
                     <ul className="menu menu-horizontal p-0">{navItems}</ul>
                 </div>
             </div>
+
         </div>
     );
 };
