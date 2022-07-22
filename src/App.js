@@ -7,25 +7,23 @@ import Login from "./components/Pages/Login/Login";
 import Contact from "./components/Pages/Contact/Contact";
 import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
-import Footer from "./components/Pages/Shared/Footer";
-import SignUp from "./components/Pages/Login/Signup";
+
+import Quizzes from "./components/Pages/Home/Quizzes";
 
 function App() {
-  return (
-    <div className="text-slate-200 bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r p-0">
-      <NavBar></NavBar>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/learn" element={<Learn />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/reviews" element={<Reviews />} />
-      </Routes>
-      <Footer></Footer>
-    </div>
-  );
-}
+    return (
+        <div>
+            <NavBar></NavBar>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/learn" element={<Learn />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/reviews" element={<Reviews />} />
+                <Route path="/quiz" element={<Quizzes />} />
+            </Routes>
+        </div>
+    );
 
 export default App;
