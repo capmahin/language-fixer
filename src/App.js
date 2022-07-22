@@ -9,6 +9,7 @@ import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
 
 import Quizzes from "./components/Pages/Home/Quizzes";
+import Footer from "./components/Pages/Shared/Footer";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/quiz" element={<Quizzes />} />
             </Routes>
+            <Footer></Footer>
         </div>
     );
 };
