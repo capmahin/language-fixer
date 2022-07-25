@@ -13,7 +13,7 @@ import Footer from "./components/Pages/Shared/Footer";
 
 function App() {
     return (
-        <div>
+        <div className="bg-primary">
             <NavBar></NavBar>
             <Routes>
                 <Route path="/" element={<Home />} />

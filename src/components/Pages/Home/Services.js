@@ -2,7 +2,8 @@ import React from "react";
 import livechat from "../../../assets/live chat.jpg";
 import quiz from "../../../assets/quiz.jpeg";
 import tutorial from "../../../assets/tutorial.jpg";
-import Service from "./Service";
+import Service from "./Service"
+import borderPrimary from "../../../assets/border primary.png"
 
 const Services = () => {
   const services = [
@@ -26,9 +27,9 @@ const Services = () => {
     },
   ];
   return (
-    <div className="my-28">
+    <div className="my-28 text-slate-300">
       <div className="text-center ">
-        <h2 className="text-teal-500 text-5xl font-bold uppercase pb-10">
+        <h2 className="text-accent text-5xl font-bold uppercase pb-10">
           Our Services
         </h2>
         <h2 className="text-2xl pb-8">Service we provide</h2>
@@ -38,6 +39,7 @@ const Services = () => {
           <Service key={service._id} service={service}></Service>
         ))}
       </div>
+      <img className="mt-28 absolute" src={borderPrimary} alt="" />
     </div>
   );
 };
