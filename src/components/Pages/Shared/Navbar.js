@@ -1,31 +1,28 @@
 import React from "react";
-import { signOut } from "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
-import auth from "../../../firebase.init";
 const NavBar = () => {
 
     const navItems = (
         <>
-            <li className="my-1 lg:mr-2 cursor-pointer">
+            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="/">Home</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer">
+            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="learn">Learn</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer">
+            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="about">About</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer">
+            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="login">Login</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer">
+            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="contact">Contact Us</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer">
+            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="reviews">Reviews</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer">
+            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="quiz">Quiz</Link>
             </li>
         </>
@@ -33,7 +30,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className="navbar bg-base-100 lg:justify-evenly">
+            <div className="navbar bg-primary text-slate-300 lg:justify-evenly">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabindex="0" className="btn btn-ghost lg:hidden">
@@ -54,21 +51,21 @@ const NavBar = () => {
                         </label>
                         <ul
                             tabindex="0"
-                            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 "
                         >
                             {navItems}
                         </ul>
                     </div>
-                    <a href="/" className="btn btn-ghost normal-case text-xl">
+                    <p><Link to="/" className="btn btn-ghost normal-case text-xl hover:text-accent">
                         Language Fixer
-                    </a>
+                    </Link></p>
                 </div>
-                <div className="navbar-center hidden lg:flex ">
+                <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">{navItems}</ul>
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 };
 
