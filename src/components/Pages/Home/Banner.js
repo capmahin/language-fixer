@@ -28,7 +28,7 @@ const Banner = () => {
                         structures, rules and representation.
                     </p>
                     <button className="btn uppercase text-primary font-bold bg-accent hover:bg-amber-300 border-0 hover:text-slate-50">
-                        <Link to="trialLesson"> Try 1-on-1 free lesson</Link>
+                        <Link to="/reservation">Try 1-on-1 free lesson</Link>
                     </button>
                 </div>
                 <img

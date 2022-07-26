@@ -25,9 +25,6 @@ const NavBar = () => {
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="quiz">Quiz</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
-                <Link to="reservation">Reservation</Link>
-            </li>
         </>
     );
 
