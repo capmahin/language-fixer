@@ -10,7 +10,11 @@ import Learn from "./components/Pages/Learn/Learn";
 
 import Quizzes from "./components/Pages/Home/Quizzes";
 import Footer from "./components/Pages/Shared/Footer";
-import TrialLesson from "./components/Pages/Home/TrialLesson";
+
+
+
+import Reservation from "./components/Pages/Reservation/Reservation";
+
 
 function App() {
     return (
@@ -24,7 +28,11 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/quiz" element={<Quizzes />} />
-                <Route path="/trialLesson" element={<TrialLesson />} />
+
+               
+
+                <Route path="/reservation" element={<Reservation />} />
+
             </Routes>
             <Footer></Footer>
         </div>

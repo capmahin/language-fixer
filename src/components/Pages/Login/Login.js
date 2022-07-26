@@ -45,7 +45,7 @@ const Login = () => {
     <div className="hero h-screen">
       <div className="hero-content flex-col lg:flex-row">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
+          <h1 className="text-5xl font-bold text-accent">Login now!</h1>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm  ">
           <div className="card-body flex h-screen justify-center items-center">
