@@ -10,11 +10,15 @@ import Learn from "./components/Pages/Learn/Learn";
 
 import Quizzes from "./components/Pages/Home/Quizzes";
 import Footer from "./components/Pages/Shared/Footer";
+
+
+
 import Reservation from "./components/Pages/Reservation/Reservation";
+
 
 function App() {
     return (
-        <div className="bg-primary">
+        <div className="bg-primary text-white">
             <NavBar></NavBar>
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -24,10 +28,14 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/quiz" element={<Quizzes />} />
+
+               
+
                 <Route path="/reservation" element={<Reservation />} />
+
             </Routes>
             <Footer></Footer>
         </div>
     );
-};
+}
 export default App;
