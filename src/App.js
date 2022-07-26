@@ -28,9 +28,6 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/quiz" element={<Quizzes />} />
-
-               
-
                 <Route path="/reservation" element={<Reservation />} />
 
             </Routes>
