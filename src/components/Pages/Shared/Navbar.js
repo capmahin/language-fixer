@@ -24,6 +24,9 @@ const NavBar = () => {
         <Link to="contact">Contact Us</Link>
       </li>
       <li className="my-1 lg:mr-2 cursor-pointer">
+        <Link to="tutorial">Tutorials</Link>
+      </li>
+      <li className="my-1 lg:mr-2 cursor-pointer">
         <Link to="reviews">Reviews</Link>
       </li>
       <li className="my-1 lg:mr-2 cursor-pointer">
