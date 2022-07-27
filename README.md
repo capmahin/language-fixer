@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Language Fixer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site [Language Fixer](https://language-fixer.vercel.app/).
 
 ## Available Scripts
 
