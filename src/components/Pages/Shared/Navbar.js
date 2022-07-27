@@ -24,12 +24,12 @@ const NavBar = () => {
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="reviews">Reviews</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
+            {/* <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
                 <Link to="tutorial">Tutorial</Link>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="quiz">Quiz</Link>
-            </li>
+            </li> */}
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="about">About</Link>
             </li>
