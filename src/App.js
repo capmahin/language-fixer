@@ -10,6 +10,8 @@ import Learn from "./components/Pages/Learn/Learn";
 
 import Quizzes from "./components/Pages/Home/Quizzes";
 import Footer from "./components/Pages/Shared/Footer";
+import SignUp from "./components/Pages/Login/Signup";
+import ForKids from "./components/Pages/For Kids/ForKids"
 
 function App() {
     return (
@@ -20,9 +22,11 @@ function App() {
                 <Route path="/learn" element={<Learn />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/quiz" element={<Quizzes />} />
+                <Route path="/kids" element={<ForKids />} />
             </Routes>
             <Footer></Footer>
         </div>
