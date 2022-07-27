@@ -1,6 +1,25 @@
 import React from "react";
+import { signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import auth from "../../../firebase.init";
 const NavBar = () => {
+  const [user] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
+  const navItems = (
+    <>
+      <li className="my-1 lg:mr-2 cursor-pointer">
+        <Link to="/">Home</Link>
+      </li>
+      <li className="my-1 lg:mr-2 cursor-pointer">
+        <Link to="learn">Learn</Link>
+      </li>
+      <li className="my-1 lg:mr-2 cursor-pointer">
+        <Link to="about">About</Link>
+      </li>
+
 
     const navItems = (
         <>
@@ -16,6 +35,9 @@ const NavBar = () => {
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="reviews">Reviews</Link>
             </li>
+            <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
+                <Link to="tutorial">Tutorials</Link>
+             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="quiz">Quiz</Link>
             </li>
@@ -25,8 +47,14 @@ const NavBar = () => {
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="kids">For Kids</Link>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
-                <Link to="login">Login</Link>
+            <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
+            {user ? (
+              <button className="btn btn-ghost" onClick={logout}>
+            Sign Out
+             </button>
+            ) : (
+           <Link to="/login">Login</Link>
+            )}
             </li>
         </>
     );
@@ -70,6 +98,7 @@ const NavBar = () => {
 
         </div >
     );
+
 };
 
 export default NavBar;

@@ -1,9 +1,10 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import banner2 from '../../../assets/banner/banner 2.png'
-import borderPrimary from '../../../assets/border primary.png'
+import banner2 from "../../../assets/banner/banner 2.png";
+import borderPrimary from "../../../assets/border primary.png";
 
 const Banner = () => {
+
   const navigate = useNavigate();
   const navigateAbout = () => {
     navigate("/about");

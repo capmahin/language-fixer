@@ -7,8 +7,7 @@ import Login from "./components/Pages/Login/Login";
 import Contact from "./components/Pages/Contact/Contact";
 import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
-
-import Quizzes from "./components/Pages/Home/Quizzes";
+import SignUp from "./components/Pages/Login/Signup";
 import Footer from "./components/Pages/Shared/Footer";
 import SignUp from "./components/Pages/Login/Signup";
 import ForKids from "./components/Pages/For Kids/ForKids"
@@ -32,4 +31,5 @@ function App() {
         </div>
     );
 };
+
 export default App;
