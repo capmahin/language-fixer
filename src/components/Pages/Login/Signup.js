@@ -149,7 +149,7 @@ const SignUp = () => {
             <small>
               {" "}
               Already have an account{" "}
-              <Link className="text-secondary" to="/signup">
+              <Link className="text-secondary" to="/login">
                 Please Login?
               </Link>
             </small>
@@ -157,7 +157,7 @@ const SignUp = () => {
           <div className="divider">OR</div>
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline"
+            className="btn btn-outline hover:bg-accent hover:text-primary"
           >
             Continue with Google
           </button>
