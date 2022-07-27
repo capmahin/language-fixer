@@ -12,6 +12,7 @@ import Footer from "./components/Pages/Shared/Footer";
 import ForKids from "./components/Pages/For Kids/ForKids"
 import Quizzes from "./components/Pages/Home/Quizzes";
 import Tutorial from "./components/Pages/Tutorial/Tutorials";
+import NotFound from "./components/Pages/Shared/NotFound";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/tutorial" element={<Tutorial />} />
                 <Route path="/quiz" element={<Quizzes />} />
                 <Route path="/kids" element={<ForKids />} />
+                <Route path="/*" element={<NotFound />} />
             </Routes>
             <Footer></Footer>
         </div>
