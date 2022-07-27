@@ -8,8 +8,8 @@ import Contact from "./components/Pages/Contact/Contact";
 import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
 import SignUp from "./components/Pages/Login/Signup";
-import Tutorials from "./components/Pages/Tutorial/Tutorials";
 import Footer from "./components/Pages/Shared/Footer";
+import Tutorials from "./components/Pages/Tutorial/Tutorials";
 
 function App() {
   return (

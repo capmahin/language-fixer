@@ -42,12 +42,12 @@ const Login = () => {
     signInWithEmailAndPassword(data.email, data.password);
   };
   return (
-    <div class="hero h-screen">
-      <div class="hero-content flex-col lg:flex-row">
-        <div class="text-center lg:text-left">
-          <h1 class="text-5xl font-bold">Login now!</h1>
+    <div className="hero h-screen">
+      <div className="hero-content flex-col lg:flex-row">
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-bold text-accent">Login now!</h1>
         </div>
-        <div class="card flex-shrink-0 w-full max-w-sm  ">
+        <div className="card flex-shrink-0 w-full max-w-sm  ">
           <div className="card-body flex h-screen justify-center items-center">
             <div className="card w-96 bg-base-100 shadow-xl">
               <div className="card-body">

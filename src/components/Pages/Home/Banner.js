@@ -1,35 +1,44 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import banner from "../../../assets/banner/banner.jpg";
+import banner2 from "../../../assets/banner/banner 2.png";
+import borderPrimary from "../../../assets/border primary.png";
 
 const Banner = () => {
-  const navigate = useNavigate();
-  const navigateAbout = () => {
-    navigate("/about");
-  };
-  return (
-    <div class="hero min-h-screen pb-10 ">
-      <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src={banner} class="max-w-sm rounded-lg shadow-2xl" />
-        <div>
-          <h1 class="text-5xl font-bold text-purple-800">
-            Language Learner !!
-          </h1>
-          <p class="py-6 text-xl">
-            Language acquisition is the process by which humans acquire the
-            capacity to perceive and comprehend language, as well as to produce
-            and use words and sentences to communicate. Language acquisition
-            involves structures, rules and representation.
-          </p>
-          <button class="btn btn-primary uppercase text-white font-bold">
-            <Link to="about" onClick={navigateAbout}>
-              About
-            </Link>
-          </button>
+    const navigate = useNavigate();
+    const navigateAbout = () => {
+        navigate("/about");
+    };
+    return (
+        <div className="hero min-h-screen pb-10">
+            <div className="hero-content flex-col lg:flex-row-reverse">
+                <img
+                    src={banner2}
+                    className="max-w-xs lg:max-w-xl rounded-lg"
+                    alt=""
+                />
+                <div className="px-4">
+                    <h1 className="text-5xl font-bold text-accent">
+                        New language, new opportunities, new you
+                    </h1>
+                    <p className="py-6 text-xl text-slate-300">
+                        Language acquisition is the process by which humans
+                        acquire the capacity to perceive and comprehend
+                        language, as well as to produce and use words and
+                        sentences to communicate. Language acquisition involves
+                        structures, rules and representation.
+                    </p>
+                    <button className="btn uppercase text-primary font-bold bg-accent hover:bg-amber-300 border-0 hover:text-slate-50">
+                        <Link to="/reservation">Try 1-on-1 free lesson</Link>
+                    </button>
+                </div>
+                <img
+                    className=" mt-96 lg:mt-80 lg:pt-24 pt-36 absolute"
+                    src={borderPrimary}
+                    alt=""
+                />
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Banner;
