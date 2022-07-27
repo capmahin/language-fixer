@@ -34,8 +34,8 @@ const Review = () => {
         <div className='bg-accent text-slate-700 py-16'>
             <div className='w-96 mx-auto mt-14'>
                 <h2 className='text-2xl text-center font-bold mb-7'>Add Review!</h2>
-                <p className='label-text'>Your Name</p>
-                <input ref={nameRef} type="text" name="name" disabled value={user?.displayName || ''} className="input input-bordered w-full " />
+                <p className='label-text py-2'>Your Name</p>
+                <input ref={nameRef} type="text" name="name" value={user?.displayName || ""} className="input input-bordered w-full " />
                 <div className="form-control mt-4">
                     <label className="label">
                         <span className="label-text">Your Thoughts</span>
