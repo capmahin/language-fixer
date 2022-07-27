@@ -4,21 +4,10 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../../firebase.init";
 const NavBar = () => {
-  const [user] = useAuthState(auth);
-  const logout = () => {
-    signOut(auth);
-  };
-  const navItems = (
-    <>
-      <li className="my-1 lg:mr-2 cursor-pointer">
-        <Link to="/">Home</Link>
-      </li>
-      <li className="my-1 lg:mr-2 cursor-pointer">
-        <Link to="learn">Learn</Link>
-      </li>
-      <li className="my-1 lg:mr-2 cursor-pointer">
-        <Link to="about">About</Link>
-      </li>
+    const [user] = useAuthState(auth);
+    const logout = () => {
+        signOut(auth);
+    };
 
 
     const navItems = (
@@ -36,8 +25,8 @@ const NavBar = () => {
                 <Link to="reviews">Reviews</Link>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
-                <Link to="tutorial">Tutorials</Link>
-             </li>
+                <Link to="tutorial">Tutorial</Link>
+            </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <Link to="quiz">Quiz</Link>
             </li>
@@ -48,13 +37,13 @@ const NavBar = () => {
                 <Link to="kids">For Kids</Link>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
-            {user ? (
-              <button className="btn btn-ghost" onClick={logout}>
-            Sign Out
-             </button>
-            ) : (
-           <Link to="/login">Login</Link>
-            )}
+                {user ? (
+                    <button className="btn btn-ghost" onClick={logout}>
+                        Sign Out
+                    </button>
+                ) : (
+                    <Link to="/login">Login</Link>
+                )}
             </li>
         </>
     );

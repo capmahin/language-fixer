@@ -9,8 +9,9 @@ import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
 import SignUp from "./components/Pages/Login/Signup";
 import Footer from "./components/Pages/Shared/Footer";
-import SignUp from "./components/Pages/Login/Signup";
 import ForKids from "./components/Pages/For Kids/ForKids"
+import Quizzes from "./components/Pages/Home/Quizzes";
+import Tutorial from "./components/Pages/Tutorial/Tutorials";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/reviews" element={<Reviews />} />
+                <Route path="/tutorial" element={<Tutorial />} />
                 <Route path="/quiz" element={<Quizzes />} />
                 <Route path="/kids" element={<ForKids />} />
             </Routes>
