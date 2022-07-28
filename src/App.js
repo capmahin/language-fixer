@@ -9,7 +9,12 @@ import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
 import SignUp from "./components/Pages/Login/Signup";
 import Footer from "./components/Pages/Shared/Footer";
-import Tutorials from "./components/Pages/Tutorial/Tutorials";
+
+import Tutorial from "./components/Pages/Tutorial/Tutorial";
+import EnglishTutorials from "./components/Pages/Tutorial/English/EnglishTutorials";
+import FranchTutorials from "./components/Pages/Tutorial/Franch/FranchTutorials";
+import ChineseTutorials from "./components/Pages/Tutorial/Chinese/ChineseTutorials";
+import SpanishTutorials from "./components/Pages/Tutorial/Spanish/SpanishTutorials";
 
 function App() {
   return (
@@ -22,7 +27,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/tutorial" element={<Tutorials />} />
+        <Route path="/tutorial" element={<Tutorial />} />
+        <Route path="/englishtutorial" element={<EnglishTutorials />} />
+        <Route path="/franchtutorial" element={<FranchTutorials />} />
+        <Route path="/chinesetutorial" element={<ChineseTutorials />} />
+        <Route path="/spanishtutorial" element={<SpanishTutorials />} />
         <Route path="/reviews" element={<Reviews />} />
       </Routes>
       <Footer></Footer>
