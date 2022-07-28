@@ -15,6 +15,10 @@ import EnglishTutorials from "./components/Pages/Tutorial/English/EnglishTutoria
 import FranchTutorials from "./components/Pages/Tutorial/Franch/FranchTutorials";
 import ChineseTutorials from "./components/Pages/Tutorial/Chinese/ChineseTutorials";
 import SpanishTutorials from "./components/Pages/Tutorial/Spanish/SpanishTutorials";
+import ForKids from "./components/Pages/For Kids/ForKids";
+import Quizzes from "./components/Pages/Home/Quizzes";
+
+import NotFound from "./components/Pages/Shared/NotFound";
 
 function App() {
   return (
@@ -33,6 +37,10 @@ function App() {
         <Route path="/chinesetutorial" element={<ChineseTutorials />} />
         <Route path="/spanishtutorial" element={<SpanishTutorials />} />
         <Route path="/reviews" element={<Reviews />} />
+
+        <Route path="/quiz" element={<Quizzes />} />
+        <Route path="/kids" element={<ForKids />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer></Footer>
     </div>
