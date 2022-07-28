@@ -10,7 +10,7 @@ const Banner = () => {
     navigate("/about");
   };
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-primary">
       <div className="hero min-h-screen pb-10">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img src={banner2} className="max-w-xs lg:max-w-xl rounded-lg" alt="" />

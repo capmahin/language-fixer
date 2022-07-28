@@ -14,7 +14,7 @@ const Reviews = () => {
 
     return (
         <div className='pt-28 pb-20'>
-            <h2 className='text-center text-3xl font-bold text-slate-300'>Customer Review</h2>
+            <h2 className='text-center text-3xl font-bold text-slate-300'>Learners Review</h2>
             <img className='mx-auto mt-1' src={underline} alt="" />
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-6 p-4 px-16'>
                 {reviews.map(review =>
