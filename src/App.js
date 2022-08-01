@@ -19,32 +19,36 @@ import ForKids from "./components/Pages/For Kids/ForKids";
 import Quizzes from "./components/Pages/Home/Quizzes";
 
 import NotFound from "./components/Pages/Shared/NotFound";
+import Join from "./components/Pages/ChatApplication/Join";
+import Chat from "./components/Pages/ChatApplication/Chat";
 
 function App() {
-    return (
-        <div className="bg-primary">
-            <NavBar></NavBar>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/learn" element={<Learn />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/signup" element={<SignUp />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/tutorial" element={<Tutorial />} />
-                <Route path="/englishtutorial" element={<EnglishTutorials />} />
-                <Route path="/franchtutorial" element={<FranchTutorials />} />
-                <Route path="/chinesetutorial" element={<ChineseTutorials />} />
-                <Route path="/spanishtutorial" element={<SpanishTutorials />} />
-                <Route path="/reviews" element={<Reviews />} />
+  return (
+    <div className="bg-primary">
+      <NavBar></NavBar>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/tutorial" element={<Tutorial />} />
+        <Route path="/englishtutorial" element={<EnglishTutorials />} />
+        <Route path="/franchtutorial" element={<FranchTutorials />} />
+        <Route path="/chinesetutorial" element={<ChineseTutorials />} />
+        <Route path="/spanishtutorial" element={<SpanishTutorials />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="/chat" element={<Chat />} />
 
-                <Route path="/quiz" element={<Quizzes />} />
-                <Route path="/kids" element={<ForKids />} />
-                <Route path="/*" element={<NotFound />} />
-            </Routes>
-            <Footer></Footer>
-        </div>
-    );
+        <Route path="/quiz" element={<Quizzes />} />
+        <Route path="/kids" element={<ForKids />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+      <Footer></Footer>
+    </div>
+  );
 }
 
 export default App;
