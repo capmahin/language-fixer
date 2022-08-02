@@ -12,7 +12,7 @@ import Footer from "./components/Pages/Shared/Footer";
 
 import ForKids from "./components/Pages/For Kids/ForKids";
 
-import Tutorial from "./components/Pages/Tutorial/Tutorials";
+import Tutorial from "./components/Pages/Tutorial/Tutorial";
 
 import EnglishTutorials from "./components/Pages/Tutorial/English/EnglishTutorials";
 import FranchTutorials from "./components/Pages/Tutorial/Franch/FranchTutorials";
@@ -80,8 +80,6 @@ function App() {
                 <Route path="/chinesetutorial" element={<ChineseTutorials />} />
                 <Route path="/spanishtutorial" element={<SpanishTutorials />} />
                 <Route path="/reviews" element={<Reviews />} />
-
-                <Route path="/quiz" element={<Quizzes />} />
 
                 <Route path="/kids" element={<ForKids />} />
                 <Route path="/*" element={<NotFound />} />
