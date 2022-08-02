@@ -9,7 +9,7 @@ const WhyLF = () => {
     return (
         <div className='bg-gray-50 text-slate-800 py-20'>
             <h2 className='text-center font-black text-4xl px-4 mb-28'>Why Language Fixer?</h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center content-center mb-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center content-center'>
                 <div className="w-60 mb-10 rounded-lg">
                     <div className='bg-cyan-300 flex justify-center py-8 rounded-lg'>
                         <img src={brain} alt="Shoes" className="rounded-xl" />
