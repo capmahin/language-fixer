@@ -2,9 +2,10 @@ import React from "react";
 import Banner from "./Banner";
 
 import Info from "./Info";
-import Review from "./Review";
+import AddReview from "./AddReview";
 import Services from "./Services";
 import WhyLF from "./WhyLF";
+import Reviews from "./Reviews";
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <Info></Info>
       <Services></Services>
       <WhyLF></WhyLF>
-      <Review></Review>
+      <Reviews></Reviews>
+      <AddReview></AddReview>
     </div>
   );
 };

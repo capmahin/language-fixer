@@ -13,6 +13,14 @@ import Footer from "./components/Pages/Shared/Footer";
 import ForKids from "./components/Pages/For Kids/ForKids";
 
 import Tutorial from "./components/Pages/Tutorial/Tutorials";
+
+import EnglishTutorials from "./components/Pages/Tutorial/English/EnglishTutorials";
+import FranchTutorials from "./components/Pages/Tutorial/Franch/FranchTutorials";
+import ChineseTutorials from "./components/Pages/Tutorial/Chinese/ChineseTutorials";
+import SpanishTutorials from "./components/Pages/Tutorial/Spanish/SpanishTutorials";
+
+import Quizzes from "./components/Pages/Home/Quizzes";
+
 import NotFound from "./components/Pages/Shared/NotFound";
 
 import StartingPage from "./components/Pages/Tutorial/StartingPage";
@@ -35,7 +43,6 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/reviews" element={<Reviews />} />
                 <Route path="/tutorial" element={<Tutorial />} />
 
                 <Route
@@ -67,6 +74,14 @@ function App() {
                         />
                     }
                 />
+
+                <Route path="/englishtutorial" element={<EnglishTutorials />} />
+                <Route path="/franchtutorial" element={<FranchTutorials />} />
+                <Route path="/chinesetutorial" element={<ChineseTutorials />} />
+                <Route path="/spanishtutorial" element={<SpanishTutorials />} />
+                <Route path="/reviews" element={<Reviews />} />
+
+                <Route path="/quiz" element={<Quizzes />} />
 
                 <Route path="/kids" element={<ForKids />} />
                 <Route path="/*" element={<NotFound />} />

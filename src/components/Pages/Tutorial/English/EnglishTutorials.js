@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 
 import Service from "./Service";
 
+<<<<<<< HEAD:src/components/Pages/Tutorial/Tutorials.js
 const Tutorial = () => {
     const [services, setServices] = useState([]);
+=======
+const EnglishTutorials = () => {
+  const [services, setServices] = useState([]);
+>>>>>>> 83f3d4612687387b952124dbd02a06a92d2e00c5:src/components/Pages/Tutorial/English/EnglishTutorials.js
 
     useEffect(() => {
         fetch("services.json")
@@ -28,4 +33,4 @@ const Tutorial = () => {
     );
 };
 
-export default Tutorial;
+export default EnglishTutorials;
