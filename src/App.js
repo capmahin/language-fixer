@@ -21,16 +21,7 @@ import SpanishTutorials from "./components/Pages/Tutorial/Spanish/SpanishTutoria
 
 import NotFound from "./components/Pages/Shared/NotFound";
 
-import StartingPage from "./components/Pages/Tutorial/StartingPage";
-
-import FinalPage from "./components/Pages/Tutorial/FinalPage";
-import { useState } from "react";
-import QuestionPage from "./components/Pages/Tutorial/QuestionPage";
-
 function App() {
-    const [score, setScore] = useState(0);
-    const [topScore, setTopScore] = useState(0);
-    const [userName, setUserName] = useState("");
     return (
         <div className="bg-primary">
             <NavBar></NavBar>
@@ -42,36 +33,6 @@ function App() {
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/tutorial" element={<Tutorial />} />
-
-                <Route
-                    path="/quiz"
-                    element={
-                        <StartingPage
-                            topScore={topScore}
-                            userName={userName}
-                            setUserName={setUserName}
-                        />
-                    }
-                />
-
-                <Route
-                    path="/questionQuiz"
-                    element={<QuestionPage score={score} setScore={setScore} />}
-                />
-
-                <Route
-                    path="/finalPage"
-                    element={
-                        <FinalPage
-                            score={score}
-                            setScore={setScore}
-                            topScore={topScore}
-                            setTopScore={setTopScore}
-                            userName={userName}
-                            setUserName={setUserName}
-                        />
-                    }
-                />
 
                 <Route path="/englishtutorial" element={<EnglishTutorials />} />
                 <Route path="/franchtutorial" element={<FranchTutorials />} />
