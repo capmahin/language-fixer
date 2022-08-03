@@ -19,8 +19,8 @@ import ForKids from "./components/Pages/For Kids/ForKids";
 import Quizzes from "./components/Pages/Home/Quizzes";
 
 import NotFound from "./components/Pages/Shared/NotFound";
-import Join from "./components/Pages/ChatApplication/Join";
-import Chat from "./components/Pages/ChatApplication/Chat";
+import Join from "./components/Pages/ChatApplication/Join/Join";
+import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
         <Route path="/chinesetutorial" element={<ChineseTutorials />} />
         <Route path="/spanishtutorial" element={<SpanishTutorials />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/join" element={<Join />} />
+        <Route path="/join" exact element={<Join />} />
         <Route path="/chat" element={<Chat />} />
 
         <Route path="/quiz" element={<Quizzes />} />
