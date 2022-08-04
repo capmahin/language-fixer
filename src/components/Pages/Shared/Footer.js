@@ -30,9 +30,6 @@ const Footer = () => {
                     <a href='/' className="link link-hover">Cookie policy</a>
                 </div>
             </footer>
-            <div className='bg-gray-200'>
-                <img className='mt-5' src={borderPrimary} alt="" />
-            </div>
         </div>
     );
 };

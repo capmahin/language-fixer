@@ -17,7 +17,7 @@ const Service = ({ service }) => {
           <img className="rounded-lg my-4 w-60" src={service.image} alt="" />
         </div>
         <div className="card-actions justify-end">
-          <Link to={service.name} onClick={navigateLearn} className="btn bg-accent py-3 text-primary hover:bg-yellow-300 border-0 w-36">
+          <Link to={service.route} onClick={navigateLearn} className="btn bg-accent py-3 text-primary hover:bg-yellow-300 border-0 w-36">
             {service.name}
           </Link>
         </div>

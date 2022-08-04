@@ -17,7 +17,7 @@ const Review = () => {
             imageUrl: "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
             comment: commentRef.current.value
         }
-        const url = ""
+        const url = "http://localhost:5000/reviews"
         fetch(url, {
             method: 'POST',
             headers: {
@@ -44,7 +44,7 @@ const Review = () => {
                     <button onClick={handlePostReview} className='bg-primary text-gray-50 px-10 py-2 rounded-lg mt-6 hover:bg-slate-700'>Post Comment</button>
                 </div>
             </div>
-            <img className='pt-12 absolute' src={borderAccent} alt="" />
+            <img className='pt-12 absolute w-screen' src={borderAccent} alt="" />
         </div>
     );
 };

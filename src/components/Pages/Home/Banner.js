@@ -13,8 +13,8 @@ const Banner = () => {
     <div className="min-h-screen bg-primary">
       <div className="hero min-h-screen pb-10">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src={banner2} className="max-w-xs lg:max-w-xl rounded-lg" alt="" />
-          <div className="px-4">
+          <img data-aos="fade-left" src={banner2} className="max-w-xs lg:max-w-xl rounded-lg" alt="" />
+          <div data-aos="fade-right" className="px-4">
             <h1 className="text-5xl font-bold text-accent">
               New language, new opportunities, new you
             </h1>
@@ -32,7 +32,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <img className="absolute" src={borderPrimary} alt="" />
+      <img className="absolute w-screen" src={borderPrimary} alt="" />
     </div>
   );
 };

@@ -11,18 +11,21 @@ const Services = () => {
       _id: 1,
       name: "LIVE CHAT",
       description: ".....",
+      route: "/join",
       image: livechat
     },
     {
       _id: 2,
       name: "QUIZ",
       description: ".....",
+      route: "/quiz",
       image: quiz
     },
     {
       _id: 3,
       name: "TUTORIAL",
       description: ".....",
+      route: "/tutorial",
       image: tutorial
     },
   ];
@@ -39,7 +42,7 @@ const Services = () => {
           <Service key={service._id} service={service}></Service>
         ))}
       </div>
-      <img className="mt-28 absolute" src={borderPrimary} alt="" />
+      <img className="mt-28 absolute w-screen" src={borderPrimary} alt="" />
     </div>
   );
 };
