@@ -11,18 +11,21 @@ const Services = () => {
       _id: 1,
       name: "LIVE CHAT",
       description: ".....",
+      route: "/join",
       image: livechat
     },
     {
       _id: 2,
       name: "QUIZ",
       description: ".....",
+      route: "/quiz",
       image: quiz
     },
     {
       _id: 3,
       name: "TUTORIAL",
       description: ".....",
+      route: "/tutorial",
       image: tutorial
     },
   ];
