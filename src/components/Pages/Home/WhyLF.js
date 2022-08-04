@@ -39,7 +39,7 @@ const WhyLF = () => {
                     <h2 className="text-xl font-bold px-1">Cover everything from holiday essentials to longer-term goals</h2>
                 </div>
             </div>
-            <img className='mt-16 absolute' src={borderWhite} alt="" />
+            <img className='mt-16 absolute w-screen' src={borderWhite} alt="" />
         </div>
     );
 };

@@ -39,7 +39,7 @@ const Services = () => {
           <Service key={service._id} service={service}></Service>
         ))}
       </div>
-      <img className="mt-28 absolute" src={borderPrimary} alt="" />
+      <img className="mt-28 absolute w-screen" src={borderPrimary} alt="" />
     </div>
   );
 };
