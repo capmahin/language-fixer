@@ -7,8 +7,7 @@ import Login from "./components/Pages/Login/Login";
 import Contact from "./components/Pages/Contact/Contact";
 import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
-
-import Quizzes from "./components/Pages/Home/Quizzes";
+import SignUp from "./components/Pages/Login/Signup";
 import Footer from "./components/Pages/Shared/Footer";
 
 import Reservation from "./components/Pages/Trial-lesson/Reservation";
@@ -25,12 +24,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/quiz" element={<Quizzes />} />
+        {/* <Route path="/quiz" element={<Quizzes />} /> */}
         <Route path="/trial" element={<Reservation />} />
-        <Route path="/trial/english" element={<PickDate />} />
       </Routes>
       <Footer></Footer>
     </div>
   );
 }
+
 export default App;
