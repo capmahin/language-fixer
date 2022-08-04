@@ -9,7 +9,6 @@ import Reviews from "./components/Pages/Reviews/Reviews";
 import Learn from "./components/Pages/Learn/Learn";
 import SignUp from "./components/Pages/Login/Signup";
 import Footer from "./components/Pages/Shared/Footer";
-
 import Reservation from "./components/Pages/Trial-lesson/Reservation";
 import PickDate from "./components/Pages/Trial-lesson/PickDate";
 
@@ -26,6 +25,7 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         {/* <Route path="/quiz" element={<Quizzes />} /> */}
         <Route path="/trial" element={<Reservation />} />
+        <Route path="/trial/pickdate" element={<PickDate />} />
       </Routes>
       <Footer></Footer>
     </div>
