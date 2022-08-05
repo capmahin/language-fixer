@@ -7,7 +7,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/reviews")
+        fetch("http://localhost:5000/review")
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
@@ -31,7 +31,7 @@ const Reviews = () => {
                     </>
                 )}
             </div>
-            <img className="mt-20 absolute" src={borderPrimary} alt="" />
+            <img className="mt-20 absolute w-screen" src={borderPrimary} alt="" />
         </div>
     );
 };
