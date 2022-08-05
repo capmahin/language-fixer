@@ -24,7 +24,7 @@ const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
 
     return (
         <div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card w-96 bg-base-100 shadow-xl mx-auto my-16">
                 <div class="card-body">
                     <h2 class="card-title justify-center">Welcome {name}</h2>
 

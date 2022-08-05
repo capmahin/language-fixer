@@ -4,6 +4,22 @@ import { exportComponentAsPNG } from "react-component-export-image";
 
 const Certificate = ({ name }) => {
     const certificateRef = useRef();
+
+    const ComponentToPrint = React.forwardRef((props, ref) => {
+        console.log(ref.current);
+        return (
+            <div ref={ref}>
+                <p className="name absolute text-black lg:top-[365px] lg:left-[950px] text-4xl ">
+                    {name}
+                </p>
+                <img
+                    className="w-[600px] block"
+                    src="https://i.ibb.co/RQw9r7z/Blue-and-Yellow-Minimalist-Employee-of-the-Month-Certificate-2.png"
+                    alt="certificate"
+                />
+            </div>
+        );
+    });
     return (
         <div>
             <h1 className="text-center text-accent text-2xl lg:text-4xl m-5">
@@ -19,23 +35,22 @@ const Certificate = ({ name }) => {
                     <button
                         onClick={(e) => {
                             e.preventDefault();
-                            exportComponentAsPNG(certificateRef);
+                            exportComponentAsPNG(certificateRef, {}).then(
+                                (dataURL) => {
+                                    const link = document.createElement("a");
+                                    link.href = dataURL;
+                                    link.download = "certificate.png";
+                                    link.click();
+                                }
+                            );
+                            console.log(certificateRef.current);
                         }}
                         className="btn btn-accent"
                     >
                         Download
                     </button>
                 </div>
-                <div>
-                    <p className="name absolute text-black lg:top-[365px] lg:left-[950px] text-4xl ">
-                        {name}
-                    </p>
-                    <img
-                        className="w-[600px] block"
-                        src="https://i.ibb.co/RQw9r7z/Blue-and-Yellow-Minimalist-Employee-of-the-Month-Certificate-2.png"
-                        alt="certificate"
-                    />
-                </div>
+                <ComponentToPrint ref={certificateRef} />
             </div>
         </div>
     );

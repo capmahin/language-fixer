@@ -22,7 +22,7 @@ const QuizHome = ({ name, setName, fetchQuestions }) => {
     };
     return (
         <div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card w-96 bg-base-100 shadow-xl mx-auto my-10">
                 <div class="card-body">
                     <h2 class="card-title justify-center">Quiz Settings</h2>
                     {error && (
