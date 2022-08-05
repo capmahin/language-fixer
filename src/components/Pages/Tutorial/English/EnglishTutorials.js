@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
 import Service from "./Service";
 
 const EnglishTutorials = () => {
-    const [services, setServices] = useState([]);
+  const [services, setServices] = useState([]);
+
 
     useEffect(() => {
         fetch("services.json")
@@ -23,6 +22,6 @@ const EnglishTutorials = () => {
             </div>
         </div>
     );
-};
 
+                }
 export default EnglishTutorials;

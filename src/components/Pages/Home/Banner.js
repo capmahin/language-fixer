@@ -1,23 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import banner2 from "../../../assets/banner/banner 2.png";
 import borderPrimary from "../../../assets/border primary.png";
 
 const Banner = () => {
+    const navigate = useNavigate();
+    const navigateAbout = () => {
+        navigate("/about");
+    };
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-primary">
             <div className="hero min-h-screen pb-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         data-aos="fade-left"
-                        data-aos-duration="1500"
+                        data-aos-duration="1200"
                         src={banner2}
                         className="max-w-xs lg:max-w-xl rounded-lg"
                         alt=""
                     />
                     <div
                         data-aos="fade-right"
-                        data-aos-duration="1500"
+                        data-aos-duration="1200"
                         className="px-4"
                     >
                         <h1 className="text-5xl font-bold text-accent">
@@ -31,17 +35,11 @@ const Banner = () => {
                             involves structures, rules and representation.
                         </p>
                         <button className="btn uppercase text-primary font-bold bg-accent hover:bg-amber-300 border-0 hover:text-slate-50">
-                            <Link to="/freeSession">
-                                {" "}
-                                Try 1-on-1 free lesson
+                            <Link to="about" onClick={navigateAbout}>
+                                About
                             </Link>
                         </button>
                     </div>
-                    <img
-                        className=" mt-96 lg:mt-80 lg:pt-24  absolute"
-                        src={borderPrimary}
-                        alt=""
-                    />
                 </div>
             </div>
             <img className="absolute" src={borderPrimary} alt="" />
