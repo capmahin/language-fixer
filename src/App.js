@@ -19,6 +19,8 @@ import ForKids from "./components/Pages/For Kids/ForKids";
 import Quizzes from "./components/Pages/Home/Quizzes";
 
 import NotFound from "./components/Pages/Shared/NotFound";
+import Join from "./components/Pages/ChatApplication/Join/Join";
+import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 
 import QuizHome from "./components/Quiz/QuizPages/QuizHome";
 import Quiz from "./components/Quiz/QuizPages/Quiz";
@@ -51,7 +53,6 @@ function App() {
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/tutorial" element={<Tutorial />} />
-                
                 <Route path="/englishtutorial" element={<EnglishTutorials />} />
                 <Route path="/franchtutorial" element={<FranchTutorials />} />
                 <Route path="/chinesetutorial" element={<ChineseTutorials />} />
@@ -89,6 +90,8 @@ function App() {
                     path="/certificate"
                     element={<Certificate name={name} />}
                 />
+                <Route path="/join" exact element={<Join />} />
+                <Route path="/chat" element={<Chat />} />
 
                 <Route path="/quiz" element={<Quizzes />} />
                 <Route path="/kids" element={<ForKids />} />
