@@ -74,9 +74,7 @@ const Tutorial = () => {
                     </div>
                 </div>
             </div>
-            <Link to="/quiz">
-                <button className="btn brn-primary">Take Exam</button>
-            </Link>
+            +
         </div>
     );
 };

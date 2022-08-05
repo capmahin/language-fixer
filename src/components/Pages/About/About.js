@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const About = () => {
     return (
         <div
-            data-aos="zoom-in-up"
+            data-aos="zoom-out"
             data-aos-duration="1200"
             className="text-white "
         >

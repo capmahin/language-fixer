@@ -21,9 +21,6 @@ const EnglishTutorials = () => {
                     <Service key={service._id} service={service}></Service>
                 ))}
             </div>
-            <Link to="/quiz">
-                <button className="btn btn-primary">Take Exam</button>
-            </Link>
         </div>
     );
 };
