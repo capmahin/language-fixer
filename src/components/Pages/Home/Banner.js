@@ -4,7 +4,6 @@ import banner2 from "../../../assets/banner/banner 2.png";
 import borderPrimary from "../../../assets/border primary.png";
 
 const Banner = () => {
-
   return (
     <div className="min-h-screen bg-primary">
       <div className="hero min-h-screen pb-10">
@@ -31,14 +30,9 @@ const Banner = () => {
               </button>
             </Link>
           </div>
-          <img
-            className=" mt-96 lg:mt-80 lg:pt-24 pt-36 absolute"
-            src={borderPrimary}
-            alt=""
-          />
         </div>
-        <img className="absolute w-screen" src={borderPrimary} alt="" />
       </div>
+      <img className="absolute w-screen" src={borderPrimary} alt="" />
     </div>
   );
 };
