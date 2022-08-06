@@ -42,7 +42,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <img className="absolute" src={borderPrimary} alt="" />
+            <img className="absolute w-screen" src={borderPrimary} alt="" />
         </div>
     );
 };

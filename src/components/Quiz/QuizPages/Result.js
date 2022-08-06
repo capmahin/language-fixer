@@ -18,8 +18,8 @@ const Result = ({ name, score, setCurrentQues, setQuestions, setScore }) => {
 
     return (
         <div className="my-5">
-            <div class="card w-96 bg-base-100 shadow-xl mx-auto my-16">
-                <div class="card-body">
+            <div className="card w-96 bg-base-100 shadow-xl mx-auto my-16">
+                <div className="card-body">
                     <h1 className="card-title justify-center">Result</h1>
                     {score < 5 ? (
                         <p>

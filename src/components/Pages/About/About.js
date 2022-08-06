@@ -9,13 +9,13 @@ const About = () => {
             className="text-white "
         >
             <div className="">
-                <div class="hero min-h-screen bg-primary-200">
-                    <div class="hero-content flex-col lg:flex-row-reverse">
+                <div className="hero min-h-screen bg-primary-200">
+                    <div className="hero-content flex-col lg:flex-row-reverse">
                         <div>
-                            <h1 class="text-5xl font-bold text-accent">
+                            <h1 className="text-5xl font-bold text-accent">
                                 Know more about us
                             </h1>
-                            <p class="py-6">
+                            <p className="py-6">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Sit error dolores veniam
                                 itaque ab possimus deserunt voluptatibus modi
@@ -51,7 +51,7 @@ const About = () => {
                                 ullam sequi labore! Recusandae, obcaecati id.
                             </p>
                             <Link to="/">
-                                <button class="btn btn-accent">Home</button>
+                                <button className="btn btn-accent">Home</button>
                             </Link>
                         </div>
                     </div>
