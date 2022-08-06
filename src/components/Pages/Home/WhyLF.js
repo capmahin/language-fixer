@@ -14,25 +14,31 @@ const WhyLF = () => {
                 <img className='mx-auto mt-1' src={underline} alt="" />
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center content-center'>
-                <div className="w-60 mb-10 rounded-lg">
+                <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className="w-60 mb-10 rounded-lg">
                     <div className='bg-cyan-300 flex justify-center py-8 rounded-lg'>
                         <img src={brain} alt="Shoes" className="rounded-xl" />
                     </div>
                     <h2 className="text-xl font-bold px-1">Proven memory techniques rooted in science</h2>
                 </div>
-                <div className="w-60 mb-10 rounded-lg">
+                <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" className="w-60 mb-10 rounded-lg">
                     <div className='bg-purple-300 flex justify-center py-8 rounded-lg'>
                         <img src={phone} alt="Shoes" className="rounded-xl" />
                     </div>
                     <h2 className="text-xl font-bold px-1">Twice as fast as learning in a regular classroom setting</h2>
                 </div>
-                <div className="w-60 mb-10 rounded-lg">
+                <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" className="w-60 mb-10 rounded-lg">
                     <div className='bg-emerald-300 flex justify-center py-8 rounded-lg'>
                         <img src={people} alt="Shoes" className="rounded-xl" />
                     </div>
                     <h2 className="text-xl font-bold px-1">Immersive learning. Learn like you live there.</h2>
                 </div>
-                <div className="w-60 mb-10 rounded-lg">
+                <div data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className="w-60 mb-10 rounded-lg">
                     <div className='bg-red-200 flex justify-center py-8 rounded-lg'>
                         <img src={rocket} alt="Shoes" className="rounded-xl" />
                     </div>
