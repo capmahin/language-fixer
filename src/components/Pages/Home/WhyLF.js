@@ -1,8 +1,6 @@
 import React from "react";
 import brain from "../../../assets/brain.svg";
-import people from "../../../assets/people.svg";
-import rocket from "../../../assets/rocket.svg";
-import phone from "../../../assets/phone.svg";
+
 import borderWhite from "../../../assets/borderWhite.png";
 import underline from "../../../assets/underline.png";
 
