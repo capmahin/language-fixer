@@ -22,29 +22,29 @@ const QuizHome = ({ name, setName, fetchQuestions }) => {
     };
     return (
         <div>
-            <div class="card w-96 bg-base-100 shadow-xl mx-auto my-10">
-                <div class="card-body">
-                    <h2 class="card-title justify-center">Quiz Settings</h2>
+            <div className="card w-96 bg-base-100 shadow-xl mx-auto my-10">
+                <div className="card-body">
+                    <h2 className="card-title justify-center">Quiz Settings</h2>
                     {error && (
                         <ErrorMessage className="text-red-600">
                             Please Fill all the Fields!
                         </ErrorMessage>
                     )}
 
-                    <div class="form-control w-full max-w-xs">
-                        <label class="label">
-                            <span class="label-text">What is your name?</span>
+                    <div className="form-control w-full max-w-xs">
+                        <label className="label">
+                            <span className="label-text">What is your name?</span>
                         </label>
                         <input
                             type="text"
                             placeholder="Type here"
-                            class="input input-bordered w-full max-w-xs"
+                            className="input input-bordered w-full max-w-xs"
                             onChange={(e) => setName(e.target.value)}
                         />
                     </div>
-                    <div class="form-control w-full max-w-xs">
-                        <label class="label">
-                            <span class="label-text">Select Language</span>
+                    <div className="form-control w-full max-w-xs">
+                        <label className="label">
+                            <span className="label-text">Select Language</span>
                         </label>
                         <select
                             className="input input-bordered w-full max-w-xs"
@@ -59,15 +59,15 @@ const QuizHome = ({ name, setName, fetchQuestions }) => {
                             ))}
                         </select>
                     </div>
-                    <div class="form-control w-full max-w-xs">
-                        <label class="label">
-                            <span class="label-text">Select Difficulty</span>
+                    <div className="form-control w-full max-w-xs">
+                        <label className="label">
+                            <span className="label-text">Select Difficulty</span>
                         </label>
                         <select
                             onChange={(e) => setDifficulty(e.target.value)}
                             value={difficulty}
                             select
-                            class="input input-bordered w-full max-w-xs"
+                            className="input input-bordered w-full max-w-xs"
                         >
                             <option key="Select DiffiCulty" value="">
                                 Select Difficulty
@@ -83,8 +83,8 @@ const QuizHome = ({ name, setName, fetchQuestions }) => {
                             </option>
                         </select>
                     </div>
-                    <div class="card-actions justify-center">
-                        <button onClick={handleSubmit} class="btn btn-primary">
+                    <div className="card-actions justify-center">
+                        <button onClick={handleSubmit} className="btn btn-primary">
                             Start Quiz
                         </button>
                     </div>
