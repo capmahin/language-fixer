@@ -4,6 +4,7 @@ import kidsBanner from '../../../assets/banner/kidsBanner.svg'
 import borderPrimary from '../../../assets/border primary.png'
 import HaveQuestions from "./HaveQuestions";
 import KidsBanner from "./KidsBanner";
+import KidsFacilities from "./KidsFacilities";
 import KidsServices from "./KidsServices";
 
 const Banner = () => {
@@ -13,6 +14,7 @@ const Banner = () => {
             <KidsBanner></KidsBanner>
             <HaveQuestions></HaveQuestions>
             <KidsServices></KidsServices>
+            <KidsFacilities></KidsFacilities>
             <div className="hero min-h-screen ">
                 <div className="hero-content flex-col lg:flex-row-reverse p-20">
                     <img src={kidsBanner} className="max-w-xs lg:max-w-xl rounded-lg" alt="" />
