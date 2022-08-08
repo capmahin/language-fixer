@@ -1,15 +1,18 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import kidsBanner from '../../../assets/banner/kidsBanner.svg'
 import borderPrimary from '../../../assets/border primary.png'
+import HaveQuestions from "./HaveQuestions";
+import KidsBanner from "./KidsBanner";
+import KidsServices from "./KidsServices";
 
 const Banner = () => {
-    const navigate = useNavigate();
-    const navigateAbout = () => {
-        navigate("/about");
-    };
+
     return (
         <div>
+            <KidsBanner></KidsBanner>
+            <HaveQuestions></HaveQuestions>
+            <KidsServices></KidsServices>
             <div className="hero min-h-screen ">
                 <div className="hero-content flex-col lg:flex-row-reverse p-20">
                     <img src={kidsBanner} className="max-w-xs lg:max-w-xl rounded-lg" alt="" />
@@ -24,7 +27,7 @@ const Banner = () => {
                             involves structures, rules and representation.
                         </p>
                         <button className="btn uppercase text-primary font-bold bg-accent hover:bg-amber-300 border-0 hover:text-slate-50">
-                            <Link to="about" onClick={navigateAbout}>
+                            <Link to="about">
                                 About
                             </Link>
                         </button>
@@ -32,7 +35,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className="pb-36 bg-gray-50">
-                <img className="absolute " src={borderPrimary} alt="" />
+                <img className="absolute w-screen" src={borderPrimary} alt="" />
             </div>
         </div>
     );
