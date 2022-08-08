@@ -48,7 +48,8 @@ const WhyLF = () => {
                             architecto aspernatur blanditiis a laudantium ullam
                             ipsa! Alias?
                         </p>
-
+                    </div>
+                </div>
 
                 <div className="flex justify-center items-center">
                     <img src={brain} alt="brain" />
@@ -83,7 +84,6 @@ const WhyLF = () => {
                             Enim quaerat eos autem dolorum ratione omnis,
                             consequatur quod?
                         </p>
-
                     </div>
                 </div>
             </div>
