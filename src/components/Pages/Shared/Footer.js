@@ -1,5 +1,4 @@
 import React from 'react';
-import borderPrimary from '../../../assets/border primary.png'
 
 const Footer = () => {
     return (
