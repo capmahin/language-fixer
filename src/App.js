@@ -21,6 +21,7 @@ import Quizzes from "./components/Pages/Home/Quizzes";
 import NotFound from "./components/Pages/Shared/NotFound";
 import Join from "./components/Pages/ChatApplication/Join/Join";
 import Chat from "./components/Pages/ChatApplication/Chat/Chat";
+import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/join" exact element={<Join />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/videoCall" element={<VideoCall />} />
 
         <Route path="/quiz" element={<Quizzes />} />
         <Route path="/kids" element={<ForKids />} />

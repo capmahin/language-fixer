@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 import ScrollToBottom from "react-scroll-to-bottom";
 
 function Chat({ socket, username, room }) {
+  const navigate = useNavigate();
+  const navigateVideoCall = () => {
+    navigate("/videoCall");
+  };
   const [currentMessage, setCurrentMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
 
@@ -69,6 +75,9 @@ function Chat({ socket, username, room }) {
           }}
         />
         <button onClick={sendMessage}>&#9658;</button>
+        <Link to="/videoCall" onClick={navigateVideoCall}>
+          <button>Video</button>
+        </Link>
       </div>
     </div>
   );
