@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "../Chat/Chat";
 
-const socket = io.connect("http://localhost:5001/");
+const socket = io.connect("https://language-fixer-server.vercel.app/");
 
 function Join() {
     const [username, setUsername] = useState("");

@@ -7,6 +7,7 @@ const Reviews = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+
         setLoading(true);
         fetch("http://localhost:5000/review")
             .then((res) => res.json())
@@ -18,6 +19,7 @@ const Reviews = () => {
     if (loading) {
         return <div>Loading...</div>;
     }
+
 
     return (
         <div className="pt-28 pb-20">
