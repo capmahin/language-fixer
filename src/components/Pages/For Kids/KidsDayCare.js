@@ -9,7 +9,7 @@ const KidsDayCare = () => {
 
             <div className=''>
                 <img className='w-2/6 absolute left-1/4 ml-28 top-60  -mt-24' src={DayCareChildren} alt="cloud" />
-                <img className='w-2/6 absolute left-1/4 ml-28 top-60 ' src={DayCareCloud} alt="cloud" />
+                <img className='w-2/6 absolute left-1/4 ml-28 top-60 drop-shadow-2xl' src={DayCareCloud} alt="cloud" />
 
                 <div className='text-center absolute left-1/4 ml-48 top-80 mt-5'>
                     <h3 className='uppercase text-xl font-semibold pb-2 text-red-600'>Discover Our DayCare</h3>

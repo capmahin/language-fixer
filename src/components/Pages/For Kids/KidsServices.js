@@ -6,8 +6,8 @@ import img4 from '../../../assets/For Kids/servicesImg4.jpg'
 
 const KidsServices = () => {
     return (
-        <div>
-            <div className='pt-40 bg-slate-200 px-28'>
+        <div className='bg-slate-200 '>
+            <div className='pt-40 px-28'>
                 <div className='text-center'>
                     <h2 className='text-black font-extrabold text-5xl mb-4'>Our Services</h2>
                     <div className='flex justify-center items-center'>
@@ -23,9 +23,9 @@ const KidsServices = () => {
                     </div>
                     <p className='text-slate-500 font-thin'>We make your child happy day after day</p>
                 </div>
-                <div className="carousel w-full">
+                <div className="carousel w-full -mt-10">
                     <div id="slide1" className="carousel-item w-full">
-                        <div className="hero min-h-min">
+                        <div className="hero min-h-fit">
                             <div className="hero-content flex-col lg:flex-row-reverse">
                                 <img src={img1} className="max-w-md rounded-3xl shadow-2xl" alt='children' />
                                 <div>
@@ -79,7 +79,7 @@ const KidsServices = () => {
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center items-center gap-2 -mt-20 pb-10">
+            <div class="flex justify-center items-center gap-2 -mt-20 pb-20">
                 <a href="#slide1" class="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">1</a>
                 <a href="#slide2" class="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">2</a>
                 <a href="#slide3" class="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">3</a>
