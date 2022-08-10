@@ -1,7 +1,7 @@
 import React from "react";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import auth from "../../../firebase.init";
 const NavBar = () => {
     const [user] = useAuthState(auth);
@@ -9,20 +9,48 @@ const NavBar = () => {
         signOut(auth);
     };
 
-
     const navItems = (
         <>
-            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
-                <Link to="/">Home</Link>
+            <li className=" lg:hidden flex items-center">
+                {user && (
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                            <img src={user.photoURL} alt="" />
+                        </div>
+                    </div>
+                )}
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
-                <Link to="learn">Learn</Link>
+                <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="/"
+                >
+                    Home
+                </NavLink>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
-                <Link to="contact">Contact Us</Link>
+                <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="learn"
+                >
+                    Learn
+                </NavLink>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
-                <Link to="reviews">Reviews</Link>
+                <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="contact"
+                >
+                    Contact Us
+                </NavLink>
+            </li>
+            <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
+                <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="reviews"
+                >
+                    Reviews
+                </NavLink>
             </li>
             {/* <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
                 <Link to="tutorial">Tutorial</Link>
@@ -31,18 +59,71 @@ const NavBar = () => {
                 <Link to="quiz">Quiz</Link>
             </li> */}
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
-                <Link to="about">About</Link>
+                <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="about"
+                >
+                    About
+                </NavLink>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
-                <Link to="kids">For Kids</Link>
+                <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="kids"
+                >
+                    For Kids
+                </NavLink>
             </li>
-            <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
+            {user && (
+                <li>
+                    <NavLink
+                        className={({ isActive }) => (isActive ? "active" : "")}
+                        to="/dashboard"
+                    >
+                        Dashboard
+                    </NavLink>
+                </li>
+            )}
+            <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent hidden lg:block">
                 {user ? (
-                    <button className="btn btn-ghost" onClick={logout}>
-                        Sign Out
-                    </button>
+                    <div class="avatar dropdown hidden lg:block">
+                        <div class="w-10 rounded-full">
+                            <label tabindex="0" className="pointer">
+                                <img
+                                    className="pointer"
+                                    src={user.photoURL}
+                                    alt=""
+                                />
+                            </label>
+                            <ul
+                                tabindex="0"
+                                class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 absolute right-0"
+                            >
+                                <li>
+                                    <button onClick={logout}>Log Out</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 ) : (
-                    <Link to="/login">Login</Link>
+                    <NavLink
+                        className={({ isActive }) => (isActive ? "active" : "")}
+                        to="/login"
+                    >
+                        Login
+                    </NavLink>
+                )}
+            </li>
+            <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent block lg:hidden">
+                {user ? (
+                    <button onClick={logout}>Log Out</button>
+                ) : (
+                    <NavLink
+                        className={({ isActive }) => (isActive ? "active" : "")}
+                        to="/login"
+                    >
+                        Login
+                    </NavLink>
                 )}
             </li>
         </>
@@ -76,18 +157,21 @@ const NavBar = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <p><Link to="/" className="btn btn-ghost normal-case text-xl hover:text-accent pl-8">
-                        Language Fixer
-                    </Link></p>
+                    <p>
+                        <Link
+                            to="/"
+                            className="btn btn-ghost normal-case text-xl hover:text-accent pl-8"
+                        >
+                            Language Fixer
+                        </Link>
+                    </p>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal pr-8">{navItems}</ul>
                 </div>
             </div>
-
-        </div >
+        </div>
     );
-
 };
 
 export default NavBar;
