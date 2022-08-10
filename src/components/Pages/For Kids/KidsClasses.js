@@ -34,12 +34,17 @@ const KidsClasses = () => {
                                 <h1 className="text-base ">English Teacher</h1>
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
-                            <div class="divider"></div>
-                            <div className='text-lg flex justify-center'>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                            <div class="divider m-0"></div>
+                            <div className='flex justify-center text-xs'>
+                                <div className=''>
+                                    <p>Year Old</p>
+                                    <p>3-6</p>
+                                </div>
+                                <div class="divider divider-horizontal"></div>
+                                <div>
+                                    <p>Students</p>
+                                    <p>25</p>
+                                </div>
                             </div>
                         </div>
 
@@ -49,12 +54,17 @@ const KidsClasses = () => {
                                 <h1 className="text-xl font-bold py-4  ">English Class</h1>
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
-                            <div class="divider"></div>
-                            <div className='text-lg flex justify-center'>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                            <div class="divider m-0"></div>
+                            <div className='flex justify-center text-xs'>
+                                <div className=''>
+                                    <p>Year Old</p>
+                                    <p>3-6</p>
+                                </div>
+                                <div class="divider divider-horizontal"></div>
+                                <div>
+                                    <p>Students</p>
+                                    <p>25</p>
+                                </div>
                             </div>
                         </div>
                         <div className="hero-content flex-col border shadow-2xl rounded-3xl hover:text-white hover:bg-lime-600 text-lime-600">
@@ -64,12 +74,17 @@ const KidsClasses = () => {
                                 <h1 className="">English Teacher</h1>
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
-                            <div class="divider"></div>
-                            <div className='text-lg flex justify-center'>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                            <div class="divider m-0"></div>
+                            <div className='flex justify-center text-xs'>
+                                <div className=''>
+                                    <p>Year Old</p>
+                                    <p>3-6</p>
+                                </div>
+                                <div class="divider divider-horizontal"></div>
+                                <div>
+                                    <p>Students</p>
+                                    <p>25</p>
+                                </div>
                             </div>
                         </div>
                         <div className="hero-content flex-col border shadow-2xl rounded-3xl hover:text-white hover:bg-indigo-600 text-indigo-600">
@@ -78,12 +93,17 @@ const KidsClasses = () => {
                                 <h1 className="text-xl font-bold py-4  ">Communication Class</h1>
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
-                            <div class="divider"></div>
-                            <div className='text-lg flex justify-center'>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                            <div class="divider m-0"></div>
+                            <div className='flex justify-center text-xs'>
+                                <div className=''>
+                                    <p>Year Old</p>
+                                    <p>3-6</p>
+                                </div>
+                                <div class="divider divider-horizontal"></div>
+                                <div>
+                                    <p>Students</p>
+                                    <p>25</p>
+                                </div>
                             </div>
                         </div>
                         <div className="hero-content flex-col border shadow-2xl rounded-3xl hover:text-white hover:bg-orange-600 text-orange-600">
@@ -92,12 +112,17 @@ const KidsClasses = () => {
                                 <h1 className="text-xl font-bold py-4  ">Chinese Class</h1>
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
-                            <div class="divider"></div>
-                            <div className='text-lg flex justify-center'>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                            <div class="divider m-0"></div>
+                            <div className='flex justify-center text-xs'>
+                                <div className=''>
+                                    <p>Year Old</p>
+                                    <p>3-6</p>
+                                </div>
+                                <div class="divider divider-horizontal"></div>
+                                <div>
+                                    <p>Students</p>
+                                    <p>25</p>
+                                </div>
                             </div>
                         </div>
                         <div className="hero-content flex-col border shadow-2xl rounded-3xl hover:text-white hover:bg-rose-600 text-rose-600 ">
@@ -106,15 +131,23 @@ const KidsClasses = () => {
                                 <h1 className="text-xl font-bold py-4 ">Activitiy  Class</h1>
                                 <p className="py-6 ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
-                            <div class="divider"></div>
-                            <div className='text-lg flex justify-center'>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                            <div class="divider m-0"></div>
+                            <div className='flex justify-center text-xs'>
+                                <div className=''>
+                                    <p>Year Old</p>
+                                    <p>3-6</p>
+                                </div>
+                                <div class="divider divider-horizontal"></div>
+                                <div>
+                                    <p>Students</p>
+                                    <p>25</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='flex justify-center mt-20'>
+                    <button className="btn btn-sm bg-accent border-0 text-white rounded-full w-28 hover:bg-white hover:text-accent hover:border-accent hover:border-2 uppercase ">See More</button>
                 </div>
             </div>
         </div>
