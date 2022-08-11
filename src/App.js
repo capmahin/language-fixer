@@ -47,7 +47,7 @@ function App() {
         console.log(data);
     };
     return (
-        <div className="bg-primary">
+        <div className="bg-primary text-primary">
             <NavBar></NavBar>
             <Routes>
                 <Route path="/" element={<Home />} />
