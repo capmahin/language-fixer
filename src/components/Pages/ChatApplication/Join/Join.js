@@ -3,7 +3,9 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "../Chat/Chat";
 
+
 const socket = io.connect("https://language-fixer-server.vercel.app/");
+
 
 function Join() {
     const [username, setUsername] = useState("");
@@ -41,6 +43,7 @@ function Join() {
             ) : (
                 <Chat socket={socket} username={username} room={room} />
             )}
+
         </div>
     );
 }
