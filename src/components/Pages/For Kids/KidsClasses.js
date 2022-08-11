@@ -12,7 +12,7 @@ const KidsClasses = () => {
         <div>
             <div className='bg-white py-28'>
                 <div className='text-center mb-20'>
-                    <h2 className='text-primary font-extrabold text-5xl mb-4'>Meet Our Teachers</h2>
+                    <h2 className='text-primary font-extrabold text-5xl mb-4'>Our Classes</h2>
                     <div className='flex justify-center items-center'>
                         <div>
                             <div className="w-14 border-t border-accent pb-1 mr-1"></div>
