@@ -39,8 +39,8 @@ const SignUp = () => {
         );
     }
 
-    if (user || gUser) {
-        // navigate("/");
+    if (token) {
+        navigate("/");
     }
     const onSubmit = async (data) => {
         console.log(data);
