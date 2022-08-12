@@ -4,11 +4,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink, Link } from "react-router-dom";
 import auth from "../../../firebase.init";
 
-
 const NavBar = () => {
     const [user] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
+        localStorage.removeItem("accessToken");
     };
 
     const navItems = (
@@ -132,7 +132,7 @@ const NavBar = () => {
     );
 
     return (
-        <div >
+        <div>
             <div className="navbar bg-primary text-slate-300 lg:justify-evenly">
                 <div className="navbar-start">
                     <div className="dropdown">
