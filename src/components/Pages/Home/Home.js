@@ -6,6 +6,7 @@ import AddReview from "./AddReview";
 import Services from "./Services";
 import WhyLF from "./WhyLF";
 import Reviews from "./Reviews";
+import Newsletter from "./Newsletter";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <WhyLF></WhyLF>
       <Reviews></Reviews>
       <AddReview></AddReview>
+      <Newsletter></Newsletter>
     </div>
   );
 };
