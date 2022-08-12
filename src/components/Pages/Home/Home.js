@@ -7,6 +7,7 @@ import Services from "./Services";
 import WhyLF from "./WhyLF";
 import Reviews from "./Reviews";
 import Newsletter from "./Newsletter";
+import Blog from "./Blog";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <WhyLF></WhyLF>
       <Reviews></Reviews>
       <AddReview></AddReview>
+      <Blog></Blog>
       <Newsletter></Newsletter>
     </div>
   );
