@@ -51,6 +51,7 @@ const PickDate = () => {
             <input
               type="text"
               name="user_name"
+              required
               placeholder="Type Name"
               class="input input-bordered w-full input-sm max-w-xs"
             />
@@ -60,6 +61,7 @@ const PickDate = () => {
             <input
               type="text"
               name="user_email"
+              required
               placeholder="Type Email"
               class="input input-bordered w-full input-sm max-w-xs"
             />
@@ -79,6 +81,7 @@ const PickDate = () => {
             <input
               type="text"
               name="language"
+              required
               // value={(selected.langu)}
               placeholder="Type Language"
               class="input input-bordered w-full input-sm max-w-xs"
