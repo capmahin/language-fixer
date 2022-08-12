@@ -44,18 +44,21 @@ const Newsletter = () => {
         <div className="grid grid-cols-1 justify-items-center gap-5">
           <input
             type="text"
+            required
             name="user_email"
             placeholder="Email Address"
             className="input w-full max-w-md"
           />
           <input
             type="text"
+            required
             name="subject"
             placeholder="Subject"
             className="input w-full max-w-md"
           />
           <textarea
             name="message"
+            required
             className="textarea w-full max-w-md"
             placeholder="Your message"
             rows={6}
