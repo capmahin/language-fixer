@@ -7,7 +7,7 @@ import WhyLF from "./WhyLF";
 import Reviews from "./Reviews";
 import Effective from "./Effective";
 import Newsletter from "./Newsletter";
-import Blog from "./Blog";
+import Blogs from "./Blogs";
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <Effective />
       <Reviews></Reviews>
       <AddReview></AddReview>
-      <Blog></Blog>
+      <Blogs></Blogs>
       <Newsletter></Newsletter>
     </div>
   );
