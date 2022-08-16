@@ -22,7 +22,8 @@ import NotFound from "./components/Pages/Shared/NotFound";
 
 import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
-import MainForm from "./components/Pages/ChatApplication/MainForm/MainForm";
+
+import Join from "./components/Pages/ChatApplication/Join/Join";
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
         <Route path="/spanishtutorial" element={<SpanishTutorials />} />
         <Route path="/reviews" element={<Reviews />} />
 
-        <Route path="/mainform" element={<MainForm />} />
+        <Route path="/join" element={<Join />} />
         <Route path="chat/:roomId" element={<Chat />} />
         <Route path="/videoCall" element={<VideoCall />} />
 

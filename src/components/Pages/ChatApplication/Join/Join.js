@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const MainForm = () => {
+const Join = () => {
   let navigate = useNavigate();
 
   const [error, setError] = useState("");
@@ -72,4 +72,4 @@ const MainForm = () => {
   );
 };
 
-export default MainForm;
+export default Join;
