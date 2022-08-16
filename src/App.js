@@ -22,7 +22,6 @@ import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 
 
 import NotFound from "./components/Pages/Shared/NotFound";
-import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 import Join from "./components/Pages/ChatApplication/Join/Join";
 import QuizHome from "./components/Quiz/QuizPages/QuizHome";
 import Quiz from "./components/Quiz/QuizPages/Quiz";
@@ -38,8 +37,6 @@ import Users from "./components/Pages/Dashboard/Users";
 import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
 import BlogDetails from "./BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
-
-import Join from "./components/Pages/ChatApplication/Join/Join";
 
 function App() {
   const [name, setName] = useState("");
