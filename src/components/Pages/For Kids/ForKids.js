@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import kidsBanner from '../../../assets/banner/kidsBanner.svg'
-import borderPrimary from '../../../assets/border primary.png'
 import HaveQuestions from "./HaveQuestions";
 import KidsBanner from "./KidsBanner";
 import KidsClasses from "./KidsClasses";
