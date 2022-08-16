@@ -4,19 +4,19 @@ import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 
 const Reservation = () => {
-    return (
-      <div>
-        <h1 className='text-5xl text-accent my-12 text-center font-medium'>Reservation</h1>
-        <div class="card lg:card-side mx-12 ">
-  <div class="hero-content flex-col lg:flex-row mx-auto px-12">
-    <img src={reserve} class="max-w-sm rounded-lg shadow-2xl" alt='#' />
+  return (
     <div>
-      <DayPicker className='text-white'/>
-    </div>
-  </div>
-</div>
+      <h1 className='text-5xl text-accent my-12 text-center font-medium'>Reservation</h1>
+      <div className="card lg:card-side mx-12 ">
+        <div className="hero-content flex-col lg:flex-row mx-auto px-12">
+          <img src={reserve} className="max-w-sm rounded-lg shadow-2xl" alt='#' />
+          <div>
+            <DayPicker className='text-white' />
+          </div>
+        </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Reservation;

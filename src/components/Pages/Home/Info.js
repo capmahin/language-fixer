@@ -15,7 +15,7 @@ const Info = () => {
         <InfoCard cardTitle="Learn French" img={french}></InfoCard>
         <InfoCard cardTitle="Learn Chinese" img={chinese}></InfoCard>
       </div>
-      <img src={borderAccent} alt="" />
+      <img className="w-screen" src={borderAccent} alt="" />
     </div>
   );
 };
