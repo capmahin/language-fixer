@@ -7,7 +7,7 @@ const Users = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch("http://localhost:5000/user", {
+        fetch("https://young-plains-25750.herokuapp.com/", {
             method: "GET",
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -20,7 +20,7 @@ const Users = () => {
             });
     }, []);
     // const { data: users, isLoading } = useQuery("users", () =>
-    //     fetch("http://localhost:5000/user", {
+    //     fetch("https://young-plains-25750.herokuapp.com/", {
     //         method: "GET",
     //         headers: {
     //             authorization: `Bearer ${localStorage.getItem("accessToken")}`,
