@@ -20,9 +20,10 @@ import ForKids from "./components/Pages/For Kids/ForKids";
 import Quizzes from "./components/Pages/Home/Quizzes";
 import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 
-import Join from "./components/Pages/ChatApplication/Join/Join";
-import NotFound from "./components/Pages/Shared/NotFound";
 
+import NotFound from "./components/Pages/Shared/NotFound";
+import Chat from "./components/Pages/ChatApplication/Chat/Chat";
+import Join from "./components/Pages/ChatApplication/Join/Join";
 import QuizHome from "./components/Quiz/QuizPages/QuizHome";
 import Quiz from "./components/Quiz/QuizPages/Quiz";
 import Result from "./components/Quiz/QuizPages/Result";
@@ -33,9 +34,12 @@ import Certificate from "./components/Quiz/QuizPages/Certificate";
 import Dashboard from "./components/Pages/Dashboard/Dashboard";
 
 import Users from "./components/Pages/Dashboard/Users";
+
 import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
 import BlogDetails from "./BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
+
+import Join from "./components/Pages/ChatApplication/Join/Join";
 
 function App() {
   const [name, setName] = useState("");
@@ -66,6 +70,9 @@ function App() {
         <Route path="/chinesetutorial" element={<ChineseTutorials />} />
         <Route path="/spanishtutorial" element={<SpanishTutorials />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="chat/:roomId" element={<Chat />} />
+
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<Users />}></Route>
           <Route path="users" element={<Users />}></Route>
