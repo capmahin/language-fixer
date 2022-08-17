@@ -34,25 +34,24 @@ import Dashboard from "./components/Pages/Dashboard/Dashboard";
 
 import Users from "./components/Pages/Dashboard/Users";
 import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
-
-
-
+import { ToastContainer } from "react-toastify";
 
 function App() {
     const [name, setName] = useState("");
     const [questions, setQuestions] = useState();
     const [score, setScore] = useState(0);
 
-
-
-
-
     const fetchQuestions = async (category = "", difficulty = "") => {
-        const { data } = await axios.get(
-            `questions.json?amount=10&category=${category}&difficulty=${difficulty}`
-        );
-
-        setQuestions(data);
+        console.log(category, difficulty);
+        const { data } = await axios.get(`questions.json`);
+        const filteredQuestions = data.filter((question) => {
+            return (
+                question.category === category &&
+                question.difficulty === difficulty
+            );
+        });
+        console.log(filteredQuestions);
+        setQuestions(filteredQuestions);
         console.log(data);
     };
     return (
@@ -60,7 +59,7 @@ function App() {
             <NavBar></NavBar>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/learn" element={<Learn />} />
+                <Route path="/learn" element={<Learn />}></Route>
                 <Route path="/about/*" element={<About />}></Route>
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
@@ -118,6 +117,7 @@ function App() {
                 <Route path="/trial/pickdate" element={<PickDate />} />
                 <Route path="/*" element={<NotFound />} />
             </Routes>
+            <ToastContainer></ToastContainer>
             <Footer></Footer>
         </div>
     );

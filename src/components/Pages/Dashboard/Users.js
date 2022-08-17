@@ -1,39 +1,41 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
+import { useQuery } from "react-query";
 import UserRow from "./UserRow";
+import { ToastContainer } from "react-toastify";
 
 const Users = () => {
-    const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(true);
+    // const [users, setUsers] = useState([]);
+    // const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        setLoading(true);
-        fetch("http://localhost:5000/user", {
-            method: "GET",
-            headers: {
-                authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-            },
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                setUsers(data);
-                setLoading(false);
-            });
-    }, []);
-    // const { data: users, isLoading } = useQuery("users", () =>
+    // useEffect(() => {
+    //     setLoading(true);
     //     fetch("http://localhost:5000/user", {
     //         method: "GET",
     //         headers: {
     //             authorization: `Bearer ${localStorage.getItem("accessToken")}`,
     //         },
-    //     }).then((res) => res.json())
-    // );
-    // if (isLoading) {
-    //     return <div>Loading...</div>;
-    // }
-
-    // if (users) {
-    //     console.log(users);
-    // }
+    //     })
+    //         .then((res) => res.json())
+    //         .then((data) => {
+    //             setUsers(data);
+    //             setLoading(false);
+    //         });
+    // }, []);
+    const {
+        data: users,
+        isLoading,
+        refetch,
+    } = useQuery("users", () =>
+        fetch("http://localhost:5000/user", {
+            method: "GET",
+            headers: {
+                authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+            },
+        }).then((res) => res.json())
+    );
+    if (isLoading) {
+        return <div>Loading...</div>;
+    }
 
     return (
         <div className="px-10 text-black">
@@ -55,12 +57,14 @@ const Users = () => {
                             <UserRow
                                 key={user._id}
                                 user={user}
+                                refetch={refetch}
                                 index={index}
                             ></UserRow>
                         ))}
                     </tbody>
                 </table>
             </div>
+            <ToastContainer />
         </div>
     );
 };

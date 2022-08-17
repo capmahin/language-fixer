@@ -33,7 +33,7 @@ const NavBar = () => {
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <NavLink
                     className={({ isActive }) => (isActive ? "active" : "")}
-                    to="learn"
+                    to="/learn"
                 >
                     Learn
                 </NavLink>
