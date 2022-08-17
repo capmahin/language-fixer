@@ -20,7 +20,6 @@ import ForKids from "./components/Pages/For Kids/ForKids";
 import Quizzes from "./components/Pages/Home/Quizzes";
 import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 
-
 import NotFound from "./components/Pages/Shared/NotFound";
 import Join from "./components/Pages/ChatApplication/Join/Join";
 import QuizHome from "./components/Quiz/QuizPages/QuizHome";
@@ -35,6 +34,9 @@ import Dashboard from "./components/Pages/Dashboard/Dashboard";
 import Users from "./components/Pages/Dashboard/Users";
 
 import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
+
+import { ToastContainer } from "react-toastify";
+
 import BlogDetails from "./BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
 import LFClassroom from "./components/Pages/LFClassroom/LFClassroom";
@@ -45,11 +47,16 @@ function App() {
   const [score, setScore] = useState(0);
 
   const fetchQuestions = async (category = "", difficulty = "") => {
-    const { data } = await axios.get(
-      `questions.json?amount=10&category=${category}&difficulty=${difficulty}`
-    );
-
-    setQuestions(data);
+    console.log(category, difficulty);
+    const { data } = await axios.get(`questions.json`);
+    const filteredQuestions = data.filter((question) => {
+      return (
+        question.category === category &&
+        question.difficulty === difficulty
+      );
+    });
+    console.log(filteredQuestions);
+    setQuestions(filteredQuestions);
     console.log(data);
   };
   return (
@@ -117,6 +124,7 @@ function App() {
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
