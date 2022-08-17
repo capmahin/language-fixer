@@ -8,6 +8,7 @@ import Reviews from "./Reviews";
 import Effective from "./Effective";
 import Newsletter from "./Newsletter";
 import Blogs from "./Blogs";
+import LFSchool from "./LFSchool";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Services></Services>
       <WhyLF></WhyLF>
       <Effective />
+      <LFSchool></LFSchool>
       <Reviews></Reviews>
       <AddReview></AddReview>
       <Blogs></Blogs>

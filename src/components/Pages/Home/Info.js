@@ -12,7 +12,7 @@ const Info = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 pb-28 px-6 bg-accent text-slate-700 pt-44">
         <InfoCard cardTitle="Learn English" img={english}></InfoCard>
         <InfoCard cardTitle="Learn Spanish" img={spanish}></InfoCard>
-        <InfoCard cardTitle="Learn French" img={french}></InfoCard>
+        <InfoCard cardTitle="Learn  French" img={french}></InfoCard>
         <InfoCard cardTitle="Learn Chinese" img={chinese}></InfoCard>
       </div>
       <img className="w-screen" src={borderAccent} alt="" />

@@ -37,6 +37,7 @@ import Users from "./components/Pages/Dashboard/Users";
 import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
 import BlogDetails from "./BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
+import LFClassroom from "./components/Pages/LFClassroom/LFClassroom";
 
 function App() {
   const [name, setName] = useState("");
@@ -62,6 +63,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/tutorial" element={<Tutorial />} />
+        <Route path="/LFClassroom" element={<LFClassroom />} />
         <Route path="/englishtutorial" element={<EnglishTutorials />} />
         <Route path="/franchtutorial" element={<FranchTutorials />} />
         <Route path="/chinesetutorial" element={<ChineseTutorials />} />

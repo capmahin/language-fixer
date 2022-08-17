@@ -46,7 +46,7 @@ const Users = () => {
                         <tr>
                             <th></th>
                             <th>Email</th>
-                            <th>MAke Admin</th>
+                            <th>Make Admin</th>
                             <th>Remove User</th>
                         </tr>
                     </thead>
