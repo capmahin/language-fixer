@@ -90,5 +90,17 @@
             "Una palabra es una secuencia de letras y/o símbolos que forman una palabra.",
             "Una palabra es una secuencia de letras y/o símbolos que forman una palabra."
         ]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "¿Qué es una frase?",
+        "correct_answer": "Una frase es una secuencia de palabras que forman una frase.",
+        "incorrect_answers": [
+            "Una frase es una secuencia de palabras que forman una frase.",
+            "Una frase es una secuencia de palabras que forman una frase.",
+            "Una frase es una secuencia de palabras que forman una frase."
+        ]
     }
 ]

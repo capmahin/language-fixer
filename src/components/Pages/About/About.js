@@ -8,7 +8,7 @@ import Team from "./Team";
 
 const About = () => {
     return (
-        <div>
+        <div className="text-white">
             <AboutNav />
             {
                 <Routes>

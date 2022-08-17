@@ -1,6 +1,7 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const UserRow = ({ user, index }) => {
+const UserRow = ({ user, refetch, index }) => {
     const { email, role } = user;
 
     const makeAdmin = () => {
@@ -10,9 +11,20 @@ const UserRow = ({ user, index }) => {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,
             },
         })
-            .then((res) => res.json())
+            .then((res) => {
+                if (res.status === 403) {
+                    toast("You are not authorized to do this", {
+                        type: "error",
+                    });
+                }
+                return res.json();
+            })
+
             .then((data) => {
-                console.log(data);
+                if (data.modifiedCount > 0) {
+                    refetch();
+                    toast("Successfully made an admin", { type: "success" });
+                }
             });
     };
 
