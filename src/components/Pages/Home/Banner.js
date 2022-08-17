@@ -31,12 +31,6 @@ const Banner = () => {
                                     Try 1-on-1 free lesson
                                 </button>
                             </Link>
-
-                            <Link to="/learn">
-                                <button className="btn btn-accent hover:bg-amber-300 border-0 hover:text-slate-50">
-                                    Get Started
-                                </button>
-                            </Link>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,6 @@
 // import React, { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import UserRow from "./UserRow";
-import { ToastContainer } from "react-toastify";
 
 const Users = () => {
     const {
@@ -31,7 +30,7 @@ const Users = () => {
                         <tr>
                             <th></th>
                             <th>Email</th>
-                            <th>MAke Admin</th>
+                            <th>Make Admin</th>
                             <th>Remove User</th>
                         </tr>
                     </thead>
@@ -47,7 +46,6 @@ const Users = () => {
                     </tbody>
                 </table>
             </div>
-            <ToastContainer />
         </div>
     );
 };

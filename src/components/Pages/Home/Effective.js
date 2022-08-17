@@ -5,11 +5,11 @@ import borderPrimary from "../../../assets/border primary.png";
 const Effective = () => {
     return (
         <div>
-            <div className="flex justify-center items-center my-20 space-x-10 ">
-                <div className="w-60">
+            <div className="flex flex-col justify-center items-center lg:flex-row my-20 space-x-10 ">
+                <div className="w-64">
                     <img src={effective} alt="effective" />
                 </div>
-                <div className="space-y-5">
+                <div className="space-y-5 w-96">
                     <h1 className="text-accent font-bold text-2xl">
                         Effective and efficient learning
                     </h1>
