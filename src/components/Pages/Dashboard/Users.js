@@ -4,23 +4,6 @@ import UserRow from "./UserRow";
 import { ToastContainer } from "react-toastify";
 
 const Users = () => {
-    // const [users, setUsers] = useState([]);
-    // const [loading, setLoading] = useState(true);
-
-    // useEffect(() => {
-    //     setLoading(true);
-    //     fetch("http://localhost:5000/user", {
-    //         method: "GET",
-    //         headers: {
-    //             authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-    //         },
-    //     })
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //             setUsers(data);
-    //             setLoading(false);
-    //         });
-    // }, []);
     const {
         data: users,
         isLoading,

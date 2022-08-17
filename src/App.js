@@ -20,9 +20,8 @@ import ForKids from "./components/Pages/For Kids/ForKids";
 import Quizzes from "./components/Pages/Home/Quizzes";
 import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 
-import Join from "./components/Pages/ChatApplication/Join/Join";
 import NotFound from "./components/Pages/Shared/NotFound";
-
+import Join from "./components/Pages/ChatApplication/Join/Join";
 import QuizHome from "./components/Quiz/QuizPages/QuizHome";
 import Quiz from "./components/Quiz/QuizPages/Quiz";
 import Result from "./components/Quiz/QuizPages/Result";
@@ -33,8 +32,13 @@ import Certificate from "./components/Quiz/QuizPages/Certificate";
 import Dashboard from "./components/Pages/Dashboard/Dashboard";
 
 import Users from "./components/Pages/Dashboard/Users";
+
 import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
+
 import { ToastContainer } from "react-toastify";
+
+import BlogDetails from "./BlogDetails";
+import Blogs from "./components/Pages/Home/Blogs";
 
 function App() {
     const [name, setName] = useState("");
