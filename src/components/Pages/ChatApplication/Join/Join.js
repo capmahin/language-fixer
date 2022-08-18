@@ -1,5 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import yellowbg from '../../../../assets/yellow-black-bg.jpg'
 
 const Join = () => {
   let navigate = useNavigate();
@@ -36,39 +37,38 @@ const Join = () => {
   };
 
   return (
-    <div className="px-3 py-4 shadow bg-white text-dark border rounded row">
+    <div style={{ backgroundImage: `url(${yellowbg})` }} className=" bg-center min-h-screen px-3 py-4 shadow bg-slate-200  text-dark border rounded row flex flex-col justify-center items-center">
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-4">
-          <h2 className="text-warning mb-4">Welcome to Language-Fixer-Chat</h2>
+          <h2 className="text-accent text-2xl font-bold mb-4">Welcome to Language-Fixer-Chat</h2>
         </div>
         <div className="form-group mb-4">
           <input
             type="name"
-            className="form-control bg-light"
+            className="input input-bordered w-full max-w-xs"
             name="name"
             placeholder="Enter name"
             onChange={handleChange}
           />
         </div>
-        <div className="form-group mb-4">
+        <div className="form-group mb-4 flex flex-col justify-center items-center">
           <select
-            className="form-select bg-light"
+            className="select  select-accent mb-4 w-full max-w-xs"
             name="room"
-            aria-label="Default select example"
             onChange={handleChange}
           >
             <option value="">Select Room</option>
-            <option value="gaming">Gaming</option>
-            <option value="coding">Coding</option>
-            <option value="socialMedia">Social Media</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Coding">Coding</option>
+            <option value="Social Media">Social Media</option>
           </select>
+          {error ? <small className="text-red-600 text-base">{error}</small> : ""}
+          <button type="submit" className="btn bg-accent border-0 text-white rounded-full w-44 hover:bg-white hover:text-accent hover:border-accent hover:border-2 my-2">
+            Submit
+          </button>
         </div>
-        <button type="submit" className="btn btn-warning w-100 mb-2">
-          Submit
-        </button>
-        {error ? <small className="text-danger m-auto">{error}</small> : ""}
-      </form>
-    </div>
+      </form >
+    </div >
   );
 };
 

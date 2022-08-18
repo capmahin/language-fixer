@@ -19,11 +19,11 @@ const Questions = ({
 
     const handleSelect = (option) => {
         if (selected === option && selected === correct) {
-            return "select";
+            return "selected";
         } else if (selected === option && selected !== correct) {
             return "wrong";
         } else if (option === correct) {
-            return "select";
+            return "selected";
         }
     };
     const handleCheck = (option) => {
@@ -65,9 +65,8 @@ const Questions = ({
                                     onClick={() => {
                                         handleCheck(option);
                                     }}
-                                    className={`singleOption ${
-                                        selected && handleSelect(option)
-                                    }`}
+                                    className={`singleOption ${selected && handleSelect(option)
+                                        }`}
                                     key={index}
                                     disabled={selected}
                                 >

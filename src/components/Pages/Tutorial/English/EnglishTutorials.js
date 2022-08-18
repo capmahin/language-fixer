@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Service from "./Service";
+import Service from "../Service";
 
 const EnglishTutorials = () => {
-  const [services, setServices] = useState([]);
+    const [services, setServices] = useState([]);
 
 
     useEffect(() => {
@@ -23,5 +23,5 @@ const EnglishTutorials = () => {
         </div>
     );
 
-                }
+}
 export default EnglishTutorials;
