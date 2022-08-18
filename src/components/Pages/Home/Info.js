@@ -2,7 +2,7 @@ import React from "react";
 import InfoCard from "./InfoCard";
 import english from "../../../assets/Info/english.jpg";
 import french from "../../../assets/Info/french.jpg";
-import spanish from "../../../assets/Info/spanish.webp";
+import spanish from "../../../assets/Info/spanish.jpg";
 import chinese from "../../../assets/Info/Chinese.jpg";
 import borderAccent from "../../../assets/border accent.png"
 

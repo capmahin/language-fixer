@@ -87,7 +87,10 @@ function App() {
         <Route path="/chinesetutorial" element={<ChineseTutorials />} />
         <Route path="/spanishtutorial" element={<SpanishTutorials />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/join" element={<Join />} />
+        <Route path="/join" element={
+          <RequireAuth>
+            <Join />
+          </RequireAuth>} />
         <Route path="chat/:roomId" element={<Chat />} />
 
         <Route path="/dashboard" element={<Dashboard />}>
