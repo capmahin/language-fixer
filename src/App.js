@@ -40,6 +40,10 @@ import { ToastContainer } from "react-toastify";
 import BlogDetails from "./BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
 import LFClassroom from "./components/Pages/LFClassroom/LFClassroom";
+import Students from "./components/Pages/LFClassroom/Students";
+import Assignments from "./components/Pages/LFClassroom/Assignments";
+import Reports from "./components/Pages/LFClassroom/Reports";
+import RequireAuth from "./components/Pages/Login/RequireAuth";
 
 function App() {
   const [name, setName] = useState("");
@@ -70,7 +74,14 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/tutorial" element={<Tutorial />} />
-        <Route path="/LFClassroom" element={<LFClassroom />} />
+        <Route path="/LFClassroom" element={<RequireAuth>
+          <LFClassroom />
+        </RequireAuth>} >
+          <Route index element={<Students />}></Route>
+          <Route path="students" element={<Students />}></Route>
+          <Route path="assign" element={<Assignments />}></Route>
+          <Route path="reports" element={<Reports />}></Route >
+        </Route>
         <Route path="/englishtutorial" element={<EnglishTutorials />} />
         <Route path="/franchtutorial" element={<FranchTutorials />} />
         <Route path="/chinesetutorial" element={<ChineseTutorials />} />
