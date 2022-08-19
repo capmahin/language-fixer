@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import auth from "../../firebase.init";
+import auth from "../../../firebase.init";
 
 const UpdateInfoModal = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -30,16 +30,13 @@ const UpdateInfoModal = () => {
             updatedLinkedIn,
             updatedGithub,
         };
-        fetch(
-            `https://limitless-thicket-02169.herokuapp.com/info?email=${user.email}`,
-            {
-                method: "PUT",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(bodyData),
-            }
-        )
+        fetch(`http://localhost:5000/info?email=${user.email}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(bodyData),
+        })
             .then((res) => res.json())
             .then((data) => {
                 if (data.modifiedCount > 0) {
@@ -65,7 +62,7 @@ const UpdateInfoModal = () => {
                     setFb(updatedNFacebook);
                     setGit(updatedNGithub);
                     reset();
-                    toast("Updated Successfully", { type: "success" });
+                    alert("Info updated successfully");
                 }
             });
     };

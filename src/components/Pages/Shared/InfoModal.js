@@ -2,21 +2,19 @@ import axios from "axios";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
-import auth from "../../firebase.init";
+import auth from "../../../firebase.init";
 
 const InfoModal = () => {
     const { register, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
 
     const onSubmit = (data) => {
-        axios
-            .post("https://limitless-thicket-02169.herokuapp.com/info", data)
-            .then((res) => {
-                if (res.data.insertedId) {
-                    alert("Info added successfully");
-                    reset();
-                }
-            });
+        axios.post("http://localhost:5000/info", data).then((res) => {
+            if (res.data.insertedId) {
+                alert("Info added successfully");
+                reset();
+            }
+        });
     };
     return (
         <div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-import auth from "../../firebase.init";
+import auth from "../../../firebase.init";
 
 import InfoModal from "./InfoModal";
 import UpdateInfoModal from "./UpdateInfoModal";
@@ -13,12 +13,9 @@ const MyProfile = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(
-                `https://limitless-thicket-02169.herokuapp.com/info?email=${user.email}`,
-                {
-                    method: "GET",
-                }
-            )
+            fetch(`http://localhost:5000/info?email=${user.email}`, {
+                method: "GET",
+            })
                 .then((res) => {
                     return res.json();
                 })
