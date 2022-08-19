@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Moment from "react-moment";
 import { io } from "socket.io-client";
+import textureredbg from '../../../../assets/texture-red-bg.jpg'
 
 const Chat = () => {
   const location = useLocation();
@@ -55,9 +56,9 @@ const Chat = () => {
   };
 
   return (
-    <div className="py-4 m-5 w-50 shadow bg-white text-dark border rounded container">
+    <div style={{ backgroundImage: `url(${textureredbg})` }} className=" bg-center py-4 m-5 w-50 shadow bg-slate-200  text-dark border rounded container ">
       <div className="text-center px-3 mb-4 text-capitalize">
-        <h1 className="text-warning mb-4">{data?.room} Chat Room</h1>
+        <h1 className="text-accent text-2xl font-bold text-center mb-4">{data?.room} Chat Room</h1>
       </div>
       <div
         className="bg-light border rounded p-3 mb-4"
@@ -78,7 +79,7 @@ const Chat = () => {
             </div>
           ) : (
             <div className="row justify-content-start">
-              <div className="d-flex flex-column m-2 p-2 shadow bg-white border rounded w-auto">
+              <div className="d-flex flex-column m-2 p-2 shadow bg-slate-200  border rounded w-auto">
                 <div>
                   <strong className="m-1">{msg.name}</strong>
                   <small className="text-mmuted m-1">
@@ -92,10 +93,10 @@ const Chat = () => {
         })}
         <div ref={msgBoxRef}></div>
       </div>
-      <div className="form-group d-flex">
+      <div className="form-group flex justify-center items-center">
         <input
           type="text"
-          className="form-control bg-light"
+          className="input input-bordered input-warning text-base w-full max-w-xs"
           name="message"
           onKeyDown={handleEnter}
           placeholder="Type your message"
@@ -127,8 +128,8 @@ const Chat = () => {
           <Link to="/videoCall" onClick={navigatevideo}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="26"
+              height="26"
               fill="currentColor"
               class="bi bi-camera-video-fill"
               viewBox="0 0 16 16"

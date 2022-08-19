@@ -39,92 +39,108 @@ import { ToastContainer } from "react-toastify";
 
 import BlogDetails from "./BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
+import LFClassroom from "./components/Pages/LFClassroom/LFClassroom";
+import Students from "./components/Pages/LFClassroom/Students";
+import Assignments from "./components/Pages/LFClassroom/Assignments";
+import Reports from "./components/Pages/LFClassroom/Reports";
+import RequireAuth from "./components/Pages/Login/RequireAuth";
 
 function App() {
-    const [name, setName] = useState("");
-    const [questions, setQuestions] = useState();
-    const [score, setScore] = useState(0);
+  const [name, setName] = useState("");
+  const [questions, setQuestions] = useState();
+  const [score, setScore] = useState(0);
 
-    const fetchQuestions = async (category = "", difficulty = "") => {
-        console.log(category, difficulty);
-        const { data } = await axios.get(`questions.json`);
-        const filteredQuestions = data.filter((question) => {
-            return (
-                question.category === category &&
-                question.difficulty === difficulty
-            );
-        });
-        console.log(filteredQuestions);
-        setQuestions(filteredQuestions);
-        console.log(data);
-    };
-    return (
-        <div className="bg-primary text-primary">
-            <NavBar></NavBar>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/learn" element={<Learn />}></Route>
-                <Route path="/about/*" element={<About />}></Route>
-                <Route path="/login" element={<Login />} />
-                <Route path="/signup" element={<SignUp />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/tutorial" element={<Tutorial />} />
-                <Route path="/englishtutorial" element={<EnglishTutorials />} />
-                <Route path="/franchtutorial" element={<FranchTutorials />} />
-                <Route path="/chinesetutorial" element={<ChineseTutorials />} />
-                <Route path="/spanishtutorial" element={<SpanishTutorials />} />
-                <Route path="/reviews" element={<Reviews />} />
-                <Route path="/dashboard" element={<Dashboard />}>
-                    <Route index element={<Users />}></Route>
-                    <Route path="users" element={<Users />}></Route>
-                </Route>
-                <Route
-                    path="/quiz"
-                    element={
-                        <QuizHome
-                            name={name}
-                            setName={setName}
-                            fetchQuestions={fetchQuestions}
-                            category={questions && questions[0]?.category}
-                            difficulty={questions && questions[0]?.difficulty}
-                        />
-                    }
-                />
-                <Route
-                    path="/quizQues"
-                    element={
-                        <Quiz
-                            name={name}
-                            questions={questions}
-                            setQuestions={setQuestions}
-                            score={score}
-                            setScore={setScore}
-                        />
-                    }
-                />
-                <Route
-                    path="/result"
-                    element={<Result name={name} score={score} />}
-                />
-                <Route
-                    path="/certificate"
-                    element={<Certificate name={name} />}
-                />
-                <Route path="/join" exact element={<Join />} />
-                <Route path="/chat" element={<Chat />} />
-                <Route path="/videoCall" element={<VideoCall />} />
+  const fetchQuestions = async (category = "", difficulty = "") => {
+    console.log(category, difficulty);
+    const { data } = await axios.get(`questions.json`);
+    const filteredQuestions = data.filter((question) => {
+      return (
+        question.category === category &&
+        question.difficulty === difficulty
+      );
+    });
+    console.log(filteredQuestions);
+    setQuestions(filteredQuestions);
+    console.log(data);
+  };
+  return (
+    <div className="bg-primary text-primary">
+      <NavBar></NavBar>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/about/*" element={<About />}></Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/tutorial" element={<Tutorial />} />
+        <Route path="/LFClassroom" element={<RequireAuth>
+          <LFClassroom />
+        </RequireAuth>} >
+          <Route index element={<Students />}></Route>
+          <Route path="students" element={<Students />}></Route>
+          <Route path="assign" element={<Assignments />}></Route>
+          <Route path="reports" element={<Reports />}></Route >
+        </Route>
+        <Route path="/englishtutorial" element={<EnglishTutorials />} />
+        <Route path="/franchtutorial" element={<FranchTutorials />} />
+        <Route path="/chinesetutorial" element={<ChineseTutorials />} />
+        <Route path="/spanishtutorial" element={<SpanishTutorials />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/join" element={
+          <RequireAuth>
+            <Join />
+          </RequireAuth>} />
+        <Route path="chat/:roomId" element={<Chat />} />
 
-                <Route path="/quiz" element={<Quizzes />} />
-                <Route path="/kids" element={<ForKids />} />
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route index element={<Users />}></Route>
+          <Route path="users" element={<Users />}></Route>
+        </Route>
+        <Route
+          path="/quiz"
+          element={
+            <QuizHome
+              name={name}
+              setName={setName}
+              fetchQuestions={fetchQuestions}
+              category={questions && questions[0]?.category}
+              difficulty={questions && questions[0]?.difficulty}
+            />
+          }
+        />
+        <Route
+          path="/quizQues"
+          element={
+            <Quiz
+              name={name}
+              questions={questions}
+              setQuestions={setQuestions}
+              score={score}
+              setScore={setScore}
+            />
+          }
+        />
+        <Route path="/result" element={<Result name={name} score={score} />} />
+        <Route path="/certificate" element={<Certificate name={name} />} />
+        <Route path="/join" exact element={<Join />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/videoCall" element={<VideoCall />} />
 
-                <Route path="/trial" element={<Reservation />} />
-                <Route path="/trial/pickdate" element={<PickDate />} />
-                <Route path="/*" element={<NotFound />} />
-            </Routes>
-            <ToastContainer></ToastContainer>
-            <Footer></Footer>
-        </div>
-    );
+        <Route path="/quiz" element={<Quizzes />} />
+        <Route path="/kids" element={<ForKids />} />
+
+        <Route path="/trial" element={<Reservation />} />
+        <Route path="/trial/pickdate" element={<PickDate />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:id" element={<BlogDetails />} />
+
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+      <Footer></Footer>
+      <ToastContainer></ToastContainer>
+    </div>
+  );
 }
 
 export default App;

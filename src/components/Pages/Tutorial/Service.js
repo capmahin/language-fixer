@@ -4,12 +4,12 @@ import ReactPlayer from "react-player";
 const Service = ({ service }) => {
   const { name, video } = service;
   return (
-    <div className="rounded-xl shadow-xl">
-      <figure>
-        <ReactPlayer width="620px" url={video} />
-      </figure>
+    <div className="card card-compact bg-sky-800 w-3/4 shadow-xl">
       <div className="card-body">
-        <h2 className="card-title text-xl">{name}</h2>
+        <h2 className=" text-gray-200 text-center text-xl">{name}</h2>
+        <figure>
+          <ReactPlayer url={video} />
+        </figure>
       </div>
     </div>
   );
