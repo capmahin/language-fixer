@@ -13,21 +13,21 @@ const Questions = ({
     setScore,
     setQuestions,
 }) => {
-    const [selected, setSelected] = useState();
+    const [selectedd, setselectedd] = useState();
     const [error, setError] = useState(false);
     const navigate = useNavigate();
 
     const handleSelect = (option) => {
-        if (selected === option && selected === correct) {
+        if (selectedd === option && selectedd === correct) {
             return "selected";
-        } else if (selected === option && selected !== correct) {
+        } else if (selectedd === option && selectedd !== correct) {
             return "wrong";
         } else if (option === correct) {
             return "selected";
         }
     };
     const handleCheck = (option) => {
-        setSelected(option);
+        setselectedd(option);
         if (option === correct) {
             setScore(score + 1);
             setError(false);
@@ -37,9 +37,9 @@ const Questions = ({
     const handleNext = () => {
         if (currentQues > 8) {
             navigate("/result");
-        } else if (selected) {
+        } else if (selectedd) {
             setCurrentQues(currentQues + 1);
-            setSelected();
+            setselectedd();
             setError(false);
         } else {
             setError("Please select an option");
@@ -65,10 +65,11 @@ const Questions = ({
                                     onClick={() => {
                                         handleCheck(option);
                                     }}
-                                    className={`singleOption ${selected && handleSelect(option)
-                                        }`}
+                                    className={`singleOption ${
+                                        selectedd && handleSelect(option)
+                                    }`}
                                     key={index}
-                                    disabled={selected}
+                                    disabled={selectedd}
                                 >
                                     {option}
                                 </button>

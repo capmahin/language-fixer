@@ -6,7 +6,7 @@
 }
 
 .singleQuestion {
-    width: 95%;
+    width: 105%;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 .singleOption {
-    width: 46%;
+    width: 50%;
     height: 50px;
     padding: 15px 20px;
     /* margin: 10px; */

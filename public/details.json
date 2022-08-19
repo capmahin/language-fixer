@@ -3,6 +3,7 @@
         "language": "Korean",
         "question": "What sound does this make?",
         "sound": "https://90daykoreanaudiobytes.s3-us-west-1.amazonaws.com/audio-a.mp3",
+        "word": "아",
         "correct_answer": "a",
         "incorrect_answeres": ["e", "o"]
     },
@@ -10,7 +11,16 @@
         "language": "Korean",
         "question": "What sound does this make?",
         "sound": "https://90daykoreanaudiobytes.s3-us-west-1.amazonaws.com/audio-o.mp3",
+        "word": "오",
         "correct_answer": "o",
         "incorrect_answeres": ["eo", "a"]
+    },
+    {
+        "language": "French",
+        "question": "What sound does this make?",
+        "sound": "https://90daykoreanaudiobytes.s3-us-west-1.amazonaws.com/audio-e.mp3",
+        "word": "에",
+        "correct_answer": "e",
+        "incorrect_answeres": ["a", "o"]
     }
 ]

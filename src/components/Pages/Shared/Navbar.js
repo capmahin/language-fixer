@@ -102,6 +102,11 @@ const NavBar = () => {
                                 class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 absolute right-0"
                             >
                                 <li>
+                                    <Link to="/profile">
+                                        <button>Profile</button>
+                                    </Link>
+                                </li>
+                                <li>
                                     <button onClick={logout}>Log Out</button>
                                 </li>
                             </ul>
