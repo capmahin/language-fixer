@@ -83,24 +83,112 @@
         "category": "Spanish",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "¿Qué es una palabra?",
-        "correct_answer": "Una palabra es una secuencia de letras y/o símbolos que forman una palabra.",
-        "incorrect_answers": [
-            "Una palabra es una secuencia de letras y/o símbolos que forman una palabra.",
-            "Una palabra es una secuencia de letras y/o símbolos que forman una palabra.",
-            "Una palabra es una secuencia de letras y/o símbolos que forman una palabra."
-        ]
+        "question": "What is the correct translation for telephone",
+        "correct_answer": "el teléfono",
+        "incorrect_answers": ["un paraguas", "un teléfono", "el agua"]
     },
     {
         "category": "Spanish",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "¿Qué es una frase?",
-        "correct_answer": "Una frase es una secuencia de palabras que forman una frase.",
-        "incorrect_answers": [
-            "Una frase es una secuencia de palabras que forman una frase.",
-            "Una frase es una secuencia de palabras que forman una frase.",
-            "Una frase es una secuencia de palabras que forman una frase."
-        ]
+        "question": "How do you say Good Morning?",
+        "correct_answer": "Buenas tardes",
+        "incorrect_answers": ["Adios", "Buenos días", "Buenas noches"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘Spanish’?",
+        "correct_answer": "Español",
+        "incorrect_answers": ["Inglés", "Portugués", "Italiano"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "How do you say Good Afternoon?",
+        "correct_answer": "Buenas tardes",
+        "incorrect_answers": ["Buenos días", "Buenas noches", "Adios"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘Good Night’?",
+        "correct_answer": "Buenas noches",
+        "incorrect_answers": ["Buenos días", "Buenas tardes", "Adios"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for Please?",
+        "correct_answer": "Por favor",
+        "incorrect_answers": ["Por favor", "Por favor", "Por favor"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘Thank You’?",
+        "correct_answer": "Gracias",
+        "incorrect_answers": ["Adios", "Derecha", "Perdon"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘Hello’?",
+        "correct_answer": "Hola",
+        "incorrect_answers": ["Adios", "Buenos días", "Buenas noches"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘Goodbye’?",
+        "correct_answer": "Adios",
+        "incorrect_answers": ["Hola", "Buenos días", "Buenas noches"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘Yes’?",
+        "correct_answer": "Sí",
+        "incorrect_answers": ["No", "Sí", "Sí"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘No’?",
+        "correct_answer": "No",
+        "incorrect_answers": ["Sí", "No", "No"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘I’?",
+        "correct_answer": "Yo",
+        "incorrect_answers": ["Yo", "Yo", "Yo"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘You’?",
+        "correct_answer": "Tú",
+        "incorrect_answers": ["Tú", "Tú", "Tú"]
+    },
+    {
+        "category": "Spanish",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "What is the correct translation for the word ‘We’?",
+        "correct_answer": "Nosotros",
+        "incorrect_answers": ["Nosotros", "Nosotros"]
     }
 ]
