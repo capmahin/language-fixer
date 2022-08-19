@@ -1,0 +1,182 @@
+[
+    {
+      "_id": "1",
+     
+      "Question": "Where are you from?",
+      "Answer": "  cóng nǎ lǐ lái?",
+      "Answer2": " Nǐ cóng lǐ lái?",
+      "Answer3": " Nǐ cóng nǎ lǐ ",
+      "Ri8_Answer": " Nǐ cóng nǎ lǐ lái?"
+    },
+    {
+      "_id": "2",
+      
+      "Question": "I come from China",
+      "Answer": "Wǒ  zì [Běi jīng]",
+      "Answer2": "Wǒ lái  [Běi jīng]",
+      "Answer3": "Wǒ lái zì",
+      "Ri8_Answer": "Wǒ lái zì [Běi jīng]"
+    },
+    {
+      "_id": "3",
+      
+      "Question": "I am from Shanghai",
+      "Answer": "  [Shàng hǎi] lái",
+      "Answer2": " Wǒ cóng  lái",
+      "Answer3": " Wǒ cóng [Shàng hǎi] ",
+      "Ri8_Answer": " Wǒ cóng [Shàng hǎi] lái"
+    },
+    {
+      "_id": "4",
+      
+      "Question": "Do you speak [Chinese]",
+      "Answer": "N huì shuō [Zhōng wén] ma",
+      "Answer2": "Nǐ hshuō [Zhōng wén] ma",
+      "Answer3": "Nǐ huì shuō [Zhōng wén] ",
+      "Ri8_Answer": "Nǐ huì shuō [Zhōng wén] ma"
+    },
+    {
+      "_id": "5",
+      
+      "Question": "I can speak a little bit.",
+      "Answer": "Wǒ  shuō yī diǎn",
+      "Answer2": "Wǒ huì  yī diǎn",
+      "Answer3": "Wǒ huì shuō yī ",
+      "Ri8_Answer": "Wǒ huì shuō yī diǎn"
+    },
+    {
+      "_id": "6",
+      
+      "Question": "I can speak Chinese pretty well",
+      "Answer": "  Zhōng wén shuō de bú cuò",
+      "Answer2": "Wǒ de  wén shuō de bú cuò",
+      "Answer3": "Wǒ de Zhōng wén shuō de bú  ",
+      "Ri8_Answer": "Wǒ de Zhōng wén shuō de bú cuò"
+    },
+    {
+      "_id": "7",
+      
+      "Question": "I can barely speak i",
+      "Answer": " bù zěn me huì shuō",
+      "Answer2": " Wǒ  zěn me huì shuō",
+      "Answer3": "Wǒ bù zěn me huì shuō ouwe ",
+      "Ri8_Answer": "Wǒ bù zěn me huì shuō"
+    },
+    {
+      "_id": "8",
+      
+      "Question": "It’s been [three] months / years / weeks / days.",
+      "Answer": " Xué le  [sān] (gè) yuè / nián / zhōu / tiān le",
+      "Answer2": "Xué le yǒu [sān] (gè) yuè / nián n` / zhōu / tiān le lt",
+      "Answer3": "Xué le yǒu [sān] (gè) yuè / nián / zhōu ",
+      "Ri8_Answer": "Xué le yǒu [sān] (gè) yuè / nián / zhōu / tiān le"
+    },
+    {
+      "_id": "9",
+      
+      "Question": "I just got started.",
+      "Answer": " Wǒ gāng  kāi shǐ xué x",
+      "Answer2": "  gāng gāng kāi shǐ xué x",
+      "Answer3": " Wǒ gāng gāng kāi shǐ xué  ",
+      "Ri8_Answer": " Wǒ gāng gāng kāi shǐ xué x"
+    },
+    {
+      "_id": "10",
+     
+      "Question": "I went to [China] on a trip.",
+      "Answer": "  qù [Zhōng guó] lǚ yóu guò",
+      "Answer2": "Wǒ  [Zhōng guó] lǚ yóu guò",
+      "Answer3": "Wǒ qù [Zhōng guó] lǚ yóu ",
+      "Ri8_Answer": "Wǒ qù [Zhōng guó] lǚ yóu guò"
+    },
+    {
+      "_id": "11",
+      
+      "Question": "I once studied in [the United States] for a while",
+      "Answer": " Wǒ  zài [Měi guó] liú guò xué",
+      "Answer2": "Wǒ céng  [Měi guó] liú guò xué",
+      "Answer3": "Wǒ céng zài [Měi guó] liú  ",
+      "Ri8_Answer": "Wǒ céng zài [Měi guó] liú guò xué"
+    },
+    {
+      "_id": "12",
+      
+      "Question": "I visited there for a while.",
+      "Answer": "Wǒ zài nà  dāi guò yī zhèn",
+      "Answer2": "Wǒ  nà lǐ dāi guò yī zhèn",
+      "Answer3": "Wǒ zài nà lǐ dāi guò yī ",
+      "Ri8_Answer": "Wǒ zài nà lǐ dāi guò yī zhèn"
+    },
+    {
+      "_id": "13",
+      
+      "Question": "How is [China]",
+      "Answer": "  [Zhōng guó] zěn  yàng",
+      "Answer2": " [Zhōng guó]  me yàng",
+      "Answer3": " [Zhōng guó] zěn me  ",
+      "Ri8_Answer": " [Zhōng guó] zěn me yàng"
+    },
+    {
+      "_id": "14",
+     
+      "Question": "Very good.",
+      "Answer": "  bié hǎo",
+      "Answer2": "Tè bié hǎo  bie`",
+      "Answer3": "Tè bié hǎo hoo`",
+      "Ri8_Answer": "Tè bié hǎo"
+    },
+    {
+      "_id": "15",
+      
+      "Question": "Not that great",
+      "Answer": " Bù zěn  yàng",
+      "Answer2": " Bù  me yàng",
+      "Answer3": " Bù zěn me ",
+      "Ri8_Answer": " Bù zěn me yàng"
+    },
+    {
+      "_id": "16",
+      
+      "Question": "I don’t enjoy [Chinese] food all that much.",
+      "Answer": "  Wǒ  shì hěn xǐ huān [Zhōng guó] cài.",
+      "Answer2": " Wǒ bú shì  xǐ huān [Zhōng guó] cài.",
+      "Answer3": " Wǒ bú shì hěn huān [Zhōng guó] cài.",
+      "Ri8_Answer": " Wǒ bú shì hěn xǐ huān [Zhōng guó] cài."
+    },
+    {
+      "_id": "17",
+     
+      "Question": "What are you doing?",
+      "Answer": " Nǐ zài gàn ma ne ne?",
+      "Answer2": "Nǐ  gàn ma ne?",
+      "Answer3": "Nǐ zài gàn  ne? ",
+      "Ri8_Answer": "Nǐ zài gàn ma ne?"
+    },
+    {
+      "_id": "18",
+      
+      "Question": "What are you busy with?",
+      "Answer": " Nǐ  máng xiē shén me ne?",
+      "Answer2": "Nǐ zài  xiē shén me ne?",
+      "Answer3": "Nǐ zài máng xiē shén me ? ",
+      "Ri8_Answer": "Nǐ zài máng xiē shén me ne?"
+    },
+    {
+      "_id": "19",
+      
+      "Question": "What’s wrong?",
+      "Answer": " shén me bú duì ma?",
+      "Answer2": "Yǒu  me bú duì ma?",
+      "Answer3": "Yǒu shén me bú duì ?",
+      "Ri8_Answer": "Yǒu shén me bú duì ma?"
+    },
+    {
+      "_id": "20",
+      
+      "Question": "I am not in a good mood.",
+      "Answer": " Wǒ  qíng bú tài hǎo",
+      "Answer2": "Wǒ  qíng bú tài hǎo",
+      "Answer3": "Wǒ xīn qíng bú tài  ",
+      "Ri8_Answer": "Wǒ xīn qíng bú tài hǎo"
+    }
+  ]

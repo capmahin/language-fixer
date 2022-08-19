@@ -1,0 +1,182 @@
+[
+    {
+      "_id": "1",
+     
+      "Question": "Are you tired?",
+      "Answer": "ileon sig-eulo jag-eob-eul suhaeng",
+      "Answer2": "geuleul ani",
+      "Answer3": "hangug-eoleul hal su issseubnikka",
+      "Ri8_Answer": "pigonhasibnikka"
+    },
+    {
+      "_id": "2",
+      
+      "Question": "Are you Korean",
+      "Answer": "bappeuseyo",
+      "Answer2": "geuleul ani",
+      "Answer3": "igeo goyang-iya",
+      "Ri8_Answer": "hangug salam-ieyo"
+    },
+    {
+      "_id": "3",
+      
+      "Question": "Are you busy?",
+      "Answer": "hangug salam-ieyo",
+      "Answer2": "pigonhasibnikka",
+      "Answer3": "geuleul ani",
+      "Ri8_Answer": "bappeuseyo"
+    },
+    {
+      "_id": "4",
+      
+      "Question": "Is this a cat",
+      "Answer": "geuleul joh-ahabnikka",
+      "Answer2": "hangug salam-ieyo",
+      "Answer3": "bappeuseyo",
+      "Ri8_Answer": "igeo goyang-iya"
+    },
+    {
+      "_id": "5",
+      
+      "Question": "Do you know him?",
+      "Answer": "igeo goyang-iya",
+      "Answer2": "bappeuseyo",
+      "Answer3": "pigonhasibnikka",
+      "Ri8_Answer": "geuleul ani"
+    },
+    {
+      "_id": "6",
+      
+      "Question": "Do you like this?",
+      "Answer": " jag-eob-eul suhaeng",
+      "Answer2": "ileon sig-eulo  suhaeng",
+      "Answer3": "ileon sig-eulo jag-eob-eul ",
+      "Ri8_Answer": "ileon sig-eulo jag-eob-eul suhaeng"
+    },
+    {
+      "_id": "7",
+      
+      "Question": "Can you speak Korean?",
+      "Answer": "hangug-eoleul  su issseubnikka",
+      "Answer2": " hal su issseubnikka",
+      "Answer3": "hangug-eoleul hal su ",
+      "Ri8_Answer": "hangug-eoleul hal su issseubnikka"
+    },
+    {
+      "_id": "8",
+      
+      "Question": "Do you like him?",
+      "Answer": " joh-ahabnikka",
+      "Answer2": "geuleul jahabnikka",
+      "Answer3": "geuleul joh-",
+      "Ri8_Answer": "geuleul joh-ahabnikka"
+    },
+    {
+      "_id": "9",
+      
+      "Question": "Are cats cute?",
+      "Answer": "ineun gwiyeobnayo",
+      "Answer2": "goyang gwiyeobnayo",
+      "Answer3": "goyang-ineun ",
+      "Ri8_Answer": "goyang-ineun gwiyeobnayo"
+    },
+    {
+      "_id": "10",
+     
+      "Question": "Is this your book?",
+      "Answer": " nichaeg-iya",
+      "Answer2": "igeo nichaeg-iyaqqq",
+      "Answer3": "igeo nichaeg",
+      "Ri8_Answer": "igeo nichaeg-iya"
+    },
+    {
+      "_id": "11",
+      
+      "Question": "Is this your cat?",
+      "Answer": " dangsin-ui goyang-iibnikka",
+      "Answer2": "igeos-eun  goyang-iibnikka",
+      "Answer3": "igeos-eun dangsin-ui ",
+      "Ri8_Answer": "igeos-eun dangsin-ui goyang-iibnikka"
+    },
+    {
+      "_id": "12",
+      
+      "Question": "Are these your children?",
+      "Answer": "i aideul-i dangsin aideul-ibnikka",
+      "Answer2": "i  dangsin-ui aideul-ibnikka",
+      "Answer3": "i aideul-i dangsin-ui",
+      "Ri8_Answer": "i aideul-i dangsin-ui aideul-ibnikka"
+    },
+    {
+      "_id": "13",
+      
+      "Question": "Is this your school?",
+      "Answer": " dangsin-ui haggyoibnikka",
+      "Answer2": "yeogiga  haggyoibnikka",
+      "Answer3": "yeogiga dangsin-ui ",
+      "Ri8_Answer": "yeogiga dangsin-ui haggyoibnikka"
+    },
+    {
+      "_id": "14",
+     
+      "Question": "Is your husband nice?",
+      "Answer": " nampyeon-i joh-eungayo",
+      "Answer2": "dangsin-ui  joh-eungayo",
+      "Answer3": "dangsin-ui nampyeon-i",
+      "Ri8_Answer": "dangsin-ui nampyeon-i joh-eungayo"
+    },
+    {
+      "_id": "15",
+      
+      "Question": "Where are you going",
+      "Answer": "eodi gaseyo juoo",
+      "Answer2": "eodi  yyytytt gaseyo",
+      "Answer3": "eodi gaseyo eewww",
+      "Ri8_Answer": "eodi gaseyo"
+    },
+    {
+      "_id": "16",
+      
+      "Question": "What kind of solution do you want?",
+      "Answer": " haegyeol bangbeob-eul wonhaseyo",
+      "Answer2": "eotteon haegyeol",
+      "Answer3": "eotteon haegyeol bangbeob-eul",
+      "Ri8_Answer": "eotteon haegyeol bangbeob-eul wonhaseyo"
+    },
+    {
+      "_id": "17",
+     
+      "Question": "Who is your boyfriend?",
+      "Answer": " namja chinguneun nugu-ibnikka",
+      "Answer2": "dangsin-ui  chinguneun nugu-ibnikka",
+      "Answer3": "dangsin-ui namja chinguneun ",
+      "Ri8_Answer": "dangsin-ui namja chinguneun nugu-ibnikka"
+    },
+    {
+      "_id": "18",
+      
+      "Question": "When did you come",
+      "Answer": " eonje wassni",
+      "Answer2": "neo  wassni",
+      "Answer3": "neo eonje ",
+      "Ri8_Answer": "neo eonje wassni"
+    },
+    {
+      "_id": "19",
+      
+      "Question": "How long do I have to wait?",
+      "Answer": "eolmana gidalyeoya hanayo yeeeyaa",
+      "Answer2": "eolmana  hanayo",
+      "Answer3": "eolmana gidalyeoya",
+      "Ri8_Answer": "eolmana gidalyeoya hanayo"
+    },
+    {
+      "_id": "20",
+      
+      "Question": "Which country are you from?",
+      "Answer": " nala salam-ieyo",
+      "Answer2": "eoneu  salam-ieyo",
+      "Answer3": "eoneu nala ",
+      "Ri8_Answer": "eoneu nala salam-ieyo"
+    }
+  ]
