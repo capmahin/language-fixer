@@ -19,7 +19,7 @@ const Chat = () => {
   const [socket, setSocket] = useState();
 
   useEffect(() => {
-    const socket = io("https://young-plains-25750.herokuapp.com/");
+    const socket = io("https://young-plains-25750.herokuapp.com");
     setSocket(socket);
 
     socket.on("connect", () => {
@@ -110,7 +110,7 @@ const Chat = () => {
           onClick={onSubmit}
         >
           {loading ? (
-            <div class="spinner-border spinner-border-sm text-primary"></div>
+            <div className="spinner-border spinner-border-sm text-primary"></div>
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ const Chat = () => {
               width="26"
               height="26"
               fill="currentColor"
-              class="bi bi-camera-video-fill"
+              className="bi bi-camera-video-fill"
               viewBox="0 0 16 16"
             >
               <path

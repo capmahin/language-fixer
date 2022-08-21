@@ -12,7 +12,7 @@ const LFClassroom = () => {
                         <ClassroomSidebar></ClassroomSidebar>
                     </div>
                     <div>
-                        <div class="navbar bg-gray-200 rounded-lg">
+                        <div className="navbar bg-gray-200 rounded-lg">
                             <ClassroomNavBar></ClassroomNavBar>
                         </div>
                     </div>

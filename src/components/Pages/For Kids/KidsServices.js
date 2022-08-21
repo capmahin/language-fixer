@@ -79,11 +79,11 @@ const KidsServices = () => {
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center items-center gap-2 -mt-20 pb-20">
-                <a href="#slide1" class="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">1</a>
-                <a href="#slide2" class="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">2</a>
-                <a href="#slide3" class="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">3</a>
-                <a href="#slide4" class="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">4</a>
+            <div className="flex justify-center items-center gap-2 -mt-20 pb-20">
+                <a href="#slide1" className="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">1</a>
+                <a href="#slide2" className="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">2</a>
+                <a href="#slide3" className="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">3</a>
+                <a href="#slide4" className="btn btn-xs bg-accent border-0 text-white w-8 hover:bg-white hover:text-accent hover:border-accent hover:border-2">4</a>
             </div>
 
         </div>
