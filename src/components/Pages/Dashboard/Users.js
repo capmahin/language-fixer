@@ -10,9 +10,9 @@ const Users = () => {
     } = useQuery("users", () =>
         fetch("https://young-plains-25750.herokuapp.com/user", {
             method: "GET",
-            headers: {
-                authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-            },
+            // headers: {
+            //     authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+            // },
         }).then((res) => res.json())
     );
     if (isLoading) {

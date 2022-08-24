@@ -18,17 +18,15 @@ const Students = () => {
                 <h4 className='text-xl'>Let's add students to your class.</h4>
                 <label for="my-modal-6" className="btn bg-accent my-5 border-0 text-white rounded-full w-44 hover:bg-white hover:text-accent hover:border-accent hover:border-2 modal-button">Add Students</label>
 
+                <label for="my-modal-5" class="btn modal-button">open modal</label>
 
-                <input type="checkbox" id="my-modal-6" className="modal-toggle" />
-                <div className="modal modal-bottom sm:modal-middle bg-transparent ">
-                    <div className="modal-box">
-                        <h3 className="font-bold text-2xl text-center">Invite your students via link!</h3>
-                        <p className="py-8">They'll create or connect a Language Fixer account and be added directly to your classroom...!</p>
-                        <div className="mockup-code bg-accent text-center">
-                            <pre><code>https://language-fixer.vercel.app{location.pathname}</code></pre>
-                        </div>
-                        <div className="modal-action">
-                            <label for="my-modal-6" className="btn bg-accent border-0 text-white rounded-full w-44 hover:bg-white hover:text-accent hover:border-accent hover:border-2">Done</label>
+                <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+                <div class="modal">
+                    <div class="modal-box w-11/12 max-w-5xl">
+                        <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+                        <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                        <div class="modal-action">
+                            <label for="my-modal-5" class="btn">Yay!</label>
                         </div>
                     </div>
                 </div>
