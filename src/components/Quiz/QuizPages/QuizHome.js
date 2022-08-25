@@ -33,7 +33,9 @@ const QuizHome = ({ name, setName, fetchQuestions }) => {
 
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
-                            <span className="label-text">What is your name?</span>
+                            <span className="label-text">
+                                What is your name?
+                            </span>
                         </label>
                         <input
                             type="text"
@@ -61,7 +63,9 @@ const QuizHome = ({ name, setName, fetchQuestions }) => {
                     </div>
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
-                            <span className="label-text">Select Difficulty</span>
+                            <span className="label-text">
+                                Select Difficulty
+                            </span>
                         </label>
                         <select
                             onChange={(e) => setDifficulty(e.target.value)}
@@ -84,7 +88,10 @@ const QuizHome = ({ name, setName, fetchQuestions }) => {
                         </select>
                     </div>
                     <div className="card-actions justify-center">
-                        <button onClick={handleSubmit} className="btn btn-primary">
+                        <button
+                            onClick={handleSubmit}
+                            className="btn btn-primary"
+                        >
                             Start Quiz
                         </button>
                     </div>

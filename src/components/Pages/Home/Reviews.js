@@ -9,7 +9,7 @@ const Reviews = () => {
     useEffect(() => {
 
         setLoading(true);
-        fetch("http://localhost:5000/review")
+        fetch("https://young-plains-25750.herokuapp.com/review")
             .then((res) => res.json())
             .then((data) => {
                 setReviews(data);

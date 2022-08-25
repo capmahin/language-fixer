@@ -4,11 +4,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink, Link } from "react-router-dom";
 import auth from "../../../firebase.init";
 
-
 const NavBar = () => {
     const [user] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
+        localStorage.removeItem("accessToken");
     };
 
     const navItems = (
@@ -33,7 +33,7 @@ const NavBar = () => {
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
                 <NavLink
                     className={({ isActive }) => (isActive ? "active" : "")}
-                    to="learn"
+                    to="/learn"
                 >
                     Learn
                 </NavLink>
@@ -102,6 +102,11 @@ const NavBar = () => {
                                 class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 absolute right-0"
                             >
                                 <li>
+                                    <Link to="/profile">
+                                        <button>Profile</button>
+                                    </Link>
+                                </li>
+                                <li>
                                     <button onClick={logout}>Log Out</button>
                                 </li>
                             </ul>
@@ -132,7 +137,7 @@ const NavBar = () => {
     );
 
     return (
-        <div >
+        <div>
             <div className="navbar bg-primary text-slate-300 lg:justify-evenly">
                 <div className="navbar-start">
                     <div className="dropdown">

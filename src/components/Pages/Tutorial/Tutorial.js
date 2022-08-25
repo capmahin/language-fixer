@@ -1,5 +1,9 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import english from "../../../assets/Info/english.jpg";
+import french from "../../../assets/Info/french.jpg";
+import spanish from "../../../assets/Info/spanish.jpg";
+import chinese from "../../../assets/Info/Chinese.jpg";
 
 const Tutorial = () => {
   const navigate = useNavigate();
@@ -17,62 +21,26 @@ const Tutorial = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-6 px-5 py-5">
-      <div className="card w-96 bg-base-100 shadow-xl image-full">
-        <figure>
-          <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center py-20 gap-4 ">
+      <div className="">
+        <figure onClick={navigateEnglish}>
+          <img className="w-64 rounded-lg" src={english} alt="" />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">Spanish Learning</h2>
-
-          <div className="card-actions justify-end">
-            <Link to="/spanishtutorial" onClick={navigateSpanish}>
-              <button className="btn btn-ghost">Spanish</button>
-            </Link>
-          </div>
-        </div>
       </div>
-      <div className="card w-96 bg-base-100 shadow-xl image-full">
-        <figure>
-          <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+      <div className="">
+        <figure onClick={navigateSpanish}>
+          <img className="w-64 rounded-lg" src={spanish} alt="" />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">Chinese Learning</h2>
-
-          <div className="card-actions justify-end">
-            <Link to="/chinesetutorial" onClick={navigateChinese}>
-              <button className="btn btn-ghost">Chinese</button>
-            </Link>
-          </div>
-        </div>
       </div>
-      <div className="card w-96 bg-base-100 shadow-xl image-full">
-        <figure>
-          <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+      <div className="">
+        <figure onClick={navigateChinese}>
+          <img className="w-64 rounded-lg" src={chinese} alt="" />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">French Learning</h2>
-
-          <div className="card-actions justify-end">
-            <Link to="/franchtutorial" onClick={navigateFrench}>
-              <button className="btn btn-ghost">French</button>
-            </Link>
-          </div>
-        </div>
       </div>
-      <div className="card w-96 bg-base-100 shadow-xl image-full">
-        <figure>
-          <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+      <div className="">
+        <figure onClick={navigateFrench}>
+          <img className="w-64 rounded-lg" src={french} alt="" />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">English Learning</h2>
-
-          <div className="card-actions justify-end">
-            <Link to="/englishtutorial" onClick={navigateEnglish}>
-              <button className="btn btn-ghost">English</button>
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   );
