@@ -15,8 +15,8 @@ const NavBar = () => {
         <>
             <li className=" lg:hidden flex items-center">
                 {user && (
-                    <div class="avatar">
-                        <div class="w-24 rounded-full">
+                    <div className="avatar">
+                        <div className="w-24 rounded-full">
                             <img src={user.photoURL} alt="" />
                         </div>
                     </div>
@@ -88,8 +88,8 @@ const NavBar = () => {
             )}
             <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent hidden lg:block">
                 {user ? (
-                    <div class="avatar dropdown hidden lg:block">
-                        <div class="w-10 rounded-full">
+                    <div className="avatar dropdown hidden lg:block">
+                        <div className="w-10 rounded-full">
                             <label tabindex="0" className="pointer">
                                 <img
                                     className="pointer"
@@ -99,7 +99,7 @@ const NavBar = () => {
                             </label>
                             <ul
                                 tabindex="0"
-                                class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 absolute right-0"
+                                className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 absolute right-0"
                             >
                                 <li>
                                     <Link to="/profile">

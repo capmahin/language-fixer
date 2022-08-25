@@ -41,13 +41,13 @@ const KidsClasses = () => {
                   assumenda excepturi.
                 </p>
               </div>
-              <div class="divider m-0"></div>
+              <div className="divider m-0"></div>
               <div className="flex justify-center text-xs">
                 <div className="">
                   <p>Year Old</p>
                   <p>3-6</p>
                 </div>
-                <div class="divider divider-horizontal"></div>
+                <div className="divider divider-horizontal"></div>
                 <div>
                   <p>Students</p>
                   <p>25</p>
@@ -68,13 +68,13 @@ const KidsClasses = () => {
                   assumenda excepturi.
                 </p>
               </div>
-              <div class="divider m-0"></div>
+              <div className="divider m-0"></div>
               <div className="flex justify-center text-xs">
                 <div className="">
                   <p>Year Old</p>
                   <p>3-6</p>
                 </div>
-                <div class="divider divider-horizontal"></div>
+                <div className="divider divider-horizontal"></div>
                 <div>
                   <p>Students</p>
                   <p>25</p>
@@ -94,13 +94,13 @@ const KidsClasses = () => {
                   assumenda excepturi.
                 </p>
               </div>
-              <div class="divider m-0"></div>
+              <div className="divider m-0"></div>
               <div className="flex justify-center text-xs">
                 <div className="">
                   <p>Year Old</p>
                   <p>3-6</p>
                 </div>
-                <div class="divider divider-horizontal"></div>
+                <div className="divider divider-horizontal"></div>
                 <div>
                   <p>Students</p>
                   <p>25</p>
@@ -122,13 +122,13 @@ const KidsClasses = () => {
                   assumenda excepturi.
                 </p>
               </div>
-              <div class="divider m-0"></div>
+              <div className="divider m-0"></div>
               <div className="flex justify-center text-xs">
                 <div className="">
                   <p>Year Old</p>
                   <p>3-6</p>
                 </div>
-                <div class="divider divider-horizontal"></div>
+                <div className="divider divider-horizontal"></div>
                 <div>
                   <p>Students</p>
                   <p>25</p>
@@ -148,13 +148,13 @@ const KidsClasses = () => {
                   assumenda excepturi.
                 </p>
               </div>
-              <div class="divider m-0"></div>
+              <div className="divider m-0"></div>
               <div className="flex justify-center text-xs">
                 <div className="">
                   <p>Year Old</p>
                   <p>3-6</p>
                 </div>
-                <div class="divider divider-horizontal"></div>
+                <div className="divider divider-horizontal"></div>
                 <div>
                   <p>Students</p>
                   <p>25</p>
@@ -174,13 +174,13 @@ const KidsClasses = () => {
                   assumenda excepturi.
                 </p>
               </div>
-              <div class="divider m-0"></div>
+              <div className="divider m-0"></div>
               <div className="flex justify-center text-xs">
                 <div className="">
                   <p>Year Old</p>
                   <p>3-6</p>
                 </div>
-                <div class="divider divider-horizontal"></div>
+                <div className="divider divider-horizontal"></div>
                 <div>
                   <p>Students</p>
                   <p>25</p>

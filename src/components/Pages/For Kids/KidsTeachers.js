@@ -34,10 +34,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center'>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="hero-content flex-col">
@@ -48,10 +48,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center '>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="hero-content flex-col">
@@ -62,10 +62,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center '>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -82,10 +82,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center '>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="hero-content flex-col">
@@ -96,10 +96,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center '>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="hero-content flex-col">
@@ -110,10 +110,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center '>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -130,10 +130,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center '>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="hero-content flex-col">
@@ -144,10 +144,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center '>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="hero-content flex-col">
@@ -158,10 +158,10 @@ const KidsTeachers = () => {
                                 <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi.</p>
                             </div>
                             <div className='text-lg flex justify-center '>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
-                                <i class="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-facebook-f"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-twitter"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-instagram"></i>
+                                <i className="pt-2 mr-1 drop-shadow-xl border-4 bg-amber-500 text-white hover:text-amber-500 hover:bg-white hover:border-sky-200 rounded-full w-10 h-10 text-center fa-brands fa-whatsapp"></i>
                             </div>
                         </div>
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

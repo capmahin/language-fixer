@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import useToken from "../../hooks/useToken";
+import useUpdateUser from "../../hooks/useAddUserToDB";
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] =
@@ -21,6 +22,11 @@ const Login = () => {
 
     const [signInWithEmailAndPassword, user, loading, error] =
         useSignInWithEmailAndPassword(auth);
+
+
+    useUpdateUser(user || gUser)
+
+
 
     const [token] = useToken(user || gUser);
 
@@ -42,6 +48,8 @@ const Login = () => {
             <p className="text-red-500">{error?.message || gError?.message}</p>
         );
     }
+
+
 
     const onSubmit = (data) => {
         console.log(data);
@@ -118,16 +126,16 @@ const Login = () => {
                                     <label className="label">
                                         {errors.password?.type ===
                                             "required" && (
-                                            <span className="label-text-alt text-red-500">
-                                                {errors.password.message}
-                                            </span>
-                                        )}
+                                                <span className="label-text-alt text-red-500">
+                                                    {errors.password.message}
+                                                </span>
+                                            )}
                                         {errors.password?.type ===
                                             "minLength" && (
-                                            <span className="label-text-alt text-red-500">
-                                                {errors.password.message}
-                                            </span>
-                                        )}
+                                                <span className="label-text-alt text-red-500">
+                                                    {errors.password.message}
+                                                </span>
+                                            )}
                                     </label>
                                 </div>
                                 {signInError}

@@ -43,40 +43,40 @@ const PickDate = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            class="form-control w-3/4 lg:w-2/4 mx-auto text-black"
+            className="form-control w-3/4 lg:w-2/4 mx-auto text-black"
           >
-            <label class="label">
-              <span class="label-text text-white">Name</span>
+            <label className="label">
+              <span className="label-text text-white">Name</span>
             </label>
             <input
               type="text"
               name="user_name"
               required
               placeholder="Type Name"
-              class="input input-bordered w-full input-sm max-w-xs"
+              className="input input-bordered w-full input-sm max-w-xs"
             />
-            <label class="label">
-              <span class="label-text text-white">Email</span>
+            <label className="label">
+              <span className="label-text text-white">Email</span>
             </label>
             <input
               type="text"
               name="user_email"
               required
               placeholder="Type Email"
-              class="input input-bordered w-full input-sm max-w-xs"
+              className="input input-bordered w-full input-sm max-w-xs"
             />
-            <label class="label">
-              <span class="label-text text-white">Selected Date</span>
+            <label className="label">
+              <span className="label-text text-white">Selected Date</span>
             </label>
             <input
               type="text"
               disabled
               name={"date" - format(selected, "PP")}
               value={format(selected, "PP")}
-              class="input input-bordered w-full input-sm max-w-xs"
+              className="input input-bordered w-full input-sm max-w-xs"
             />
-            <label class="label">
-              <span class="label-text text-white">Language</span>
+            <label className="label">
+              <span className="label-text text-white">Language</span>
             </label>
             <input
               type="text"
@@ -84,11 +84,11 @@ const PickDate = () => {
               required
               // value={(selected.langu)}
               placeholder="Type Language"
-              class="input input-bordered w-full input-sm max-w-xs"
+              className="input input-bordered w-full input-sm max-w-xs"
             />
             <input
               type="submit"
-              class="btn btn-sm btn-primary w-full my-5 max-w-xs text-white"
+              className="btn btn-sm btn-primary w-full my-5 max-w-xs text-white"
             />
           </form>
         </div>

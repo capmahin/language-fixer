@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
 import useToken from "../../hooks/useToken";
+import useUpdateUser from "../../hooks/useAddUserToDB";
 
 const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] =
@@ -23,6 +24,9 @@ const SignUp = () => {
         useCreateUserWithEmailAndPassword(auth);
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const [token] = useToken(user || gUser);
+
+
+    useUpdateUser(user || gUser)
 
     const navigate = useNavigate();
 
