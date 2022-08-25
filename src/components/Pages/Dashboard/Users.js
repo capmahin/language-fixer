@@ -1,20 +1,11 @@
 // import React, { useEffect, useState } from "react";
-import { useQuery } from "react-query";
+import useUsers from "../../hooks/useUsers";
 import UserRow from "./UserRow";
 
 const Users = () => {
-    const {
-        data: users,
-        isLoading,
-        refetch,
-    } = useQuery("users", () =>
-        fetch("https://young-plains-25750.herokuapp.com/user", {
-            method: "GET",
-            // headers: {
-            //     authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-            // },
-        }).then((res) => res.json())
-    );
+
+    const [users, isLoading, refetch] = useUsers([])
+
     if (isLoading) {
         return <div>Loading...</div>;
     }

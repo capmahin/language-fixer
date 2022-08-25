@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ClassroomNavBar = () => {
     return (
-        <div>
+        <div className=''>
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabindex="0" className="btn btn-ghost lg:hidden">
@@ -13,6 +13,7 @@ const ClassroomNavBar = () => {
                         <li><Link to="students">STUDENTS</Link></li>
                         <li><Link to="assign">ASSIGN</Link></li>
                         <li><Link to="reports">REPORTS</Link></li>
+                        <li><Link to="liveSession">Live Session</Link></li>
                     </ul>
                 </div>
             </div>
@@ -21,6 +22,7 @@ const ClassroomNavBar = () => {
                     <li><Link to="students">STUDENTS</Link></li>
                     <li><Link to="assign">ASSIGN</Link></li>
                     <li><Link to="reports">REPORTS</Link></li>
+                    <li><Link to="liveSession">Live Session</Link></li>
                 </ul>
             </div>
         </div>

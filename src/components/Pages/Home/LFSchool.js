@@ -4,6 +4,7 @@ import classroom from '../../../assets/classroom.png'
 import borderWhite from "../../../assets/borderWhite.png";
 import auth from '../../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { TurnedIn } from '@material-ui/icons';
 
 const LFSchool = () => {
 
@@ -20,13 +21,7 @@ const LFSchool = () => {
     }, []);
 
 
-
-
-
     const [error, setError] = useState("");
-
-
-
 
 
     const classRef = useRef('')
@@ -50,7 +45,8 @@ const LFSchool = () => {
 
         const lfClass = {
             className: classN,
-            languageName: language
+            languageName: language,
+            isInstructor: true
         }
         console.log(lfClass)
         const url = `https://young-plains-25750.herokuapp.com/addClasses/${user.email}`
@@ -69,13 +65,13 @@ const LFSchool = () => {
 
     }
 
-    const logedInUser = users.find(u => u.email === user?.email)
+    const loggedInUser = users.find(u => u.email === user?.email)
 
     const handleGetStarted = () => {
 
         !user && navigate('/login')
 
-        if (logedInUser.className && logedInUser.languageName) {
+        if (loggedInUser.className && loggedInUser.languageName) {
             navigate('/LFClassroom')
         }
 
