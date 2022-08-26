@@ -4,11 +4,11 @@ const UserRow = ({ user, index }) => {
     const { email, role } = user;
 
     const makeAdmin = () => {
-        fetch(`https://young-plains-25750.herokuapp.com/admin/${email}`, {
+        fetch(`https://young-plains-25750.herokuapp.com/user/addAdmin/${email}`, {
             method: "PUT",
-            headers: {
-                authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-            },
+            // headers: {
+            //     authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+            // },
         })
             .then((res) => res.json())
             .then((data) => {

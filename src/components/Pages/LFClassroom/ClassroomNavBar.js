@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const ClassroomNavBar = () => {
   return (
-    <div>
-      <div class="navbar-end">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
+    <div className="">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <label tabindex="0" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -24,7 +24,7 @@ const ClassroomNavBar = () => {
           </label>
           <ul
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-200 rounded-lg w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-200 rounded-lg w-52"
           >
             <li>
               <Link to="students">STUDENTS</Link>
@@ -35,11 +35,14 @@ const ClassroomNavBar = () => {
             <li>
               <Link to="reports">REPORTS</Link>
             </li>
+            <li>
+              <Link to="liveSession">Live Session</Link>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="navbar-center hidden lg:flex mb-12">
-        <ul class="menu menu-horizontal p-0">
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal p-0">
           <li>
             <Link to="students">STUDENTS</Link>
           </li>
@@ -48,6 +51,9 @@ const ClassroomNavBar = () => {
           </li>
           <li>
             <Link to="reports">REPORTS</Link>
+          </li>
+          <li>
+            <Link to="liveSession">Live Session</Link>
           </li>
         </ul>
       </div>

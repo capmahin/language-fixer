@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import ClassroomNavBar from "./ClassroomNavBar";
 import ClassroomSidebar from "./ClassroomSidebar";
 
@@ -12,11 +12,10 @@ const LFClassroom = () => {
             <ClassroomSidebar></ClassroomSidebar>
           </div>
           <div>
-            <div class="navbar bg-gray-200 rounded-lg">
+            <div className="navbar bg-gray-200 rounded-lg max-h-40">
               <ClassroomNavBar></ClassroomNavBar>
             </div>
           </div>
-          {/* <Assignments /> */}
           <Outlet></Outlet>
         </div>
       </div>

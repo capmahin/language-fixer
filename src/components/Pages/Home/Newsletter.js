@@ -66,7 +66,7 @@ const Newsletter = () => {
           <input
             type="submit"
             value="Subscribe Now"
-            class="btn btn-outline btn-sm btn-accent w-full my-5 max-w-xs text-white"
+            className="btn btn-outline btn-sm btn-accent w-full my-5 max-w-xs text-white"
           />
         </div>
       </form>
