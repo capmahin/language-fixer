@@ -17,8 +17,8 @@ const BlogDetails = () => {
         Blogs Details
       </h2>
       {/* {isPending && <div>Loading..</div>} */}
-      <div class="artboard artboard-horizontal lg:phone-6 bg-slate-500 text-zinc-300 p-10 mx-auto">
-        <i class="text-3xl lg:text-5xl font-bold">{blogs.title}</i>
+      <div className="artboard artboard-horizontal lg:phone-6 bg-slate-500 text-zinc-300 p-10 mx-auto">
+        <i className="text-3xl lg:text-5xl font-bold">{blogs.title}</i>
         <article className="py-5 text-justify">{blogs.body}</article>
         <h2 className="text-xl">-{blogs.author}</h2>
       </div>

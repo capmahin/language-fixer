@@ -19,7 +19,7 @@ const WhyLF = () => {
                     <div className="space-y-3">
                         <h1 className="font-bold text-2xl">
                             {" "}
-                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <i className="fa-solid fa-fire-flame-curved"></i>
                             &nbsp; Effective and efficient
                         </h1>
                         <p className="ml-7">
@@ -36,7 +36,7 @@ const WhyLF = () => {
                     <div className="space-y-3">
                         <h1 className="font-bold text-2xl">
                             {" "}
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i className="fa-solid fa-circle-check"></i>
                             &nbsp;Personalized Learning
                         </h1>
                         <p className="ml-7">
@@ -57,7 +57,7 @@ const WhyLF = () => {
                 <div className="space-y-8">
                     <div className="space-y-3">
                         <h1 className="font-bold text-2xl">
-                            <i class="fa-solid fa-crown"></i> &nbsp;Stay
+                            <i className="fa-solid fa-crown"></i> &nbsp;Stay
                             Motivated
                         </h1>
                         <p className="ml-9">
@@ -72,7 +72,7 @@ const WhyLF = () => {
 
                     <div className="space-y-3">
                         <h1 className="font-bold text-2xl">
-                            <i class="fa-solid fa-child-reaching"></i>
+                            <i className="fa-solid fa-child-reaching"></i>
                             &nbsp;&nbsp;&nbsp;&nbsp;Have fun with it!
                         </h1>
                         <p className="ml-9">

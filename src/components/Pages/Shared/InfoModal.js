@@ -9,7 +9,7 @@ const InfoModal = () => {
     const [user] = useAuthState(auth);
 
     const onSubmit = (data) => {
-        axios.post("http://localhost:5000/info", data).then((res) => {
+        axios.post("https://young-plains-25750.herokuapp.com/info", data).then((res) => {
             if (res.data.insertedId) {
                 alert("Info added successfully");
                 reset();

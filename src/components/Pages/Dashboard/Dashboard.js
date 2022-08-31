@@ -17,6 +17,9 @@ const Dashboard = () => {
                     <li>
                         <NavLink to="users">Users</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="update_quiz">Update Quiz</NavLink>
+                    </li>
                 </ul>
             </div>
         </div>

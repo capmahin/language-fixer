@@ -17,7 +17,7 @@ import FranchTutorials from "./components/Pages/Tutorial/Franch/FranchTutorials"
 import ChineseTutorials from "./components/Pages/Tutorial/Chinese/ChineseTutorials";
 import SpanishTutorials from "./components/Pages/Tutorial/Spanish/SpanishTutorials";
 import ForKids from "./components/Pages/For Kids/ForKids";
-import Quizzes from "./components/Pages/Home/Quizzes";
+
 import Chat from "./components/Pages/ChatApplication/Chat/Chat";
 
 import NotFound from "./components/Pages/Shared/NotFound";
@@ -46,6 +46,13 @@ import Reports from "./components/Pages/LFClassroom/Reports";
 import RequireAuth from "./components/Pages/Login/RequireAuth";
 import MyProfile from "./components/Pages/Shared/MyProfile";
 
+import Test from "./components/Pages/Test/Test";
+
+import UpdateQuiz from "./components/Pages/Dashboard/UpdateQuiz";
+import UpdateQuestion from "./components/Pages/Dashboard/UpdateQuestion";
+
+import LiveSession from "./components/Pages/LFClassroom/LiveSession";
+
 function App() {
     const [name, setName] = useState("");
     const [questions, setQuestions] = useState();
@@ -53,7 +60,7 @@ function App() {
 
     const fetchQuestions = async (category = "", difficulty = "") => {
         console.log(category, difficulty);
-        const { data } = await axios.get(`questions.json`);
+        const { data } = await axios.get(`http://localhost:5000/quiz`);
         const filteredQuestions = data.filter((question) => {
             return (
                 question.category === category &&
@@ -69,7 +76,7 @@ function App() {
             <NavBar></NavBar>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/learn" element={<Learn />} />
+                <Route path="/learn/*" element={<Learn />} />
                 <Route path="/about/*" element={<About />}></Route>
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
@@ -87,6 +94,7 @@ function App() {
                     <Route path="students" element={<Students />}></Route>
                     <Route path="assign" element={<Assignments />}></Route>
                     <Route path="reports" element={<Reports />}></Route>
+                    <Route path="liveSession" element={<LiveSession />} />
                 </Route>
                 <Route path="/englishtutorial" element={<EnglishTutorials />} />
                 <Route path="/franchtutorial" element={<FranchTutorials />} />
@@ -106,7 +114,21 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />}>
                     <Route index element={<Users />}></Route>
                     <Route path="users" element={<Users />}></Route>
+
+                    <Route
+                        path="update_quiz"
+                        element={
+                            <UpdateQuiz
+                                fetchQuestions={fetchQuestions}
+                                category={questions && questions[0]?.category}
+                            />
+                        }
+                    ></Route>
                 </Route>
+                <Route
+                    path="/update_question"
+                    element={<UpdateQuestion questions={questions} />}
+                ></Route>
                 <Route
                     path="/quiz"
                     element={
@@ -143,7 +165,6 @@ function App() {
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/videoCall" element={<VideoCall />} />
 
-                <Route path="/quiz" element={<Quizzes />} />
                 <Route path="/kids" element={<ForKids />} />
 
                 <Route path="/trial" element={<Reservation />} />
@@ -153,6 +174,7 @@ function App() {
                 <Route path="/profile" element={<MyProfile />} />
 
                 <Route path="/*" element={<NotFound />} />
+                <Route path="/test" element={<Test />} />
             </Routes>
             <Footer></Footer>
             <ToastContainer></ToastContainer>

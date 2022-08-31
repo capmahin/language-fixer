@@ -3,20 +3,24 @@ import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink, Link } from "react-router-dom";
 import auth from "../../../firebase.init";
+import { useTranslation } from "react-i18next";
+import { getLanguage, saveLanguage } from "../../../utilities/translate";
 
 const NavBar = () => {
+    const { t, i18n } = useTranslation();
     const [user] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
         localStorage.removeItem("accessToken");
     };
+    console.log(t);
 
     const navItems = (
         <>
             <li className=" lg:hidden flex items-center">
                 {user && (
-                    <div class="avatar">
-                        <div class="w-24 rounded-full">
+                    <div className="avatar">
+                        <div className="w-24 rounded-full">
                             <img src={user.photoURL} alt="" />
                         </div>
                     </div>
@@ -27,7 +31,7 @@ const NavBar = () => {
                     className={({ isActive }) => (isActive ? "active" : "")}
                     to="/"
                 >
-                    Home
+                    {t(`Home`)}
                 </NavLink>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
@@ -35,7 +39,7 @@ const NavBar = () => {
                     className={({ isActive }) => (isActive ? "active" : "")}
                     to="/learn"
                 >
-                    Learn
+                    {t(`Learn`)}
                 </NavLink>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
@@ -43,7 +47,7 @@ const NavBar = () => {
                     className={({ isActive }) => (isActive ? "active" : "")}
                     to="contact"
                 >
-                    Contact Us
+                    {t(`Contact`)}
                 </NavLink>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
@@ -51,7 +55,7 @@ const NavBar = () => {
                     className={({ isActive }) => (isActive ? "active" : "")}
                     to="reviews"
                 >
-                    Reviews
+                    {t(`Reviews`)}
                 </NavLink>
             </li>
             {/* <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent">
@@ -65,7 +69,7 @@ const NavBar = () => {
                     className={({ isActive }) => (isActive ? "active" : "")}
                     to="about"
                 >
-                    About
+                    {t(`About`)}
                 </NavLink>
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer  hover:text-accent">
@@ -73,7 +77,7 @@ const NavBar = () => {
                     className={({ isActive }) => (isActive ? "active" : "")}
                     to="kids"
                 >
-                    For Kids
+                    {t(`Kids`)}
                 </NavLink>
             </li>
             {user && (
@@ -82,14 +86,30 @@ const NavBar = () => {
                         className={({ isActive }) => (isActive ? "active" : "")}
                         to="/dashboard"
                     >
-                        Dashboard
+                        {t(`Dashboard`)}
                     </NavLink>
                 </li>
             )}
+            <li>
+                <select
+                    className=""
+                    onChange={(e) => {
+                        i18n.changeLanguage(e.target.value);
+                        saveLanguage(e.target.value);
+                    }}
+                    value={getLanguage()}
+                >
+                    <option value="en">English</option>
+                    <option value="kr">Korean</option>
+                    <option value="spa">Spanish</option>
+                    <option value="cn">Chinese</option>
+                    <option value="fr">French</option>
+                </select>
+            </li>
             <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent hidden lg:block">
                 {user ? (
-                    <div class="avatar dropdown hidden lg:block">
-                        <div class="w-10 rounded-full">
+                    <div className="avatar dropdown hidden lg:block">
+                        <div className="w-10 rounded-full">
                             <label tabindex="0" className="pointer">
                                 <img
                                     className="pointer"
@@ -99,15 +119,18 @@ const NavBar = () => {
                             </label>
                             <ul
                                 tabindex="0"
-                                class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 absolute right-0"
+                                className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 absolute right-0"
                             >
                                 <li>
                                     <Link to="/profile">
-                                        <button>Profile</button>
+                                        <button>{t(`Profile`)}</button>
                                     </Link>
                                 </li>
                                 <li>
-                                    <button onClick={logout}>Log Out</button>
+                                    <button onClick={logout}>
+                                        {" "}
+                                        {t(`Log Out`)}
+                                    </button>
                                 </li>
                             </ul>
                         </div>
@@ -117,19 +140,19 @@ const NavBar = () => {
                         className={({ isActive }) => (isActive ? "active" : "")}
                         to="/login"
                     >
-                        Login
+                        {t(`Login`)}
                     </NavLink>
                 )}
             </li>
             <li className="my-1 lg:mr-2 cursor-pointer hover:text-accent block lg:hidden">
                 {user ? (
-                    <button onClick={logout}>Log Out</button>
+                    <button onClick={logout}>{t(`Log Out`)}</button>
                 ) : (
                     <NavLink
                         className={({ isActive }) => (isActive ? "active" : "")}
                         to="/login"
                     >
-                        Login
+                        {t(`Login`)}
                     </NavLink>
                 )}
             </li>
