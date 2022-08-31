@@ -6,7 +6,7 @@ const BlogDetails = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch(`https://young-plains-25750.herokuapp.com/blogs/${id}`)
+    fetch(`http://localhost:5000/blogs/${id}`)
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, [id]);
