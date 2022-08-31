@@ -1,9 +1,29 @@
-import React from "react";
-import useBlogs from "../../hooks/useBlogs";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+// import useBlogs from "../../hooks/useBlogs";
+import setBlogs from "../../Redux-Blog/actions/blogActions";
 import Blog from "./Blog";
 
 const Blogs = () => {
-  const { blogs, isPending } = useBlogs("https://young-plains-25750.herokuapp.com/blogs");
+  const blogs = useSelector((state) => state.allBlogs.blogs);
+  const dispatch = useDispatch();
+
+  const fetchBlogs = async () => {
+    const res = await axios
+      .get("https://young-plains-25750.herokuapp.com/blogs")
+      .catch((err) => {
+        console.log("err", err);
+      });
+    dispatch(setBlogs(res.data));
+  };
+
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
+  console.log(blogs);
+
+  // const { blogs, isPending } = useBlogs("https://young-plains-25750.herokuapp.com/blogs");
 
   return (
     <div className="pt-28 pb-20 mx-auto">
