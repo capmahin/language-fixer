@@ -41,11 +41,12 @@ import BlogDetails from "./components/Pages/Home/BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
 import LFClassroom from "./components/Pages/LFClassroom/LFClassroom";
 import Students from "./components/Pages/LFClassroom/Students";
-import Assignments from "./components/Pages/LFClassroom/Assignments";
+// import Assignments from "./components/Pages/LFClassroom/Assignments";
 import Reports from "./components/Pages/LFClassroom/Reports";
 import RequireAuth from "./components/Pages/Login/RequireAuth";
 import MyProfile from "./components/Pages/Shared/MyProfile";
 import LiveSession from "./components/Pages/LFClassroom/LiveSession";
+import Assign from "./components/Pages/LFClassroom/Assign";
 
 function App() {
   const [name, setName] = useState("");
@@ -85,7 +86,7 @@ function App() {
         >
           <Route index element={<Students />}></Route>
           <Route path="students" element={<Students />}></Route>
-          <Route path="assign" element={<Assignments />}></Route>
+          <Route path="assign" element={<Assign />}></Route>
           <Route path="reports" element={<Reports />}></Route>
           <Route path="liveSession" element={<LiveSession />} />
         </Route>

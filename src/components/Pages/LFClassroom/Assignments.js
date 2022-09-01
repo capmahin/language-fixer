@@ -34,7 +34,7 @@ const Assignments = () => {
 
   return (
     <div>
-      <h1 className=" mt-20 text-xl lg:text-2xl text-bold">Contents</h1>
+      <h1 className="mt-20 text-xl lg:text-2xl text-bold">Contents</h1>
       <div class="card bg-primary text-zinc-300 my-16">
         <div className="bg-gray-500 p-6">
           <h1 class="card-title text-2xl text-yellow-300">
