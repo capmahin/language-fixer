@@ -13,9 +13,12 @@ const MyProfile = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/info?email=${user.email}`, {
-        method: "GET",
-      })
+      fetch(
+        `https://young-plains-25750.herokuapp.com/info?email=${user.email}`,
+        {
+          method: "GET",
+        }
+      )
         .then((res) => {
           return res.json();
         })

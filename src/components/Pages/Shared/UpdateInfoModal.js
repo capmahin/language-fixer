@@ -30,7 +30,7 @@ const UpdateInfoModal = () => {
       updatedLinkedIn,
       updatedGithub,
     };
-    fetch(`http://localhost:5000/info?email=${user.email}`, {
+    fetch(`https://young-plains-25750.herokuapp.com/info?email=${user.email}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
