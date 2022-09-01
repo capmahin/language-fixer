@@ -13,7 +13,7 @@ const LFSchool = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://young-plains-25750.herokuapp.com/users")
       .then((res) => res.json())
       .then((data) => setUsers(data));
   }, []);
@@ -45,7 +45,7 @@ const LFSchool = () => {
       isInstructor: true,
     };
     console.log(lfClass);
-    const url = `http://localhost:5000/addClasses/${user.email}`;
+    const url = `https://young-plains-25750.herokuapp.com/addClasses/${user.email}`;
     fetch(url, {
       method: "PUT",
       headers: {

@@ -17,7 +17,7 @@ const Review = () => {
       imageUrl: "https://daisyui.com/tailwind-css-component-profile-3@56w.png",
       comment: commentRef.current.value,
     };
-    const url = "http://localhost:5000/reviews";
+    const url = "https://young-plains-25750.herokuapp.com/reviews";
     fetch(url, {
       method: "POST",
       headers: {

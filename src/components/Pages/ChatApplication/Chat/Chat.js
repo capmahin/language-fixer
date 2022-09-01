@@ -15,7 +15,7 @@ const Chat = () => {
   const [socket, setSocket] = useState();
 
   useEffect(() => {
-    const socket = io("http://localhost:5000/");
+    const socket = io("https://young-plains-25750.herokuapp.com/");
     setSocket(socket);
 
     socket.on("connect", () => {

@@ -12,7 +12,7 @@ const Students = () => {
   const [logedInUser, setLogedInUser] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${user.email}`)
+    fetch(`https://young-plains-25750.herokuapp.com/user/${user.email}`)
       .then((res) => res.json())
       .then((data) => setLogedInUser(data));
   }, []);
