@@ -55,7 +55,7 @@ const Chat = () => {
     <div class="hero min-h-screen bg-base-200">
       <div class="hero-content flex-col lg:flex-row-reverse">
         <div class="text-center lg:text-left">
-          <h1 class="text-5xl font-bold">Communication !!!</h1>
+          <h1 class="text-5xl font-bold text-yellow-400">Communication !!!</h1>
 
           <img
             className="py-6 rounded w-72"
