@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import yellowbg from '../../../../assets/yellow-black-bg.jpg'
+import { useNavigate } from "react-router-dom"
 
 const Join = () => {
   let navigate = useNavigate();
@@ -37,9 +36,9 @@ const Join = () => {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${yellowbg})` }} className=" bg-center min-h-screen px-3 py-4 shadow bg-slate-200  text-dark border rounded row flex flex-col justify-center items-center">
+    <div className=" bg-center min-h-screen px-3 py-4 shadow  text-dark rounded row flex flex-col justify-center items-center">
       <form onSubmit={handleSubmit}>
-        <div className="form-group mb-4">
+        <div className="form-group mb-4 ">
           <h2 className="text-accent text-2xl font-bold mb-4">Welcome to Language-Fixer-Chat</h2>
         </div>
         <div className="form-group mb-4">
@@ -51,7 +50,7 @@ const Join = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="form-group mb-4 flex flex-col justify-center items-center">
+        <div className="form-group mb-4 ">
           <select
             className="select  select-accent mb-4 w-full max-w-xs"
             name="room"
@@ -63,6 +62,9 @@ const Join = () => {
             <option value="Social Media">Social Media</option>
           </select>
           {error ? <small className="text-red-600 text-base">{error}</small> : ""}
+        </div>
+        <div className="flex flex-col justify-center items-center">
+
           <button type="submit" className="btn bg-accent border-0 text-white rounded-full w-44 hover:bg-white hover:text-accent hover:border-accent hover:border-2 my-2">
             Submit
           </button>

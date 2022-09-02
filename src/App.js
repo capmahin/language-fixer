@@ -33,8 +33,6 @@ import Dashboard from "./components/Pages/Dashboard/Dashboard";
 
 import Users from "./components/Pages/Dashboard/Users";
 
-import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
-
 import { ToastContainer } from "react-toastify";
 
 import BlogDetails from "./BlogDetails";
@@ -143,7 +141,6 @@ function App() {
                 />
                 <Route path="/join" exact element={<Join />} />
                 <Route path="/chat" element={<Chat />} />
-                <Route path="/videoCall" element={<VideoCall />} />
 
                 <Route path="/quiz" element={<Quizzes />} />
                 <Route path="/kids" element={<ForKids />} />

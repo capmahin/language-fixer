@@ -15,7 +15,7 @@ const LFSchool = () => {
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        fetch('https://young-plains-25750.herokuapp.com/user')
+        fetch('https://young-plains-25750.herokuapp.com/users')
             .then((res) => res.json())
             .then((data) => setUsers(data));
     }, []);
