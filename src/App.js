@@ -74,7 +74,46 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/tutorial" element={<Tutorial />} />
-        
+
+
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route index element={<Users />}></Route>
+          <Route path="users" element={<Users />}></Route>
+        </Route>
+        <Route
+          path="/quiz"
+          element={
+            <QuizHome
+              name={name}
+              setName={setName}
+              fetchQuestions={fetchQuestions}
+              category={questions && questions[0]?.category}
+              difficulty={questions && questions[0]?.difficulty}
+            />
+          }
+        />
+        <Route
+          path="/quizQues"
+          element={
+            <Quiz
+              name={name}
+              questions={questions}
+              setQuestions={setQuestions}
+              score={score}
+              setScore={setScore}
+            />
+          }
+        />
+        <Route
+          path="/result"
+          element={<Result name={name} score={score} />}
+        />
+        <Route
+          path="/certificate"
+          element={<Certificate name={name} />}
+        />
+        <Route path="/join" exact element={<Join />} />
+        <Route path="/chat" element={<Chat />} />
 
         <Route
           path="/LFClassroom"
@@ -105,6 +144,7 @@ function App() {
           }
         />
         <Route path="chat/:roomId" element={<Chat />} />
+
 
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<Users />}></Route>
@@ -149,10 +189,10 @@ function App() {
         <Route path="/profile" element={<MyProfile />} />
 
         <Route path="/*" element={<NotFound />} />
-      </Routes>
+      </Routes >
       <Footer></Footer>
       <ToastContainer></ToastContainer>
-    </div>
+    </div >
   );
 }
 

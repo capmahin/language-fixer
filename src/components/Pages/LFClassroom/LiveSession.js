@@ -10,6 +10,7 @@ const LiveSession = () => {
       </button>
     </div>
   );
+
 };
 
 export default LiveSession;

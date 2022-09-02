@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import yellowbg from "../../../../assets/yellow-black-bg.jpg";
 
 const Join = () => {
   let navigate = useNavigate();
@@ -40,9 +39,7 @@ const Join = () => {
     <div className=" bg-center min-h-screen px-3 py-4 shadow  text-dark rounded row flex flex-col justify-center items-center">
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-4 ">
-          <h2 className="text-accent text-2xl font-bold mb-4">
-            Welcome to Language-Fixer-Chat
-          </h2>
+          <h2 className="text-accent text-2xl font-bold mb-4">Welcome to Language-Fixer-Chat</h2>
         </div>
         <div className="form-group mb-4">
           <input
@@ -64,6 +61,9 @@ const Join = () => {
             <option value="Spanish">Spanish</option>
             <option value="Chinese">Chinese</option>
           </select>
+          {error ? <small className="text-red-600 text-base">{error}</small> : ""}
+        </div>
+        <div className="flex flex-col justify-center items-center">
           {error ? (
             <small className="text-red-600 text-base">{error}</small>
           ) : (
