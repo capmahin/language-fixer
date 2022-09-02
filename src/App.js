@@ -35,16 +35,17 @@ import Users from "./components/Pages/Dashboard/Users";
 
 import { ToastContainer } from "react-toastify";
 
-import BlogDetails from "./BlogDetails";
+import BlogDetails from "./components/Pages/Home/BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
 import LFClassroom from "./components/Pages/LFClassroom/LFClassroom";
 import Students from "./components/Pages/LFClassroom/Students";
-import Assignments from "./components/Pages/LFClassroom/Assignments";
 import Reports from "./components/Pages/LFClassroom/Reports";
 import RequireAuth from "./components/Pages/Login/RequireAuth";
 import MyProfile from "./components/Pages/Shared/MyProfile";
 import LiveSession from "./components/Pages/LFClassroom/LiveSession";
 import ToDoList from "./components/Pages/LFClassroom/ToDoList/ToDoList";
+import Assign from "./components/Pages/LFClassroom/Assign";
+import AddStudents from "./components/Pages/LFClassroom/AddStudents";
 
 function App() {
   const [name, setName] = useState("");
@@ -75,7 +76,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/tutorial" element={<Tutorial />} />
 
-
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<Users />}></Route>
           <Route path="users" element={<Users />}></Route>
@@ -104,14 +104,8 @@ function App() {
             />
           }
         />
-        <Route
-          path="/result"
-          element={<Result name={name} score={score} />}
-        />
-        <Route
-          path="/certificate"
-          element={<Certificate name={name} />}
-        />
+        <Route path="/result" element={<Result name={name} score={score} />} />
+        <Route path="/certificate" element={<Certificate name={name} />} />
         <Route path="/join" exact element={<Join />} />
         <Route path="/chat" element={<Chat />} />
 
@@ -125,7 +119,8 @@ function App() {
         >
           <Route index element={<Students />}></Route>
           <Route path="students" element={<Students />}></Route>
-          <Route path="assign" element={<Assignments />}></Route>
+          <Route path="addstudents" element={<AddStudents />}></Route>
+          <Route path="assign" element={<Assign />}></Route>
           <Route path="reports" element={<Reports />}></Route>
           <Route path="liveSession" element={<LiveSession />} />
           <Route path="todolist" element={<ToDoList />} />
@@ -144,7 +139,6 @@ function App() {
           }
         />
         <Route path="chat/:roomId" element={<Chat />} />
-
 
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<Users />}></Route>
@@ -189,10 +183,10 @@ function App() {
         <Route path="/profile" element={<MyProfile />} />
 
         <Route path="/*" element={<NotFound />} />
-      </Routes >
+      </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
-    </div >
+    </div>
   );
 }
 

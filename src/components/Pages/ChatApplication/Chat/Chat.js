@@ -54,9 +54,10 @@ const Chat = () => {
   return (
     <div className=" bg-center py-4 m-5 w-50 shadow  text-dark container w-72 lg:w-full">
       <div className="text-center px-3 mb-4 text-capitalize flex flex-col justify-center items-center">
-        <h1 className="text-accent text-2xl font-bold text-center mb-4">{data?.room} Chat Room</h1>
-        <div
-          className=" bg-gray-200 border-2 border-accent rounded p-3 mb-4 overflow-scroll min-h-screen w-72 lg:w-96">
+        <h1 className="text-accent text-2xl font-bold text-center mb-4">
+          {data?.room} Chat Room
+        </h1>
+        <div className=" bg-gray-200 border-2 border-accent rounded p-3 mb-4 overflow-scroll min-h-screen w-72 lg:w-96">
           {allMessages.map((msg) => {
             return data.name === msg.name ? (
               <div className="row justify-content-end pl-5 bg-info rounded-lg">
@@ -117,7 +118,6 @@ const Chat = () => {
               </svg>
             )}
           </button>
-
         </div>
       </div>
     </div>

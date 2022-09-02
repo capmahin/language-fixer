@@ -20,7 +20,6 @@ const LFSchool = () => {
 
   const [error, setError] = useState("");
 
-
   const classRef = useRef("");
   const languageRef = useRef("");
 
@@ -91,7 +90,7 @@ const LFSchool = () => {
         <input type="checkbox" id="my-modal-6" className="modal-toggle" />
         <div className="modal modal-bottom sm:modal-middle">
           <div className="modal-box">
-            <label for="my-modal-6" className="btn btn-xs">
+            <label htmlFor="my-modal-6" className="btn btn-xs">
               X
             </label>
             <h3 className="font-bold text-2xl text-center">
@@ -128,7 +127,7 @@ const LFSchool = () => {
             <div className="modal-action">
               <label
                 onClick={handleCreateClassroom}
-                for={error ? "" : "my-modal-6"}
+                htmlFor={error ? "" : "my-modal-6"}
                 className="btn"
               >
                 Create Class
