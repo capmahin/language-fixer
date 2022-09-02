@@ -1,15 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Moment from "react-moment";
 import { io } from "socket.io-client";
-import textureredbg from "../../../../assets/texture-red-bg.jpg";
 
 const Chat = () => {
   const location = useLocation();
-  const navigate = useNavigate();
-  const navigatevideo = () => {
-    navigate("/videoCall");
-  };
+
   const msgBoxRef = useRef();
 
   const [data, setData] = useState({});
@@ -19,7 +15,7 @@ const Chat = () => {
   const [socket, setSocket] = useState();
 
   useEffect(() => {
-    const socket = io("http://localhost:5000");
+    const socket = io("https://young-plains-25750.herokuapp.com/");
     setSocket(socket);
 
     socket.on("connect", () => {
@@ -56,96 +52,73 @@ const Chat = () => {
   };
 
   return (
-    <div
-      style={{ backgroundImage: `url(${textureredbg})` }}
-      className=" bg-center py-4 m-5 w-50 shadow bg-slate-200  text-dark border rounded container "
-    >
-      <div className="text-center px-3 mb-4 text-capitalize">
+    <div className=" bg-center py-4 m-5 w-50 shadow  text-dark container w-72 lg:w-full">
+      <div className="text-center px-3 mb-4 text-capitalize flex flex-col justify-center items-center">
         <h1 className="text-accent text-2xl font-bold text-center mb-4">
           {data?.room} Chat Room
         </h1>
-      </div>
-      <div
-        className="bg-light border rounded p-3 mb-4"
-        style={{ height: "450px", overflowY: "scroll" }}
-      >
-        {allMessages.map((msg) => {
-          return data.name === msg.name ? (
-            <div className="row justify-content-end pl-5 ">
-              <div className="d-flex flex-column align-items-end m-2 shadow p-2 bg-info border rounded w-auto">
-                <div>
-                  <strong className="m-1">{msg.name}</strong>
-                  <small className="text-muted m-1">
-                    <Moment fromNow>{msg.time}</Moment>
-                  </small>
+        <div className=" bg-gray-200 border-2 border-accent rounded p-3 mb-4 overflow-scroll min-h-screen w-72 lg:w-96">
+          {allMessages.map((msg) => {
+            return data.name === msg.name ? (
+              <div className="row justify-content-end pl-5 bg-info rounded-lg">
+                <div className="d-flex flex-column align-items-end m-2 shadow p-2 w-auto">
+                  <div>
+                    <strong className="m-1">{msg.name}</strong>
+                    <small className="text-muted m-1">
+                      <Moment fromNow>{msg.time}</Moment>
+                    </small>
+                  </div>
+                  <h4 className="m-1">{msg.msg}</h4>
                 </div>
-                <h4 className="m-1">{msg.msg}</h4>
               </div>
-            </div>
-          ) : (
-            <div className="row justify-content-start">
-              <div className="d-flex flex-column m-2 p-2 shadow bg-slate-200  border rounded w-auto">
-                <div>
-                  <strong className="m-1">{msg.name}</strong>
-                  <small className="text-mmuted m-1">
-                    <Moment fromNow>{msg.time}</Moment>
-                  </small>
+            ) : (
+              <div className="row justify-content-start">
+                <div className="d-flex flex-column m-2 p-2 shadow bg-slate-200  border rounded w-auto">
+                  <div>
+                    <strong className="m-1">{msg.name}</strong>
+                    <small className="text-mmuted m-1">
+                      <Moment fromNow>{msg.time}</Moment>
+                    </small>
+                  </div>
+                  <h4 className="m-1">{msg.msg}</h4>
                 </div>
-                <h4 className="m-1">{msg.msg}</h4>
               </div>
-            </div>
-          );
-        })}
-        <div ref={msgBoxRef}></div>
-      </div>
-      <div className="form-group flex justify-center items-center">
-        <input
-          type="text"
-          className="input input-bordered input-warning text-base w-full max-w-xs"
-          name="message"
-          onKeyDown={handleEnter}
-          placeholder="Type your message"
-          value={msg}
-          onChange={handleChange}
-        />
-        <button
-          type="button"
-          className="btn btn-warning mx-2"
-          disabled={loading}
-          onClick={onSubmit}
-        >
-          {loading ? (
-            <div className="spinner-border spinner-border-sm text-primary"></div>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="bi bi-send"
-              viewBox="0 0 16 16"
-            >
-              <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"></path>
-            </svg>
-          )}
-        </button>
-        <button>
-          <Link to="/videoCall" onClick={navigatevideo}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              fill="currentColor"
-              className="bi bi-camera-video-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"
-              />
-            </svg>
-          </Link>
-        </button>
+            );
+          })}
+          <div ref={msgBoxRef}></div>
+        </div>
+        <div className="form-group flex justify-center items-center">
+          <input
+            type="text"
+            className="input input-bordered input-warning text-base w-full max-w-xs"
+            name="message"
+            onKeyDown={handleEnter}
+            placeholder="Type your message"
+            value={msg}
+            onChange={handleChange}
+          />
+          <button
+            type="button"
+            className="btn btn-warning mx-2"
+            disabled={loading}
+            onClick={onSubmit}
+          >
+            {loading ? (
+              <div className="spinner-border spinner-border-sm text-primary"></div>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-send"
+                viewBox="0 0 16 16"
+              >
+                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"></path>
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
     </div>
   );

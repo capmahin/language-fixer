@@ -27,7 +27,7 @@ const KidsServices = () => {
                     <div id="slide1" className="carousel-item w-full">
                         <div className="hero min-h-fit">
                             <div className="hero-content flex-col lg:flex-row-reverse">
-                                <img src={img1} className="max-w-md rounded-3xl shadow-2xl" alt='children' />
+                                <img src={img1} className="max-w-xs lg:max-w-md rounded-3xl shadow-2xl" alt='children' />
                                 <div>
                                     <h1 className=" font-bold text-lg"><span className='text-5xl text-accent font-semibold'>E</span>nglish Lessons</h1>
                                     <p className="py-6">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>

@@ -10,9 +10,11 @@ const Blogs = () => {
   const dispatch = useDispatch();
 
   const fetchBlogs = async () => {
-    const res = await axios.get("http://localhost:5000/blogs").catch((err) => {
-      console.log("err", err);
-    });
+    const res = await axios
+      .get("https://young-plains-25750.herokuapp.com/blogs")
+      .catch((err) => {
+        console.log("err", err);
+      });
     dispatch(setBlogs(res.data));
   };
 
@@ -20,7 +22,7 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
-  // const { blogs, isPending } = useBlogs("http://localhost:5000/blogs");
+  // const { blogs, isPending } = useBlogs("https://young-plains-25750.herokuapp.com/blogs");
 
   return (
     <div className="pt-28 pb-20 mx-auto">

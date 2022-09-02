@@ -12,7 +12,7 @@ const Students = () => {
   const [logedInUser, setLogedInUser] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${user.email}`)
+    fetch(`https://young-plains-25750.herokuapp.com/user/${user.email}`)
       .then((res) => res.json())
       .then((data) => setLogedInUser(data));
   }, []);
@@ -28,9 +28,9 @@ const Students = () => {
             Welcome, <span className="text-rose-600">{user.displayName}!</span>
           </h2>
         </div>
-        <div className="overflow-x-auto">
+        <div class="overflow-x-auto">
           <h4 className="">Students of your classroom</h4>
-          <table className="table w-full">
+          <table class="table w-full">
             <thead>
               <tr>
                 <th></th>

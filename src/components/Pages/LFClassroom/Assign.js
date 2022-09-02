@@ -19,7 +19,7 @@ const Assign = () => {
       assignmentBody: assignment,
     };
 
-    fetch("http://localhost:5000/assign", {
+    fetch("https://young-plains-25750.herokuapp.com/assign", {
       method: "POST",
 
       headers: { "Content-type": "application/json" },
@@ -32,7 +32,7 @@ const Assign = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/assign")
+    fetch("https://young-plains-25750.herokuapp.com/assign")
       .then((res) => res.json())
       .then((data) => setAssignBody(data));
   }, []);

@@ -12,7 +12,7 @@ const AddStudents = () => {
 
     const students = { sEmail };
 
-    const url = `http://localhost:5000/user/addStudent/${user.email}`;
+    const url = `https://young-plains-25750.herokuapp.com/user/addStudent/${user.email}`;
     fetch(url, {
       method: "PUT",
       headers: {

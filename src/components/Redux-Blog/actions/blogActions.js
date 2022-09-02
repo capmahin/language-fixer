@@ -11,7 +11,7 @@ export default setBlogs;
 
 export const selectedBlog = (blog) => {
   return {
-    type: ActionTypes.SELECTED_blog,
+    type: ActionTypes.SELECTED_BLOG,
     payload: blog,
   };
 };

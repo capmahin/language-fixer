@@ -7,7 +7,7 @@ const useUpdateUser = (user) => {
     const email = user?.user?.email;
     const currentUser = { email: email };
     if (email) {
-      fetch(`http://localhost:5000/userUpdateDB/${email}`, {
+      fetch(`https://young-plains-25750.herokuapp.com/userUpdateDB/${email}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

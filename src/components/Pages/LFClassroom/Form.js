@@ -9,7 +9,7 @@
 //     e.preventDefault();
 //     const assignmentBody = { assignBody };
 
-//     fetch("http://localhost:5000/assignSub", {
+//     fetch("https://young-plains-25750.herokuapp.com/assignSub", {
 //       method: "POST",
 //       headers: { "Content-type": "application/json" },
 //       body: JSON.stringify(assignmentBody),
