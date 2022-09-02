@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const LFClassroom = () => {
   return (
-    <div class="drawer drawer-mobile">
+    <div class="drawer drawer-mobile ">
       <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
         {/* <!-- Page content here --> */}
@@ -30,25 +30,43 @@ const LFClassroom = () => {
 
       <div class="drawer-side">
         <label for="dashboard-sidebar" class="drawer-overlay"></label>
-        <ul class="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
+
+        <ul class="menu p-4 overflow-y-auto w-64 bg-slate-400 text-base-content rounded-lg">
           {/* <!-- Sidebar content here --> */}
+          <li className="my-3">
+            <h1>
+              <span className="text-3xl text-warning text-bold">
+                Class Room
+              </span>
+            </h1>
+          </li>
           <li>
             {/* <ClassroomSidebar></ClassroomSidebar> */}
-            <Link to="addstudents">
+            <Link to="addstudents" className="hover:text-accent my-2">
               {/* <img className="mr-2" src={newclass} alt="" /> Add Students */}
               Add Students
             </Link>
           </li>
           <li>
-            <Link to="students">
+            <Link to="students" className="hover:text-accent my-2">
               {/* <img className="mr-2" src={privacy} alt="" /> */}
-              STUDENTS
+              Students
             </Link>
           </li>
           <li>
-            <Link to="assign">
+            <Link to="assign" className="hover:text-accent my-2">
               {/* <img className="mr-2" src={help} alt="" /> */}
               Assignment
+            </Link>
+          </li>
+          <li>
+            <Link to="todolist" className="hover:text-accent my-2">
+              To Do List
+            </Link>
+          </li>
+          <li>
+            <Link to="liveSession" className="hover:text-accent my-2">
+              Live Session
             </Link>
           </li>
         </ul>
