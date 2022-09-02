@@ -9,7 +9,7 @@ import Peer from "simple-peer";
 import io from "socket.io-client";
 import "./VideoCall.css";
 
-const socket = io.connect("https://young-plains-25750.herokuapp.com/");
+const socket = io.connect("http://localhost:5000/");
 function VideoCall() {
   const [me, setMe] = useState("");
   const [stream, setStream] = useState();

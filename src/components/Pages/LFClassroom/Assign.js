@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
+import useAdmin from "../../hooks/useAdmin";
 
 const Assign = () => {
-  const [assignBody, setAssignBody] = useState("");
+  const [assignBody, setAssignBody] = useState([]);
+  const [user] = useAuthState(auth);
+  const [admin] = useAdmin(user);
   //   const [assignEmail, setAssignEmail] = useState("");
+  const inputAssignment = useRef(null);
 
   const handleAssignSub = (e) => {
     e.preventDefault();
-    const assignmentBody = { assignBody };
-    setAssignBody(e.target.value);
+    const assignment = inputAssignment.current.value;
+    console.log(assignment);
+
+    const assignmentBody = {
+      assignmentBody: assignment,
+    };
 
     fetch("http://localhost:5000/assign", {
       method: "POST",
+
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(assignmentBody),
     }).then(() => {
@@ -19,47 +30,50 @@ const Assign = () => {
 
     e.target.reset();
   };
-  console.log(assignBody);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/assign")
+      .then((res) => res.json())
+      .then((data) => setAssignBody(data));
+  }, []);
 
   return (
-    <div className="mt-20">
-      <h1>Assignment: {assignBody.length}</h1>
-
-      {assignBody.length > 0 ? (
-        <h3>assignment is not done here</h3>
-      ) : (
-        <form
-          className="bg-gray-300 p-6 m-12 rounded"
-          onSubmit={handleAssignSub}
-        >
-          <textarea
-            required
-            value={assignBody}
-            //   onChange={(e) => setAssignBody(e.target.value)}
-            placeholder="type here....."
-            className="p-3 rounded text-gray-400"
-            name="task"
-            id=""
-            cols="40"
-            rows="3"
-          ></textarea>
-          {/* <div class="form-control text-center">
-          <label class="input-group">
-            <span className="text-zinc-700">Email</span>
-            <input
-              type="email"
-              name="email"
-              value={assignEmail}
-              onChange={(e) => setAssignEmail(e.target.value)}
-              placeholder="yourmail@gmail.com"
-              class="input input-bordered"
-            />
-          </label>
-        </div> */}
-          <div class="card-actions mt-3">
-            <button class="mx-auto btn btn-warning">Submit</button>
+    <div className="m-12">
+      {!admin ? (
+        <>
+          <div class="card bg-gray-700 shadow-xl text-center">
+            <div class="card-body">
+              <h2
+                class="card-title text-gray-300 mx-auto
+               text-center"
+              >
+                Assignment Questions
+              </h2>
+              <form className="" onSubmit={handleAssignSub}>
+                <textarea
+                  required
+                  ref={inputAssignment}
+                  placeholder="type here assignment questions"
+                  className="p-2 my-2
+                   rounded text-gray-200 bg-gray-500  "
+                  name="task"
+                  id=""
+                  cols="30"
+                  rows="3"
+                ></textarea>
+                <div className="text-center">
+                  <input
+                    className="btn bg-gray-300"
+                    type="submit"
+                    value="submit"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
-        </form>
+        </>
+      ) : (
+        <h2>dhur admin na apne</h2>
       )}
     </div>
   );

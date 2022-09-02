@@ -35,16 +35,18 @@ const Assignments = () => {
   return (
     <div>
       <h1 className="mt-20 text-xl lg:text-2xl text-bold">Contents</h1>
-      <div class="card bg-primary text-zinc-300 my-16">
+      <div className="card bg-primary text-zinc-300 my-16">
         <div className="bg-gray-500 p-6">
-          <h1 class="card-title text-2xl text-yellow-300">
+          <h1 className="card-title text-2xl text-yellow-300">
             Primary Assignment
           </h1>
-          <h2 class="text-bold text-xl">Make sentences with the given words</h2>
+          <h2 className="text-bold text-xl">
+            Make sentences with the given words
+          </h2>
         </div>
-        <div class="card-body">
+        <div className="card-body">
           <div className="bg-gray-400 p-5 rounded">
-            <p class="text-bold text-xl text-white">Doodle, Hustle</p>
+            <p className="text-bold text-xl text-white">Doodle, Hustle</p>
           </div>
           {role !== "admin" && (
             <form onSubmit={handleAssignSub}>
@@ -59,8 +61,8 @@ const Assignments = () => {
                 cols="40"
                 rows="3"
               ></textarea>
-              <div class="form-control">
-                <label class="input-group">
+              <div className="form-control">
+                <label className="input-group">
                   <span className="text-zinc-700">Email</span>
                   <input
                     type="email"
@@ -68,12 +70,12 @@ const Assignments = () => {
                     value={assignEmail}
                     onChange={(e) => setAssignEmail(e.target.value)}
                     placeholder="yourmail@gmail.com"
-                    class="input input-bordered"
+                    className="input input-bordered"
                   />
                 </label>
               </div>
-              <div class="card-actions mt-3">
-                <button class="mx-auto btn btn-outline btn-warning">
+              <div className="card-actions mt-3">
+                <button className="mx-auto btn btn-outline btn-warning">
                   Submit
                 </button>
               </div>

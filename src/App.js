@@ -47,6 +47,8 @@ import RequireAuth from "./components/Pages/Login/RequireAuth";
 import MyProfile from "./components/Pages/Shared/MyProfile";
 import LiveSession from "./components/Pages/LFClassroom/LiveSession";
 import Assign from "./components/Pages/LFClassroom/Assign";
+import RequireAdmin from "./components/Pages/Login/RequireAdmin";
+import AddStudents from "./components/Pages/LFClassroom/AddStudents";
 
 function App() {
   const [name, setName] = useState("");
@@ -86,6 +88,7 @@ function App() {
         >
           <Route index element={<Students />}></Route>
           <Route path="students" element={<Students />}></Route>
+          <Route path="addstudents" element={<AddStudents />}></Route>
           <Route path="assign" element={<Assign />}></Route>
           <Route path="reports" element={<Reports />}></Route>
           <Route path="liveSession" element={<LiveSession />} />

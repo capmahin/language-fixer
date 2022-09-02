@@ -34,8 +34,8 @@
 //           cols="40"
 //           rows="3"
 //         ></textarea>
-//         {/* <div class="form-control text-center">
-//           <label class="input-group">
+//         {/* <div className="form-control text-center">
+//           <label className="input-group">
 //             <span className="text-zinc-700">Email</span>
 //             <input
 //               type="email"
@@ -43,12 +43,12 @@
 //               value={assignEmail}
 //               onChange={(e) => setAssignEmail(e.target.value)}
 //               placeholder="yourmail@gmail.com"
-//               class="input input-bordered"
+//               className="input input-bordered"
 //             />
 //           </label>
 //         </div> */}
-//         <div class="card-actions mt-3">
-//           <button class="mx-auto btn btn-warning">Submit</button>
+//         <div className="card-actions mt-3">
+//           <button className="mx-auto btn btn-warning">Submit</button>
 //         </div>
 //       </form>
 //     </div>

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Moment from "react-moment";
 import { io } from "socket.io-client";
-import textureredbg from '../../../../assets/texture-red-bg.jpg'
+import textureredbg from "../../../../assets/texture-red-bg.jpg";
 
 const Chat = () => {
   const location = useLocation();
@@ -19,7 +19,7 @@ const Chat = () => {
   const [socket, setSocket] = useState();
 
   useEffect(() => {
-    const socket = io("https://young-plains-25750.herokuapp.com");
+    const socket = io("http://localhost:5000");
     setSocket(socket);
 
     socket.on("connect", () => {
@@ -56,9 +56,14 @@ const Chat = () => {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${textureredbg})` }} className=" bg-center py-4 m-5 w-50 shadow bg-slate-200  text-dark border rounded container ">
+    <div
+      style={{ backgroundImage: `url(${textureredbg})` }}
+      className=" bg-center py-4 m-5 w-50 shadow bg-slate-200  text-dark border rounded container "
+    >
       <div className="text-center px-3 mb-4 text-capitalize">
-        <h1 className="text-accent text-2xl font-bold text-center mb-4">{data?.room} Chat Room</h1>
+        <h1 className="text-accent text-2xl font-bold text-center mb-4">
+          {data?.room} Chat Room
+        </h1>
       </div>
       <div
         className="bg-light border rounded p-3 mb-4"
