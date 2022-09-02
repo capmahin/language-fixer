@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 const Join = () => {
   let navigate = useNavigate();
@@ -57,22 +57,30 @@ const Join = () => {
             onChange={handleChange}
           >
             <option value="">Select Room</option>
-            <option value="Gaming">Gaming</option>
-            <option value="Coding">Coding</option>
-            <option value="Social Media">Social Media</option>
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Chinese">Chinese</option>
           </select>
           {error ? <small className="text-red-600 text-base">{error}</small> : ""}
         </div>
         <div className="flex flex-col justify-center items-center">
-
-          <button type="submit" className="btn bg-accent border-0 text-white rounded-full w-44 hover:bg-white hover:text-accent hover:border-accent hover:border-2 my-2">
+          {error ? (
+            <small className="text-red-600 text-base">{error}</small>
+          ) : (
+            ""
+          )}
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <button
+            type="submit"
+            className="btn bg-accent border-0 text-white rounded-full w-44 hover:bg-white hover:text-accent hover:border-accent hover:border-2 my-2"
+          >
             Submit
           </button>
         </div>
-      </form >
-    </div >
+      </form>
+    </div>
   );
 };
-
 
 export default Join;

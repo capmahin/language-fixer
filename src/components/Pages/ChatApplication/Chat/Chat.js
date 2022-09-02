@@ -1,14 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Moment from "react-moment";
 import { io } from "socket.io-client";
 
 const Chat = () => {
   const location = useLocation();
-  const navigate = useNavigate();
-  const navigatevideo = () => {
-    navigate("/videoCall");
-  };
+
   const msgBoxRef = useRef();
 
   const [data, setData] = useState({});
@@ -18,7 +15,7 @@ const Chat = () => {
   const [socket, setSocket] = useState();
 
   useEffect(() => {
-    const socket = io("https://young-plains-25750.herokuapp.com");
+    const socket = io("https://young-plains-25750.herokuapp.com/");
     setSocket(socket);
 
     socket.on("connect", () => {
@@ -120,6 +117,7 @@ const Chat = () => {
               </svg>
             )}
           </button>
+
         </div>
       </div>
     </div>

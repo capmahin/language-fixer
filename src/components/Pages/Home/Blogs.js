@@ -3,7 +3,9 @@ import useBlogs from "../../hooks/useBlogs";
 import Blog from "./Blog";
 
 const Blogs = () => {
-  const { blogs, isPending } = useBlogs("https://young-plains-25750.herokuapp.com/blogs");
+  const { blogs, isPending } = useBlogs(
+    "https://young-plains-25750.herokuapp.com/blogs"
+  );
 
   return (
     <div className="pt-28 pb-20 mx-auto">
