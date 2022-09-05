@@ -33,23 +33,21 @@ import Dashboard from "./components/Pages/Dashboard/Dashboard";
 
 import Users from "./components/Pages/Dashboard/Users";
 
-import VideoCall from "./components/Pages/ChatApplication/VideoCall/VideoCall";
-
 import { ToastContainer } from "react-toastify";
 
-import BlogDetails from "./BlogDetails";
+import BlogDetails from "./components/Pages/Home/BlogDetails";
 import Blogs from "./components/Pages/Home/Blogs";
 import LFClassroom from "./components/Pages/LFClassroom/LFClassroom";
 import Students from "./components/Pages/LFClassroom/Students";
-import Assignments from "./components/Pages/LFClassroom/Assignments";
 import Reports from "./components/Pages/LFClassroom/Reports";
 import RequireAuth from "./components/Pages/Login/RequireAuth";
 import MyProfile from "./components/Pages/Shared/MyProfile";
-import UpdateQuiz from "./components/Pages/Dashboard/UpdateQuiz";
-import UpdateQuestion from "./components/Pages/Dashboard/UpdateQuestion";
 
 import LiveSession from "./components/Pages/LFClassroom/LiveSession";
-import RequireAdmin from "./components/Pages/Login/RequireAdmin";
+
+import ToDoList from "./components/Pages/LFClassroom/ToDoList/ToDoList";
+import Assign from "./components/Pages/LFClassroom/Assign";
+import AddStudents from "./components/Pages/LFClassroom/AddStudents";
 
 function App() {
     const [name, setName] = useState("");
@@ -58,7 +56,7 @@ function App() {
 
     const fetchQuestions = async (category = "", difficulty = "") => {
         console.log(category, difficulty);
-        const { data } = await axios.get(`http://localhost:5000/quiz`);
+        const { data } = await axios.get(`questions.json`);
         const filteredQuestions = data.filter((question) => {
             return (
                 question.category === category &&
@@ -74,60 +72,17 @@ function App() {
             <NavBar></NavBar>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/learn/*" element={<Learn />} />
+                <Route path="/learn" element={<Learn />} />
                 <Route path="/about/*" element={<About />}></Route>
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/tutorial" element={<Tutorial />} />
-                <Route
-                    path="/LFClassroom"
-                    element={
-                        <RequireAuth>
-                            <LFClassroom />
-                        </RequireAuth>
-                    }
-                >
-                    <Route index element={<Students />}></Route>
-                    <Route path="students" element={<Students />}></Route>
-                    <Route path="assign" element={<Assignments />}></Route>
-                    <Route path="reports" element={<Reports />}></Route>
-                    <Route path="liveSession" element={<LiveSession />} />
-                </Route>
-                <Route path="/englishtutorial" element={<EnglishTutorials />} />
-                <Route path="/franchtutorial" element={<FranchTutorials />} />
-                <Route path="/chinesetutorial" element={<ChineseTutorials />} />
-                <Route path="/spanishtutorial" element={<SpanishTutorials />} />
-                <Route path="/reviews" element={<Reviews />} />
-                <Route
-                    path="/join"
-                    element={
-                        <RequireAuth>
-                            <Join />
-                        </RequireAuth>
-                    }
-                />
-                <Route path="chat/:roomId" element={<Chat />} />
 
                 <Route path="/dashboard" element={<Dashboard />}>
                     <Route index element={<Users />}></Route>
                     <Route path="users" element={<Users />}></Route>
-
-                    <Route
-                        path="update_quiz"
-                        element={
-                            <UpdateQuiz
-                                fetchQuestions={fetchQuestions}
-                                category={questions && questions[0]?.category}
-                            />
-                        }
-                    ></Route>
-                    <Route
-                        path="update_quiz/update_question"
-                        element={<UpdateQuestion questions={questions} />}
-                    ></Route>
                 </Route>
-
                 <Route
                     path="/quiz"
                     element={
@@ -162,7 +117,76 @@ function App() {
                 />
                 <Route path="/join" exact element={<Join />} />
                 <Route path="/chat" element={<Chat />} />
-                <Route path="/videoCall" element={<VideoCall />} />
+
+                <Route
+                    path="/LFClassroom"
+                    element={
+                        <RequireAuth>
+                            <LFClassroom />
+                        </RequireAuth>
+                    }
+                >
+                    <Route index element={<Students />}></Route>
+                    <Route path="students" element={<Students />}></Route>
+                    <Route path="addstudents" element={<AddStudents />}></Route>
+                    <Route path="assign" element={<Assign />}></Route>
+                    <Route path="reports" element={<Reports />}></Route>
+                    <Route path="liveSession" element={<LiveSession />} />
+                    <Route path="todolist" element={<ToDoList />} />
+                </Route>
+                <Route path="/englishtutorial" element={<EnglishTutorials />} />
+                <Route path="/franchtutorial" element={<FranchTutorials />} />
+                <Route path="/chinesetutorial" element={<ChineseTutorials />} />
+                <Route path="/spanishtutorial" element={<SpanishTutorials />} />
+                <Route path="/reviews" element={<Reviews />} />
+                <Route
+                    path="/join"
+                    element={
+                        <RequireAuth>
+                            <Join />
+                        </RequireAuth>
+                    }
+                />
+                <Route path="chat/:roomId" element={<Chat />} />
+
+                <Route path="/dashboard" element={<Dashboard />}>
+                    <Route index element={<Users />}></Route>
+                    <Route path="users" element={<Users />}></Route>
+                </Route>
+                <Route
+                    path="/quiz"
+                    element={
+                        <QuizHome
+                            name={name}
+                            setName={setName}
+                            fetchQuestions={fetchQuestions}
+                            category={questions && questions[0]?.category}
+                            difficulty={questions && questions[0]?.difficulty}
+                        />
+                    }
+                />
+                <Route
+                    path="/quizQues"
+                    element={
+                        <Quiz
+                            name={name}
+                            questions={questions}
+                            setQuestions={setQuestions}
+                            score={score}
+                            setScore={setScore}
+                        />
+                    }
+                />
+                <Route
+                    path="/result"
+                    element={<Result name={name} score={score} />}
+                />
+                <Route
+                    path="/certificate"
+                    element={<Certificate name={name} />}
+                />
+                <Route path="/join" exact element={<Join />} />
+                <Route path="/chat" element={<Chat />} />
 
                 <Route path="/kids" element={<ForKids />} />
 

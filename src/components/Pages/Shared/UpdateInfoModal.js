@@ -30,13 +30,16 @@ const UpdateInfoModal = () => {
             updatedLinkedIn,
             updatedGithub,
         };
-        fetch(`https://young-plains-25750.herokuapp.com/info?email=${user.email}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(bodyData),
-        })
+        fetch(
+            `https://young-plains-25750.herokuapp.com/info?email=${user.email}`,
+            {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(bodyData),
+            }
+        )
             .then((res) => res.json())
             .then((data) => {
                 if (data.modifiedCount > 0) {

@@ -8,11 +8,9 @@ const UserRow = ({ user, index }) => {
             `https://young-plains-25750.herokuapp.com/user/addAdmin/${email}`,
             {
                 method: "PUT",
-                headers: {
-                    authorization: `Bearer ${localStorage.getItem(
-                        "accessToken"
-                    )}`,
-                },
+                // headers: {
+                //     authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+                // },
             }
         )
             .then((res) => res.json())
@@ -36,11 +34,9 @@ const UserRow = ({ user, index }) => {
                 )}
             </td>
             <td>
-                {role === "admin" && (
-                    <button className="btn btn-outline btn-sm btn-error">
-                        Remove Admin
-                    </button>
-                )}
+                <button className="btn btn-outline btn-sm btn-error">
+                    Remove User
+                </button>
             </td>
         </tr>
     );

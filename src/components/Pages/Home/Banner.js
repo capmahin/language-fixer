@@ -33,7 +33,8 @@ const Banner = () => {
                                 <button className="btn uppercase text-primary font-bold bg-accent hover:bg-amber-300 border-0 hover:text-slate-50">
                                     {t(`Start Learning`)}
                                 </button>
-                            </Link>
+                            </Link>{" "}
+                            */}
                         </div>
                     </div>
                 </div>

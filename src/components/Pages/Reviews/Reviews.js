@@ -1,9 +1,10 @@
 import React from "react";
+import AddReviews from "../Home/AddReview";
 
 const Reviews = () => {
   return (
     <div>
-      <h1>Reviews</h1>
+      <AddReviews />
     </div>
   );
 };
