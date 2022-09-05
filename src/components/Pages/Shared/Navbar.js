@@ -92,7 +92,7 @@ const NavBar = () => {
             )}
             <li>
                 <select
-                    className=""
+                    className="rounded bg-transparent  border-gray-500 hover:border-accent focus:outline-none focus:border-accent"
                     onChange={(e) => {
                         i18n.changeLanguage(e.target.value);
                         saveLanguage(e.target.value);

@@ -14,7 +14,7 @@ const UpdateQuiz = ({ fetchQuestions }) => {
         } else {
             setError(false);
             fetchQuestions(category);
-            navigate("/update_question");
+            navigate("/dashboard/update_quiz/update_question");
         }
         console.log(category);
     };

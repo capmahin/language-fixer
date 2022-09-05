@@ -20,10 +20,7 @@ const Info = () => {
                     cardTitle={t(`Learn Spanish`)}
                     img={spanish}
                 ></InfoCard>
-                <InfoCard
-                    cardTitle={t(`Learn  French`)}
-                    img={french}
-                ></InfoCard>
+                <InfoCard cardTitle={t(`Learn French`)} img={french}></InfoCard>
                 <InfoCard
                     cardTitle={t(`Learn Chinese`)}
                     img={chinese}

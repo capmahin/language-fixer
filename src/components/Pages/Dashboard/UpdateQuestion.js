@@ -6,7 +6,7 @@ const UpdateQuestion = ({ questions }) => {
     }, [questions]);
     return (
         <div className="text-white">
-            <h1>{questions}</h1>
+            <h1>ad</h1>
         </div>
     );
 };

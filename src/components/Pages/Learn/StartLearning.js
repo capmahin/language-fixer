@@ -1,6 +1,11 @@
 import React from "react";
+import useAxios from "../../hooks/useAxios";
 
-const startLearning = () => {
+const StartLearning = () => {
+    const { response, err, loading } = useAxios(
+        "http://localhost:5000/learning"
+    );
+
     return (
         <div className="text-white ">
             <h1 className="text-center text-2xl font-bold ">Question</h1>
@@ -26,4 +31,4 @@ const startLearning = () => {
     );
 };
 
-export default startLearning;
+export default StartLearning;

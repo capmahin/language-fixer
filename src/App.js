@@ -45,13 +45,11 @@ import Assignments from "./components/Pages/LFClassroom/Assignments";
 import Reports from "./components/Pages/LFClassroom/Reports";
 import RequireAuth from "./components/Pages/Login/RequireAuth";
 import MyProfile from "./components/Pages/Shared/MyProfile";
-
-import Test from "./components/Pages/Test/Test";
-
 import UpdateQuiz from "./components/Pages/Dashboard/UpdateQuiz";
 import UpdateQuestion from "./components/Pages/Dashboard/UpdateQuestion";
 
 import LiveSession from "./components/Pages/LFClassroom/LiveSession";
+import RequireAdmin from "./components/Pages/Login/RequireAdmin";
 
 function App() {
     const [name, setName] = useState("");
@@ -124,11 +122,12 @@ function App() {
                             />
                         }
                     ></Route>
+                    <Route
+                        path="update_quiz/update_question"
+                        element={<UpdateQuestion questions={questions} />}
+                    ></Route>
                 </Route>
-                <Route
-                    path="/update_question"
-                    element={<UpdateQuestion questions={questions} />}
-                ></Route>
+
                 <Route
                     path="/quiz"
                     element={
@@ -174,7 +173,6 @@ function App() {
                 <Route path="/profile" element={<MyProfile />} />
 
                 <Route path="/*" element={<NotFound />} />
-                <Route path="/test" element={<Test />} />
             </Routes>
             <Footer></Footer>
             <ToastContainer></ToastContainer>

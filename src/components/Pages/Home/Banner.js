@@ -21,11 +21,7 @@ const Banner = () => {
                             {t(`New language, new opportunities, new you`)}
                         </h1>
                         <p className="py-6 text-xl text-slate-300">
-                            {t(`Language acquisition is the process by which humans
-                            acquire the capacity to perceive and comprehend
-                            language, as well as to produce and use words and
-                            sentences to communicate. Language acquisition
-                            involves structures, rules and representation.`)}
+                            {t(`Learn a new language with us`)}
                         </p>
                         <div className="flex flex-col space-y-4">
                             <Link to="/trial">
