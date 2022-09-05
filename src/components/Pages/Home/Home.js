@@ -11,20 +11,20 @@ import Blogs from "./Blogs";
 import LFSchool from "./LFSchool";
 
 const Home = () => {
-  return (
-    <div>
-      <Banner></Banner>
-      <Info></Info>
-      <Services></Services>
-      <WhyLF></WhyLF>
-      <Effective />
-      <LFSchool></LFSchool>
-      <Reviews></Reviews>
-      <AddReview></AddReview>
-      <Blogs></Blogs>
-      <Newsletter></Newsletter>
-    </div>
-  );
+    return (
+        <div>
+            <Banner></Banner>
+            <Info></Info>
+            <Services></Services>
+            <WhyLF></WhyLF>
+            <Effective />
+            <LFSchool></LFSchool>
+            <Reviews></Reviews>
+            <AddReview></AddReview>
+            <Blogs></Blogs>
+            <Newsletter></Newsletter>
+        </div>
+    );
 };
 
 export default Home;

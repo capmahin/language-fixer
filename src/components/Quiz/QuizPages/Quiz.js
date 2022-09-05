@@ -9,10 +9,10 @@ const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
         console.log(questions);
         setOptions(
             questions &&
-            handleShuffle([
-                questions[currentQues]?.correct_answer,
-                ...questions[currentQues]?.incorrect_answers,
-            ])
+                handleShuffle([
+                    questions[currentQues]?.correct_answer,
+                    ...questions[currentQues]?.incorrect_answers,
+                ])
         );
     }, [questions, currentQues]);
     console.log(options);
@@ -26,7 +26,9 @@ const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
         <div>
             <div className="card w-96 bg-base-100 shadow-xl mx-auto my-16">
                 <div className="card-body">
-                    <h2 className="card-title justify-center">Welcome {name}</h2>
+                    <h2 className="card-title justify-center">
+                        Welcome {name}
+                    </h2>
 
                     {questions ? (
                         <>

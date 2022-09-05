@@ -1,69 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Navigate, Route, Routes } from "react-router";
+import useAxios from "../../hooks/useAxios";
+import FinalScreen from "./FinalScreen";
+import Settings from "./Settings";
 import StartLearning from "./StartLearning";
 
 const Learn = () => {
-    const [languages, setLanguages] = useState([]);
-    const [questions, setQuestions] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect((language = "") => {
-        setLoading(true);
-
-        fetch(`details.json`)
-            .then((response) => response.json())
-            .then((data) => {
-                let allLang = [];
-                data.map((x) => (allLang = [...allLang, x.language]));
-
-                const filteredQuestions = data.filter((question) => {
-                    return question.language === language;
-                });
-                console.log(filteredQuestions);
-
-                setLanguages([...new Set(allLang)]);
-                setQuestions(data);
-            })
-            .catch((err) => console.log(err))
-            .finally(() => setLoading(false));
-    }, []);
-
+    const { response, err, loading } = useAxios(
+        "http://localhost:5000/learning"
+    );
+    console.log("learn", response);
     if (loading) {
-        return <h1>Loading...</h1>;
+        return <div>...loading</div>;
     }
-
-    // const fetchDetails = async (language = "") => {
-    //     console.log(language);
-    //     const { data } = await axios.get(`details.json`);
-    //     let allLang = [];
-    //     data.map((x) => (allLang = [...allLang, x.language]));
-
-    //     const filteredQuestions = data.filter((question) => {
-    //         return question.language === language;
-    //     });
-    //     console.log(filteredQuestions);
-    //     setLanguages([...new Set(allLang)]);
-    //     setQuestions(data);
-    // };
-
-    const handleClick = (e) => {
-        console.log(e.target.value);
-    };
-
     return (
-        <div className="text-white">
-            <h1 className="text-4xl text-center font-bold ">
-                Which language do you want to learn...
-            </h1>
-            {languages.length > 0 &&
-                languages.map((lang) => (
-                    <button
-                        key={lang}
-                        onClick={handleClick}
-                        className="btn btn-ghost border-black hover:border-white"
-                    >
-                        {lang}
-                    </button>
-                ))}
+        <div>
+            a
+            <Routes>
+                <Route index element={<Navigate to="settings" />} />
+                <Route
+                    path="settings"
+                    element={<Settings response={response} />}
+                />
+                <Route
+                    path="start_learning"
+                    element={<StartLearning response={response} />}
+                />
+                <Route path="final_screen" element={<FinalScreen />} />
+            </Routes>
         </div>
     );
 };
