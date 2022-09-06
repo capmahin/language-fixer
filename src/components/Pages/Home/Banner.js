@@ -34,7 +34,6 @@ const Banner = () => {
                                     {t(`Start Learning`)}
                                 </button>
                             </Link>{" "}
-                            */}
                         </div>
                     </div>
                 </div>

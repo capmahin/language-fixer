@@ -21,8 +21,11 @@ const WhyLF = () => {
                     <div className="space-y-3">
                         <h1 className="font-bold text-2xl">
                             {" "}
-                            <i className="fa-solid fa-fire-flame-curved"></i>
+                            <i className="fa-solid fa-fire-flame-curved"></i>{" "}
+                            &nbsp;
+                            {t(`Effective and efficient`)}
                         </h1>
+                        <p className="ml-9">{t(`We are fast and efficient`)}</p>
                         <h1 className="font-bold text-2xl">
                             {" "}
                             <i className="fa-solid fa-circle-check"></i>
